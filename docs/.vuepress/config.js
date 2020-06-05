@@ -3,15 +3,11 @@ module.exports = {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
-          lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-          title: 'Dayangui',
-          description: '我的个人博客',
+            lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+            title: 'Dayangui',
+            description: '我的个人博客',
         }
     },
-    // 左上角标题
-    title: 'Dayangui',
-    //描述
-    description: '我的个人博客',
     // 头部部署，右上角小图标
     head: [['link', {rel: 'icon',href: '/favicon.ico' }]],
     base: '/myblog/',// 部署时指定存放的项目的地址
@@ -22,6 +18,7 @@ module.exports = {
     themeConfig: {
         nav: [
             {text: '主页',link: '/'},
+            {text: '笔记',link: '/notes/javascript/手动实现Ajax'},
             {text: '关于',link: '/about/'},
         ],
         /**
