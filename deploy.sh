@@ -2,7 +2,7 @@
 # 错误时停止
 set -e
 # 打包
-npm run docs:build
+npm run build
 # 进入目标文件夹
 cd docs/.vuepress/dist
 # 提交到本地仓库
