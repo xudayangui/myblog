@@ -12,6 +12,7 @@ module.exports = {
     // 主题部署
     themeConfig: {
         nav: [
+            {text: '主页',link: '/'},
             {text: '关于',link: '/about/'},
         ],
         /**
