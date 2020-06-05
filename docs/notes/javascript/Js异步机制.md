@@ -179,14 +179,3 @@ console.log(3); // 3
 // 宏队列 []
 console.log(6); // 6
 ```
-
-## 参考
-
-```
-https://www.jianshu.com/p/1a35857c78e5
-https://segmentfault.com/a/1190000016278115
-https://segmentfault.com/a/1190000012925872
-https://www.cnblogs.com/sunidol/p/11301808.html
-http://www.ruanyifeng.com/blog/2014/10/event-loop.html
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop
-```

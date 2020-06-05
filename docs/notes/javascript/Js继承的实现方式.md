@@ -225,10 +225,3 @@ console.log(child.from); // child
 ### 不足
 * 相对比较复杂
 
-## 参考
-
-```
-https://www.jianshu.com/p/b76ddb68df0e
-https://www.cnblogs.com/ranyonsue/p/11201730.html
-https://www.cnblogs.com/humin/p/4556820.html#!comments
-```

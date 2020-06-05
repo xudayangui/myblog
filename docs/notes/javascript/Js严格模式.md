@@ -253,11 +253,3 @@ function s(){
 }
 s();
 ```
-
-## 参考
-
-```
-https://www.runoob.com/js/js-strict.html
-https://www.cnblogs.com/xumqfaith/p/7841338.html
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode
-```

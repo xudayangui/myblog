@@ -144,14 +144,3 @@ export default obj;
 </script>
 </html>
 ```
-
-
-## 参考
-
-```
-https://segmentfault.com/a/1190000010426778
-https://www.cnblogs.com/leftJS/p/11073481.html
-https://www.cnblogs.com/zhoulujun/p/9415407.html
-https://www.cnblogs.com/zhoulujun/p/9415407.html
-https://www.cnblogs.com/moxiaowohuwei/p/8692359.html
-```

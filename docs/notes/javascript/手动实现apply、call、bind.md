@@ -76,15 +76,3 @@ Function.prototype._bind = function(base, ...args1) { // 拓展Function原型，
 var _bindFunct = funct._bind(obj, 1, 2); // 绑定对象
 _bindFunct(); // 2 1 2 
 ```
-
-## 每日一题
-
-```
-https://github.com/WindrunnerMax/EveryDay
-```
-
-## 参考
-
-```
-https://www.jianshu.com/p/57a876fe66c8
-```

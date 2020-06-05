@@ -120,18 +120,3 @@ promise.then((rand) => {
   例子中仅实现了Promise构造函数与then，实际中还有catch、Promise.all、Promise.race、Promise.resolve、Promise.reject等实现
  */
 ```
-
-## 每日一题
-
-```
-https://github.com/WindrunnerMax/EveryDay
-```
-
-
-## 参考
-
-```
-https://zhuanlan.zhihu.com/p/47434856
-https://www.jianshu.com/p/27735abb91eb
-https://segmentfault.com/a/1190000013170460
-```

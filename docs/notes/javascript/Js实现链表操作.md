@@ -371,9 +371,3 @@ function unionLinkList(L1, L2){
     traverseLinkList(L3);
 })();
 ```
-
-## 每日一题
-
-```
-https://github.com/WindrunnerMax/EveryDay
-```

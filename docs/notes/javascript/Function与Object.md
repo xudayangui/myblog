@@ -52,15 +52,3 @@ console.log(Function instanceof Function); // true
 ## 总结
 * 一切对象都继承于`Object`，都是从`Object.prototype`继承方法和属性
 * 一切构造函数包括`Object`与`Function`，都继承于`Function`，最终继承于`Object`
-
-
-## 参考
-
-```
-https://www.cnblogs.com/tiancai/p/7463252.html
-https://www.cnblogs.com/yf2196717/p/10989466.html
-https://www.cnblogs.com/ioveNature/p/6880176.html
-https://www.cnblogs.com/tiffanybear/p/11320651.html
-https://blog.csdn.net/backee/article/details/83378772
-https://blog.csdn.net/weixin_34237596/article/details/88026745
-```

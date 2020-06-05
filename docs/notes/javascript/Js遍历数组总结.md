@@ -182,10 +182,3 @@ console.log(arr.filter( (currentValue ) => {
     return currentValue > 2;
 })) // [3, 4, 5]
 ```
-
-## 参考
-
-```
-https://blog.csdn.net/function__/article/details/79555301
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array
-```

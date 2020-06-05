@@ -78,7 +78,6 @@ console.log(Object.keys(target)); // ["a"]
 返回原对象的引用。
 
 ```javascript
-// 详解 https://github.com/WindrunnerMax/EveryDay/blob/master/JavaScript/defineProperty.md
 var target = {}
 Object.defineProperties(target,{
     key1:{
@@ -117,7 +116,6 @@ console.log(target.key2); // 11
 返回原对象的引用。
 
 ```javascript
-// 详解 https://github.com/WindrunnerMax/EveryDay/blob/master/JavaScript/defineProperty.md
 var target = {}
 Object.defineProperty(target, 'key1', {
     configurable: true, // 可配置

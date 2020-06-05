@@ -137,16 +137,3 @@ for( let unit of propertyArr ){
  Symbol() "11111"
 */
 ```
-
-## 每日一题
-```
-https://github.com/WindrunnerMax/EveryDay
-```
-
-## 参考
-
-```
-https://github.com/berwin/Blog/issues/24
-https://www.cnblogs.com/zhaozhou/p/7890527.html
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Enumerability_and_ownership_of_properties
-```

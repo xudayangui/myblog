@@ -117,12 +117,5 @@ it.next();
 迭代器 https://zhuanlan.zhihu.com/p/24729321?utm_source=tuicool&utm_medium=referral
 线性方式 https://blog.csdn.net/astonishqft/article/details/82782422?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 ```
-## 参考
-
-```
-https://www.runoob.com/w3cnote/es6-generator.html
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/function*
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Generator
-```
 
 

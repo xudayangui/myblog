@@ -1,6 +1,6 @@
 module.exports = {
     // 左上角标题
-    title: '大烟鬼的博客',
+    title: 'Dayangui',
     //描述
     description: '我的个人博客',
     // 头部部署，右上角小图标
@@ -11,10 +11,8 @@ module.exports = {
     lastUpdated: '最后更新',
     // 主题部署
     themeConfig: {
-        nav: [{text: '主页',link: '/'},
-            {text: '学习文档',link: '/notes/javascript/手动实现Ajax',},
+        nav: [
             {text: '关于',link: '/about/'},
-            {text: 'Github',link: 'https://github.com/xudayangui/'},
         ],
         /**
          * 侧边栏配置：侧边栏组

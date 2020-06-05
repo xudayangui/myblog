@@ -64,12 +64,3 @@ for(let i=0;i<10;++i){
 }
 console.log(stuGroup);
 ```
-
-## 相关
-
-```
-原型与原型链
-https://github.com/WindrunnerMax/EveryDay/blob/master/JavaScript/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE.md
-apply、call、bind
-https://github.com/WindrunnerMax/EveryDay/blob/master/JavaScript/apply%E3%80%81call%E3%80%81bind.md
-```

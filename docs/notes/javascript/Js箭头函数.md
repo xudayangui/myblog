@@ -211,18 +211,3 @@ console.log(s.prototype); // undefined
 
 ## 不能用作函数生成器
 箭头函数不能用作`Generator`，`yield`关键字通常不能在箭头函数中使用，除非是嵌套在允许使用的函数内。
-
-
-
-## 每日一题
-```
-https://github.com/WindrunnerMax/EveryDay
-```
-
-
-## 参考
-```
-https://segmentfault.com/a/1190000010159725
-https://www.runoob.com/w3cnote/es6-function.html
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions
-```

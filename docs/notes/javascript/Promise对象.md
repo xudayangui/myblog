@@ -224,11 +224,3 @@ ajax("GET","https://www.baidu.com",[]).then((res) => {
     console.log(err);
 })
 ```
-
-## 参考
-
-```
-https://www.liaoxuefeng.com/wiki/1022910821149312/1023024413276544
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise
-```
-

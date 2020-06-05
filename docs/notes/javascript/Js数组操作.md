@@ -598,12 +598,3 @@ arr.sort( (v1, v2) => {
 })
 console.log(arr);
 ```
-
-
-## 参考
-
-```
-https://www.jianshu.com/p/4db36e910312
-https://blog.csdn.net/m0_37686205/article/details/88358126
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array
-```

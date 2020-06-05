@@ -86,18 +86,3 @@ console.log(Object.prototype.toString.call(new Date())); // [object Date]
 console.log(Object.prototype.toString.call(/regex/)); // [object RegExp]
 console.log(Object.prototype.toString.call({})); // [object Object]
 ```
-
-
-## 每日一题
-```
-https://github.com/WindrunnerMax/EveryDay
-```
-
-
-## 参考
-
-```
-https://www.cnblogs.com/sban/p/10256412.html
-https://www.cnblogs.com/yucheng6/p/9747313.html
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures
-```
