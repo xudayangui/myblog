@@ -29,7 +29,7 @@ module.exports = {
             '/notes/':[
                 {
                     title: 'JavaScript', // 侧边栏名称
-                    collapsable: false, // 可折叠
+                    collapsable: true, // 可折叠
                     children: [
                         ['/notes/javascript/手动实现Ajax','手动实现Ajax'],
                         ['/notes/javascript/ES6新特性','ES6新特性'],
@@ -75,11 +75,32 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'vue', // 侧边栏名称
-                    collapsable: false, // 可折叠
+                    title: 'Vue', // 侧边栏名称
+                    collapsable: true, // 可折叠
                     children: [
-                        ['/notes/vue/VuePress打造静态博客','VuePress打造静态博客'],
+                        ['/notes/vue/Vue生命周期','Vue生命周期'],
+                        ['/notes/vue/Vue-Cli4','Vue-Cli4'],
                     ]
+                },
+                {
+                    title: 'Node.js', // 侧边栏名称
+                    collapsable: true, // 可折叠
+                    children: []
+                },
+                {
+                    title: 'Webpack', // 侧边栏名称
+                    collapsable: true, // 可折叠
+                    children: []
+                },
+                {
+                    title: 'TypeScript', // 侧边栏名称
+                    collapsable: true, // 可折叠
+                    children: []
+                },
+                {
+                    title: 'Mysql', // 侧边栏名称
+                    collapsable: true, // 可折叠
+                    children: []
                 },
             ]
         }
