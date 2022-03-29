@@ -7,7 +7,7 @@ module.exports = {
       "lang": 'zh-CN'
     }
   },
-  "base": "/myBlog/",
+  "base": "/myblog/",
   "dest": "dist",
   "head": [
     [
@@ -53,7 +53,7 @@ module.exports = {
       //   "plugin",
       //   "api"
       // ],
-      "/docs/javascript/":  getChildren('./docs/javascript/'),
+      "/docs/JavaScript/":  getChildren('./docs/JavaScript/'),
     },
     "type": "blog",
     "blogConfig": {
