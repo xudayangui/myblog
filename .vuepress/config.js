@@ -41,19 +41,13 @@ module.exports = {
       {
         "text": "github",
         "icon": "reco-message",
-        "link": "https://github.com/recoluan",
+        "link": "https://github.com/xudayangui",
       }
     ],
     "subSidebar": 'auto',//在所有页面中启用自动生成右侧边栏，原 sidebar 仍然兼容
     "sidebar": {
-      // "/docs/theme-reco/": getChildren('./docs/theme-reco/'),
-      // [
-      //   "",
-      //   "theme",
-      //   "plugin",
-      //   "api"
-      // ],
-      "/docs/JavaScript/":  getChildren('./docs/JavaScript/'),
+      "/docs/javascript/":  getChildren('./docs/javascript/'),
+      "/docs/vue/": getChildren('./docs/vue/'),
     },
     "type": "blog",
     "blogConfig": {
