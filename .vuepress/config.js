@@ -7,6 +7,7 @@ module.exports = {
       "lang": 'zh-CN'
     }
   },
+  "base": "/myBlog/",
   "dest": "dist",
   "head": [
     [
