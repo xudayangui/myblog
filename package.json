@@ -1,27 +1,13 @@
 {
-  "name": "myblog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.5.0",
-    "vuepress": "^1.5.0"
-  },
+  "author": "reco_luan",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "vuepress build ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xudayangui/myblog.git"
+  "devDependencies": {
+    "vuepress": "1.8.2",
+    "vuepress-theme-reco": "1.6.10"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xudayangui/myblog/issues"
-  },
-  "homepage": "https://github.com/xudayangui/myblog#readme"
+  "description": "myBlog"
 }
