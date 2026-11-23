@@ -9,9 +9,16 @@ export default defineConfig({
   cleanUrls: true,
   head: [
     ['link', { rel: 'icon', href: '/myblog/favicon.ico' }],
-    ['meta', { name: 'theme-color', content: '#b0401f' }],
+    ['meta', { name: 'theme-color', content: '#c56473' }],
     ['meta', { name: 'description', content: 'Dayangui 的前端技术博客，记录 JavaScript、Vue 与前端工程实践' }]
   ],
+  transformPageData(pageData) {
+    // 文章详情页进入阅读模式：关闭右侧大纲，专注长文阅读
+    if (pageData.relativePath.startsWith('docs/') && pageData.relativePath.endsWith('.md')) {
+      pageData.frontmatter.aside = false
+      pageData.frontmatter.sidebar = false
+    }
+  },
   themeConfig: {
     logo: '/logo.png',
     siteTitle: 'myBlog',

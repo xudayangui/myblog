@@ -60,7 +60,7 @@ GitHub Actions 会在每次部署前自动抓取，并每天北京时间 09:00 �
 
 ```
 .
-├── index.md              # 首页（杂志风 + 程序员审美）
+├── index.md              # 首页（Yohaku 余白编辑式版面）
 ├── archives.md           # 归档页
 ├── categories.md         # 分类页
 ├── tags.md               # 标签页
@@ -74,7 +74,7 @@ GitHub Actions 会在每次部署前自动抓取，并每天北京时间 09:00 �
     ├── config.mts        # 站点配置
     └── theme/
         ├── index.ts      # 主题入口
-        ├── style.css     # "THE QUIET JOURNAL" 设计系统
+        ├── style.css     # "Yohaku 余白" 设计系统（梅红+留白+长文阅读）
         ├── posts.data.js # 本站文章数据加载器
         ├── feeds.data.json # 聚合文章缓存（自动生成）
         └── components/   # HomePage / ArticleHeader / TechRadar

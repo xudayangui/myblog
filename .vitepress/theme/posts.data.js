@@ -4,17 +4,18 @@ import { createContentLoader } from 'vitepress'
 const BASE = '/myblog'
 
 export default createContentLoader('docs/**/*.md', {
-  excerpt: false,
+  excerpt: true,
   transform(raw) {
     return raw
-      .map(({ url, frontmatter }) => {
+      .map(({ url, frontmatter, excerpt }) => {
         const fm = frontmatter || {}
         return {
           url: BASE + url,
           title: fm.title || url.split('/').pop(),
           date: normalizeDate(fm.date),
           tags: toArray(fm.tags),
-          categories: toArray(fm.categories)
+          categories: toArray(fm.categories),
+          excerpt: excerpt || ''
         }
       })
       .filter((post) => post.date)

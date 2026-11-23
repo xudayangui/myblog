@@ -28,5 +28,6 @@ const groups = computed(() => {
   <a v-for="post in list" :key="post.url" :href="post.url" class="post-item">
     <time>{{ post.date.slice(5) }}</time>
     <span class="title">{{ post.title }}</span>
+    <span class="arrow" aria-hidden="true">→</span>
   </a>
 </div>
