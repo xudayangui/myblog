@@ -1,5 +1,8 @@
 import { createContentLoader } from 'vitepress'
 
+// 与 .vitepress/config.mts 中的 base 保持一致
+const BASE = '/myblog'
+
 export default createContentLoader('docs/**/*.md', {
   excerpt: false,
   transform(raw) {
@@ -7,7 +10,7 @@ export default createContentLoader('docs/**/*.md', {
       .map(({ url, frontmatter }) => {
         const fm = frontmatter || {}
         return {
-          url,
+          url: BASE + url,
           title: fm.title || url.split('/').pop(),
           date: normalizeDate(fm.date),
           tags: toArray(fm.tags),
