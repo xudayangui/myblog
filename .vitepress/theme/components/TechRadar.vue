@@ -10,15 +10,25 @@ const sort = ref<'recommend' | 'latest'>('latest')
 const search = ref('')
 const page = ref(1)
 
-// 分类维度（对应截图里掘金的「前端 / 后端 / AI」顶部分类）
-const categoryTabs = [
-  { key: 'all', label: '全部' },
-  { key: 'frontend', label: '前端' },
-  { key: 'backend', label: '后端' },
-  { key: 'ai', label: '人工智能' },
-  { key: 'repo', label: '代码仓库' },
-  { key: 'news', label: '资讯' }
-]
+// 分类维度（按数量动态降序，隐藏 0 条，视觉更聚焦）
+const CATEGORY_LABELS: Record<string, string> = {
+  frontend: '前端', backend: '后端', ai: '人工智能', repo: '代码仓库', news: '资讯'
+}
+const categoryTabs = computed(() => {
+  const counts = new Map<string, number>()
+  for (const item of feeds.items) counts.set(item.category, (counts.get(item.category) || 0) + 1)
+  const tabs: { key: string; label: string; count: number; group: number }[] = [
+    { key: 'all', label: '全部', count: feeds.items.length, group: 0 }
+  ]
+  // 领域组（资讯/AI/前端/后端）在前，类型组（代码仓库）在后；组内按数量降序
+  for (const key of ['news', 'ai', 'frontend', 'backend'].sort((a, b) => (counts.get(b) || 0) - (counts.get(a) || 0))) {
+    const count = counts.get(key) || 0
+    if (count > 0) tabs.push({ key, label: CATEGORY_LABELS[key] || key, count, group: 1 })
+  }
+  const repoCount = counts.get('repo') || 0
+  if (repoCount > 0) tabs.push({ key: 'repo', label: CATEGORY_LABELS.repo, count: repoCount, group: 2 })
+  return tabs
+})
 
 const sourceMeta: Record<string, { label: string; color: string }> = {
   juejin: { label: '掘金', color: '#3a7afe' },
@@ -34,14 +44,29 @@ const sourceMeta: Record<string, { label: string; color: string }> = {
   devto: { label: 'DEV', color: '#333333' },
   ruanyifeng: { label: '阮一峰', color: '#2e8b57' },
   hn: { label: 'HackerNews', color: '#ff6600' },
-  solidot: { label: 'Solidot', color: '#5a8f4e' }
+  solidot: { label: 'Solidot', color: '#5a8f4e' },
+  v2ex: { label: 'V2EX', color: '#778087' },
+  qbitai: { label: '量子位', color: '#2b6cb0' },
+  ifanr: { label: '爱范儿', color: '#e0533d' },
+  ithome: { label: 'IT之家', color: '#d32f2f' }
 }
 
-// 分类下可用的来源（来源筛选跟着分类联动）
+// 搜索匹配函数：标题、摘要、来源名都参与匹配
+function matchesQuery(item: any, q: string) {
+  if (!q) return true
+  const srcName = sourceMeta[item.sourceKey]?.label || item.source || ''
+  return item.title.toLowerCase().includes(q) ||
+    (item.summary || '').toLowerCase().includes(q) ||
+    srcName.toLowerCase().includes(q)
+}
+const currentQuery = computed(() => search.value.trim().toLowerCase())
+
+// 分类下可用的来源（跟着分类 + 搜索联动，计数反映真实结果）
 const sources = computed(() => {
   const counts = new Map<string, number>()
   for (const item of feeds.items) {
     if (activeCategory.value !== 'all' && item.category !== activeCategory.value) continue
+    if (!matchesQuery(item, currentQuery.value)) continue
     counts.set(item.sourceKey, (counts.get(item.sourceKey) || 0) + 1)
   }
   return [
@@ -53,16 +78,16 @@ const sources = computed(() => {
 })
 
 const categoryCount = (key: string) =>
-  key === 'all' ? feeds.items.length : feeds.items.filter((i: any) => i.category === key).length
+  key === 'all'
+    ? feeds.items.filter((i: any) => matchesQuery(i, currentQuery.value)).length
+    : feeds.items.filter((i: any) => i.category === key && matchesQuery(i, currentQuery.value)).length
 
 // 先筛选、再排序
 const filtered = computed(() => {
-  const q = search.value.trim().toLowerCase()
   const list = feeds.items.filter((item: any) => {
     const matchCat = activeCategory.value === 'all' || item.category === activeCategory.value
     const matchSource = activeSource.value === 'all' || item.sourceKey === activeSource.value
-    const matchQuery = !q || item.title.toLowerCase().includes(q) || (item.summary || '').toLowerCase().includes(q)
-    return matchCat && matchSource && matchQuery
+    return matchCat && matchSource && matchesQuery(item, currentQuery.value)
   })
   if (sort.value === 'recommend') {
     // 推荐：仓库按 star 优先；文章优先有摘要 + 日期近的
@@ -71,11 +96,11 @@ const filtered = computed(() => {
       const sa = (a.summary ? 1 : 0) * 10 + (a.date ? 1 : 0)
       const sb = (b.summary ? 1 : 0) * 10 + (b.date ? 1 : 0)
       if (sa !== sb) return sb - sa
-      return a.date < b.date ? 1 : -1
+      return String(b.date || '').localeCompare(String(a.date || ''))
     })
   }
   // 最新：按日期倒序
-  return [...list].sort((a: any, b: any) => (a.date !== b.date ? (a.date < b.date ? 1 : -1) : 0))
+  return [...list].sort((a: any, b: any) => String(b.date || '').localeCompare(String(a.date || '')))
 })
 
 const totalPages = computed(() => Math.max(1, Math.ceil(filtered.value.length / PAGE_SIZE)))
@@ -94,15 +119,24 @@ const pages = computed(() => {
   return arr
 })
 
-// 筛选条件变化时重置页码
+// 分类或搜索变化时重置来源（新条件下当前来源可能已不存在，否则空白页）
+watch([activeCategory, search], () => { activeSource.value = 'all' })
 watch([activeCategory, activeSource, sort, search], () => { page.value = 1 })
 
+// 用 UTC 固定输出，避免 SSR 与客户端时区不同导致 hydration mismatch
 const fetchedDate = computed(() => {
   const d = new Date(feeds.fetchedAt)
-  return Number.isNaN(d.getTime()) ? '' : `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
+  return Number.isNaN(d.getTime()) ? '' : `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}-${String(d.getUTCDate()).padStart(2, '0')} ${String(d.getUTCHours()).padStart(2, '0')}:${String(d.getUTCMinutes()).padStart(2, '0')} UTC`
 })
 
-function colorOf(key: string) { return sourceMeta[key]?.color || 'var(--yh-accent)' }
+// 语言圆点：降饱和语言色映射（与来源色解耦，仅作小面积数据编码）
+const LANG_COLORS: Record<string, string> = {
+  JavaScript: '#c9a227', TypeScript: '#4a7fb5', Python: '#4a8b6a', Rust: '#b06a45',
+  Go: '#4a9aa5', Java: '#b5564a', 'C++': '#8367a8', C: '#7a7a7a', Ruby: '#b04a4a',
+  Vue: '#4a9a72', Shell: '#6a8a6a', HTML: '#b5744a', CSS: '#5a7fb5', Swift: '#c07a4a',
+  Kotlin: '#9a6ab5', Dart: '#5a8ab5', Lua: '#5a7ab5', PHP: '#7a6ab5'
+}
+function langColor(lang: string) { return LANG_COLORS[lang] || 'var(--yh-n2)' }
 function shortDate(d: string) { return d ? d.slice(5).replace('-', '.') : '' }
 function starText(n: number) { return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n) }
 function goto(p: number) { if (typeof p === 'number' && p >= 1 && p <= totalPages.value) { page.value = p; scrollToList() } }
@@ -125,15 +159,16 @@ function scrollToList() {
 
     <!-- 顶部分类栏（掘金式） -->
     <div class="radar-categories" role="tablist" aria-label="按分类筛选">
-      <button
-        v-for="tab in categoryTabs"
-        :key="tab.key"
-        class="radar-cat"
-        :class="{ active: activeCategory === tab.key }"
-        @click="activeCategory = tab.key"
-        role="tab"
-        :aria-selected="activeCategory === tab.key"
-      >{{ tab.label }} <span class="cat-count">{{ categoryCount(tab.key) }}</span></button>
+      <template v-for="(tab, i) in categoryTabs" :key="tab.key">
+        <span v-if="i > 0 && tab.group !== categoryTabs[i - 1].group" class="radar-cat-sep" aria-hidden="true"></span>
+        <button
+          class="radar-cat"
+          :class="{ active: activeCategory === tab.key }"
+          @click="activeCategory = tab.key"
+          role="tab"
+          :aria-selected="activeCategory === tab.key"
+        >{{ tab.label }} <span class="cat-count">{{ categoryCount(tab.key) }}</span></button>
+      </template>
     </div>
 
     <!-- 工具栏：来源筛选 + 排序 + 搜索 -->
@@ -178,11 +213,11 @@ function scrollToList() {
       >
         <div class="radar-card-body">
           <div class="radar-card-meta">
-            <span class="radar-source" :style="{ '--src-color': colorOf(item.sourceKey) }">{{ item.source }}</span>
+            <span class="radar-source">{{ item.source }}</span>
             <span class="radar-date" v-if="item.date">{{ shortDate(item.date) }}</span>
             <template v-if="item.type === 'repo'">
               <span class="repo-star" v-if="item.stars">★ {{ starText(item.stars) }}</span>
-              <span class="repo-lang" v-if="item.language"><i class="lang-dot"></i>{{ item.language }}</span>
+              <span class="repo-lang" v-if="item.language"><i class="lang-dot" :style="{ background: langColor(item.language) }"></i>{{ item.language }}</span>
             </template>
           </div>
           <h2 class="radar-card-title">{{ item.title }}</h2>
@@ -208,8 +243,7 @@ function scrollToList() {
     </nav>
 
     <footer class="radar-footnote">
-      <p>数据来源：掘金、OSCHINA、cnBeta、React、Vue、Node.js、GitHub 等公开 RSS 与仓库 API。本站仅展示元数据，版权归原作者所有。</p>
-      <p>数据由 <code>scripts/fetch-feeds.mjs</code> 在构建时自动抓取更新。</p>
+      <p>数据来源：掘金、OSCHINA、cnBeta、量子位、IT之家等中文技术社区与 GitHub。本站仅展示元数据，版权归原作者所有。</p>
     </footer>
   </div>
 </template>
@@ -259,6 +293,7 @@ function scrollToList() {
 }
 .radar-cat:hover { color: var(--yh-accent); background: var(--yh-surface-1); }
 .radar-cat.active { color: var(--yh-accent); font-weight: 600; background: var(--yh-surface-1); }
+.radar-cat-sep { width: 1px; align-self: stretch; margin: 8px 6px; background: var(--yh-surface-3); }
 .cat-count { font-family: var(--yh-font-mono); font-size: 0.68rem; color: var(--yh-n2); margin-left: 2px; }
 .radar-cat.active .cat-count { color: var(--yh-accent); }
 
@@ -316,14 +351,13 @@ html.dark .radar-filter.active { color: #1a1416; }
 .radar-card-meta { display: flex; align-items: center; flex-wrap: wrap; gap: var(--yh-s3); margin-bottom: var(--yh-s3); }
 .radar-source {
   font-family: var(--yh-font-mono); font-size: 0.66rem; padding: 2px 8px;
-  border-radius: 2px; background: color-mix(in srgb, var(--src-color) 12%, transparent);
-  color: var(--src-color); font-weight: 500;
+  border-radius: 2px; background: var(--yh-surface-2);
+  color: var(--yh-n4); font-weight: 500; border: 1px solid var(--yh-surface-3);
 }
-html.dark .radar-source { background: color-mix(in srgb, var(--src-color) 22%, transparent); }
 .radar-date { font-family: var(--yh-font-mono); font-size: 0.7rem; color: var(--yh-n2); }
-.repo-star { font-family: var(--yh-font-mono); font-size: 0.7rem; color: #c9932a; font-weight: 600; }
+.repo-star { font-family: var(--yh-font-mono); font-size: 0.7rem; color: var(--yh-n4); font-weight: 600; }
 .repo-lang { font-family: var(--yh-font-mono); font-size: 0.68rem; color: var(--yh-n3); display: inline-flex; align-items: center; gap: 4px; }
-.lang-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--yh-n2); display: inline-block; }
+.lang-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; opacity: 0.75; }
 .radar-card-title {
   margin: 0 0 var(--yh-s2); font-family: var(--yh-font-serif); font-size: 1.18rem;
   font-weight: 500; line-height: 1.5; color: var(--yh-n6); transition: color 0.2s ease;

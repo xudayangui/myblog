@@ -4,6 +4,7 @@ import type { Theme } from 'vitepress'
 import HomePage from './components/HomePage.vue'
 import ArticleHeader from './components/ArticleHeader.vue'
 import ArticleFooter from './components/ArticleFooter.vue'
+import RelatedPosts from './components/RelatedPosts.vue'
 import TechRadar from './components/TechRadar.vue'
 import './style.css'
 
@@ -16,7 +17,7 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       'doc-before': () => h(ArticleHeader),
-      'doc-after': () => h(ArticleFooter)
+      'doc-after': () => [h(ArticleFooter), h(RelatedPosts)]
     })
   }
 } satisfies Theme

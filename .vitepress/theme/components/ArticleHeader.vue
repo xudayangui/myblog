@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 
 const { frontmatter, page } = useData()
 
@@ -25,17 +25,11 @@ const tags = computed(() => {
   return Array.isArray(t) ? t : [t]
 })
 
-// 阅读时长估算：中文约 400 字/分钟，英文约 200 词/分钟
+// 阅读时长：构建期由 transformPageData 注入 wordCount，中文约 400 字/分钟
 const readingTime = computed(() => {
-  const src = String((page.value as any).src || '')
-  const plain = src
-    .replace(/^---[\s\S]*?---/, '')
-    .replace(/```[\s\S]*?```/g, '')
-    .replace(/<[^>]*>/g, '')
-  const cjk = (plain.match(/[\u4e00-\u9fff]/g) || []).length
-  const latin = (plain.match(/[a-zA-Z]+/g) || []).length
-  const minutes = Math.max(1, Math.ceil(cjk / 400 + latin / 200))
-  return minutes
+  const words = Number(frontmatter.value.wordCount) || 0
+  if (!words) return null
+  return Math.max(1, Math.ceil(words / 400))
 })
 
 const title = computed(() => frontmatter.value.title || '')
@@ -44,6 +38,10 @@ const title = computed(() => frontmatter.value.title || '')
 const isPost = computed(() => String(page.value.relativePath || '').startsWith('docs/'))
 
 const hasMeta = computed(() => isPost.value && (date.value || categories.value.length || tags.value.length || title.value))
+
+function tagUrl(tag: string) {
+  return withBase('/tags') + '#' + encodeURIComponent(tag)
+}
 </script>
 
 <template>
@@ -53,13 +51,15 @@ const hasMeta = computed(() => isPost.value && (date.value || categories.value.l
       <span v-if="categories.length" class="article-cat">{{ categories[0] }}</span>
       <span class="article-sep" v-if="categories.length && date">/</span>
       <span v-if="date" class="article-date">{{ date }}</span>
-      <span class="article-sep" v-if="date">/</span>
-      <span class="article-read">{{ readingTime }} min read</span>
+      <template v-if="readingTime">
+        <span class="article-sep" v-if="date">/</span>
+        <span class="article-read">约 {{ readingTime }} 分钟</span>
+      </template>
     </div>
     <div class="article-rule"></div>
-    <div class="article-tags" v-if="tags.length">
-      <span class="article-tag" v-for="tag in tags" :key="tag"># {{ tag }}</span>
-    </div>
+    <nav class="article-tags" v-if="tags.length" aria-label="文章标签">
+      <a class="article-tag" v-for="tag in tags" :key="tag" :href="tagUrl(tag)"># {{ tag }}</a>
+    </nav>
   </div>
 </template>
 
@@ -96,5 +96,8 @@ const hasMeta = computed(() => isPost.value && (date.value || categories.value.l
   padding: 2px 8px;
   border: 1px solid var(--yh-surface-3);
   border-radius: 2px;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
 }
+.article-tag:hover { color: var(--yh-accent); border-color: var(--yh-accent); }
 </style>

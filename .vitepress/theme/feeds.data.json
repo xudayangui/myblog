@@ -1,6 +1,46 @@
 {
-  "fetchedAt": "2026-11-23T06:27:12.312Z",
+  "fetchedAt": "2026-11-23T07:06:06.353Z",
   "items": [
+    {
+      "title": "我让用户白等两秒，只为一个 16MB 的中文字体",
+      "url": "https://juejin.cn/post/7710639091190677539",
+      "summary": "同一张落地页七个版本实测中文字体：全量 10.89MB 在 3G 下十秒传不完，标题被拖到 2 秒；108 字子集只有 26.8KB。附子集化命令和上线检查清单。",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23",
+      "category": "frontend",
+      "type": "article"
+    },
+    {
+      "title": "Agent开发工程师-学习大纲",
+      "url": "https://juejin.cn/post/7711164513240612864",
+      "summary": "智能体学习大纲，包含python基础驻基，智能体学习大纲，分阶段、每阶段包含周计划，后续文章会对每阶段的周计划进行细化。",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "固定使用 Chrome 135 启动 CDP",
+      "url": "https://juejin.cn/post/7710893312786694187",
+      "summary": "可以。推荐不要安装一个普通版 Chrome 135，而是安装官方的 Chrome for Testing 135。它可以和现有的 Chrome 158 并存，并且不会自动升级，适合 CDP、Playw",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23",
+      "category": "frontend",
+      "type": "article"
+    },
+    {
+      "title": "Chrome 136后 CDP 协议 该如何使用",
+      "url": "https://juejin.cn/post/7710865418698752042",
+      "summary": "Chrome 136 之后，最大的变化不是 CDP 协议本身变了，而是 Chrome 对“如何启动远程调试”增加了限制。 1. Chrome 136 的核心变化 Chrome 136 开始，以下参数在",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23",
+      "category": "frontend",
+      "type": "article"
+    },
     {
       "title": "MySQL 排序解析：索引有序扫描、filesort、优先队列",
       "url": "https://juejin.cn/post/7710865418698620970",
@@ -8,7 +48,7 @@
       "source": "掘金",
       "sourceKey": "juejin",
       "date": "2026-11-23",
-      "category": "frontend",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -98,7 +138,7 @@
       "source": "掘金",
       "sourceKey": "juejin",
       "date": "2026-11-23",
-      "category": "frontend",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -152,23 +192,13 @@
       "type": "article"
     },
     {
-      "title": "uView Pro X 2.0 发布：弃用 UTS，全面支持 TypeScript 的 uni-app x 蒸汽模式 UI 框架",
-      "url": "https://juejin.cn/post/7710959529731211279",
-      "summary": "uView Pro X 2.0 弃用 UTS，组件逻辑层改用标准 TypeScript，跟随官方蒸汽模式把页面驱动换成 JS；API 与 UTS 版完全一致，两版并行更新。",
-      "source": "掘金",
-      "sourceKey": "juejin",
+      "title": "mod_wsgi 创始人用 Rust 重写了一个 Python 服务器",
+      "url": "https://www.oschina.net/news/503742/rust-muru",
+      "summary": "Graham Dumpleton 二十年前写了 mod_wsgi。这二十年里他一直在想同一件事：Python web 应用在生产环境里最理想的跑法是什么。 Muru 是他的答案。一个用 Rust 写的服务器，边缘层和控制器是 Rust，Py…",
+      "source": "OSCHINA",
+      "sourceKey": "oschina",
       "date": "2026-11-23",
       "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "A2UI 1.0：Agent 画的 UI，6 端都能原生渲染了！",
-      "url": "https://juejin.cn/post/7711033019449262130",
-      "summary": "前言 近日，Google 正式发布了 A2UI 1.0——第一个稳定版的生成式 UI 开放协议 目录 A2UI 是什么？ 核心卖点有哪些？ 具体如何使用？ Android 开发者怎么接入？ 和现有方案",
-      "source": "掘金",
-      "sourceKey": "juejin",
-      "date": "2026-11-23",
-      "category": "ai",
       "type": "article"
     },
     {
@@ -178,7 +208,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-23",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -249,6 +279,176 @@
       "sourceKey": "oschina",
       "date": "2026-11-23",
       "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "《拓麻歌子》与《数码宝贝》推出30周年互换养成玩具",
+      "url": "https://www.cnbeta.com.tw/articles/game/1587590.htm",
+      "summary": "《拓麻歌子》与《数码宝贝》围绕30周年纪念推出互换养成对象的玩具，目前已经开放预订。两款产品将各自体系中的养成角色进行交换。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "苹果一大波低价新品即将来袭 就在明年2、3月",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587588.htm",
+      "summary": "彭博社知名苹果记者马克·古尔曼(Mark Gurman)周日透露，苹果公司计划于明年2月至3月发布 iPhone 18e、iPhone 18、新款入门级iPad，以及新款MacBook Neo和MacBook Air。 古尔曼称，苹果正为明…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "AI时代比拼“周更” 苹果12个月模式恐输掉智能体之战",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587586.htm",
+      "summary": "11月23日，据彭博社报道，AI智能体能够代表用户执行任务，正逐渐成为科技行业争夺的下一个重要生态系统战场。然而，尽管苹果拥有先天优势，但由于产品开发方式过时，该公司已面临输掉这场战役的严重风险。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "算力疯狂扩产埋隐患？马斯克警告：明年AI行业或现严重“资金荒”",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587584.htm",
+      "summary": "SpaceX首席执行官兼特斯拉首席执行官、全球首富马斯克最新表示，随着科技公司竞相建设数据中心并扩大计算能力，人工智能（AI）行业可能在2027年面临严重的资金短缺。马斯克是在回应一篇帖子时作出了上述警告。他还表示，挑战不仅在于购买昂贵的芯…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "马斯克把GTA 6搬上特斯拉 FSD端到端实时生世界 一脚油开进3A游戏",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587582.htm",
+      "summary": "马斯克把“现实版GTA”搬上车了！这个周末，特斯拉正式推送新一代FSD v15，端到端驾驶神经网络迎来全新升级。FSD v15最出圈的一个功能：Reality View，直接让全网车主和AI圈集体沸腾了。中控屏上，周围的高楼、路边的树、过马…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "微软准备放假 Windows 11下月暂停更新",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587580.htm",
+      "summary": "微软已经确认，Windows 11将在2026年12月暂停发布每月下旬的可选非安全预览更新，正常更新节奏将在2027年1月恢复。 微软在Windows消息中心解释，临近圣诞节和新年假期，相关团队将减少日常维护工作，因此12月下半月不再安排非…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "杨奇谈《GTA 6》：用“工业化”形容是一种贬损 更像昂贵且低效的艺术品",
+      "url": "https://www.cnbeta.com.tw/articles/game/1587578.htm",
+      "summary": "11月23日，游戏科学联合创始人、《黑神话：悟空》美术总监杨奇近日在微博回复网友提问，分享了自己游玩《GTA 6》后的直观感受。 在他看来，用“工业化”来形容《GTA 6》其实是一种贬损，这款游戏本质上是无数日夜与灵感的整合，更像是一件昂贵…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "中国大模型调用量连续30周第一 DeepSeek霸榜五周",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587576.htm",
+      "summary": "11月23日，大模型API聚合平台OpenRouter公布了最新一周的模型调用数据，在11月16日至22日这一周，全球大模型总调用量为210万亿Token，相比上周的194万亿增长8.25%。其中，中国大模型周Token处理量已经连续第30…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "中国车企在39个国家新车份额超过日本车企",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587574.htm",
+      "summary": "日经中文网报道，美国调查公司Mobility Global的数据显示，全球已有39个国家，中国汽车制造商的新车销售份额超过日本汽车制造商。该统计包含150个国家和地区，汇总的是1至9月的销量（不含部分大型车辆），并对其中的93个可确认各厂商…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "泰国网民对比全球空调产量 中国绕图一圈半",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587572.htm",
+      "summary": "11月12日，一名泰国网民发布了一个关于全球空调产量对比的帖子。帖子中是各国空调产品对比，第一名毫不意外地是中国，第二名是让人有点意外的泰国。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "韩国高考出了一道中国历史题引热议：考生基本没人会 包含AI",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587568.htm",
+      "summary": "今年韩国高考世界历史科目里的一道题目引发了全国性的巨大争议，这道题的考生作答错误率超过90%，几乎把绝大多数考生都考倒了。不少考完的学生集体质疑题目设置本身存在误导性偏差，甚至不少人上传了测试结果，说市面上主流的人工智能大模型给出的答案，都…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "M9车主开辅助驾驶熟睡引热议 账号已全网搜不到",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587566.htm",
+      "summary": "近日一段网络流传的行车记录仪视频引发全网哗然，一名疑似问界M9的车主在高速路段开启辅助驾驶功能之后，直接躺在主驾位置上完全熟睡，车辆仍保持上百公里的时速在公路上自主高速行驶，整个过程车主完全没有接管操作。这段危险操作的视频被发上网之后瞬间引…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "AMD数据中心业务2027年冲80%营收占比",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587564.htm",
+      "summary": "AMD近日对外公布长期业务转型规划，计划到2027年让数据中心业务占总营收达到80%。这意味着企业资源会大规模倾斜AI算力业务，消费端硬件的资源分配或将受到挤压。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "特朗普再喊话：希望英伟达董事会重新聘用黄仁勋",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587562.htm",
+      "summary": "11月23日，美国总统特朗普当地时间11月22日在社交平台Truth Social上表示，希望英伟达董事会重新聘用黄仁勋，这对英伟达、对美国而言都将是最优选择。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "黄仁勋夫妇财富版图曝光：通过信托控制8.7亿股英伟达股票 妻子洛丽为核心人物",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587560.htm",
+      "summary": "11月23日，《华尔街日报》发文，拆解了黄仁勋(Jensen Huang)及其妻子洛丽(Lori)的财富版图。文章称，黄仁勋夫妇通过信托及其他实体控制着8.7亿股英伟达股票，价值超过1090亿美元。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "微软总裁警告：未来数月或将出现更多技术宕机风险",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587558.htm",
+      "summary": "据美国《新闻周刊》、哥伦比亚广播公司（CBS）等多家美媒报道，美国微软公司总裁布拉德·史密斯当地时间22日警告称，随着各机构加紧修补软件漏洞、升级老旧基础设施，未来数月出现大规模技术宕机风险或将持续处于高位。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "贝森特“改口”：黄仁勋可能“不知情”",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587556.htm",
+      "summary": "美国财政部长贝森特暗示未排除黄仁勋回归英伟达的可能性。这一措辞较其此前呼吁英伟达“大换血”、从外部寻找领导人的强硬立场明显缓和，为这位创始人的回归留出了想象空间。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-23",
+      "category": "news",
       "type": "article"
     },
     {
@@ -392,195 +592,878 @@
       "type": "article"
     },
     {
-      "title": "Hermes: reminders that carry the check",
-      "url": "https://dev.to/kenhyou/hermes-reminders-that-carry-the-check-3n1n",
-      "summary": "<p>The loose end I leave most often isn't a bug. It's \"check this next week.\"</p> <p>I ship a fix, and the real test is…",
-      "source": "DEV",
-      "sourceKey": "devto",
+      "title": "敢写代码问路在何方？2027 年准备转行",
+      "url": "https://www.v2ex.com/t/1259114#reply16",
+      "summary": "我是软件工程师，有工科博士学历，现在每天语音和 ai 结对编程。 现在很怕 AI 把程序员这条路冲垮，想转技工手艺活，争取退休前稳一点。但又担心以后人形机器人慢慢把体力活也替代掉，想找一条能安稳干到退休的路子，大家觉得手艺活真的稳吗？",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "Codex 开始降智了吗？",
+      "url": "https://www.v2ex.com/t/1259127#reply4",
+      "summary": "从上上周五开始，就是 gpt6.2 出来那个节点 感觉傻的不行？ 之前一点就通 现在得纠正半天",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "大家都在用什么模型呢？",
+      "url": "https://www.v2ex.com/t/1259143#reply0",
+      "summary": "前几天思考了一个问题：“同能力下，什么时候用哪个模型最划算？” 国内各种套餐烦的很，arena 也只有榜单，各时段性价实际都不一样，然后就有了这个 https://modelprice.damolabs.app/zh/ 看起来现在 glm-…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "backend",
+      "type": "article"
+    },
+    {
+      "title": "看到很多人订阅 Gemini 很心动，问下一年 pro 量大管饱吗？",
+      "url": "https://www.v2ex.com/t/1259033#reply20",
+      "summary": "平常一直在使用 jio 的 pro，使用 3.8 flash，帮助我梳理产品哲学和视觉，还挺好用。 现在看好多人订阅新模型，我对新模型的能力还比较有信心，主要想问下 5h/周使用量怎么样？和 GPT 相比如何？",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "我的 Claude 从未被封过，感觉还是和使用习惯有关系",
+      "url": "https://www.v2ex.com/t/1258995#reply63",
+      "summary": "",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "你们 Agy 的 Neon 的速度怎么样",
+      "url": "https://www.v2ex.com/t/1259011#reply25",
+      "summary": "从 Opus 换回 Neon 后，解决问题的能力感觉差不多， Neon 的前端审美能力也还可以。但是有一个问题很困扰我，Neon 的速度特别慢，慢到了我无法理解的程度。 无论是 xHigh 还是 hign, 体感上完成一个相同的任务，速度只…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
       "date": "2026-11-23",
       "category": "frontend",
       "type": "article"
     },
     {
-      "title": "Lean 4 คืออะไร? ตัวตรวจสอบการพิสูจน์ที่อยู่เบื้องหลังการพิสูจน์ข้อคาดการณ์รีมันน์โดย Claud…",
-      "url": "https://dev.to/thanawat_wonchai/lean-4-khuueaair-tawtrwcchsbkaarphisuucchnthiiyuuebuuenghlangkaarphisuucchnkhkhaadkaarnriimannody-claude-9a1",
-      "summary": "<p>Lean 4 คืออะไร? Lean 4 เป็นภาษาโปรแกรมและตัวช่วยพิสูจน์ (proof assistant) แบบโอเพนซอร์ส ที่ตรวจสอบข้อพิสูจน์ทางคณิตศา…",
-      "source": "DEV",
-      "sourceKey": "devto",
+      "title": "充值了 gemini pro，登录 Antigravity 提示地区不可用。。",
+      "url": "https://www.v2ex.com/t/1259003#reply80",
+      "summary": "刚充值 99 刀一年的 pro，登录 Antigravity，提示“Your current account is not eligible for Antigravity, because it is not currently avai…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "18 个月的 gemini pro 反重力被封",
+      "url": "https://www.v2ex.com/t/1259125#reply10",
+      "summary": "This service has been disabled in this account for violation of Terms of Service. Please submit an appeal to continue us…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "GLM-5.4 上线",
+      "url": "https://www.v2ex.com/t/1259083#reply12",
+      "summary": "GLM-5.4 上线,有大佬实测么？",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "自建 DNS 安全吗？",
+      "url": "https://www.v2ex.com/t/1258997#reply25",
+      "summary": "这个问题 AI 好像回答不了，我就是想知道自己弄个 DNS 转发器服务器放国内安全吗？",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "现在如何继续订阅 claude? 成本太大了。",
+      "url": "https://www.v2ex.com/t/1259123#reply7",
+      "summary": "之前一直用 5 个 claude pro。(不敢开 max,怕封)。 现在用了 gpt 5x ,总用的不舒服。 没有 opus 那种中间挡位,平时修 bug 和写 spec 都喜欢用他。 sol 不会主动推动进入。 比如我说问题是 xx,…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "请教大家一个问题：关于使用 codex 的网络问题，真心请教",
+      "url": "https://www.v2ex.com/t/1259107#reply2",
+      "summary": "在使用 codex 的时候关于网络节点的问题，大家都是如何解决的呀？之前使用的一些都不太稳定，要不速度很慢，卡得不行，要不就是经常断，要不就是 ip 经常变，好难，请问大家在个人工作中都是如何来保证网络的呀？非常感谢~",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "细品 GLM5.4",
+      "url": "https://www.v2ex.com/t/1259137#reply0",
+      "summary": "对比 5.3，输出的内容完全无法阅读，即使用了很多优化的 skill，黑话依然满天飞，该说废话依然说废话。 5.4 黑话少了很多，输出内容更简洁。",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "贡献一个反重力扫码验证解决方法",
+      "url": "https://www.v2ex.com/t/1259112#reply5",
+      "summary": "由于： anti 和 google cloud 走的一套认证 google cloud 中，通过伪装设备为 iPad Mini，无法发短信，从而将认证降级为向手机发送 6 位验证码 从而实现跳过扫码验证转向短信验证码验证 经佬友反馈，在 s…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "开通了$5 的 ai pro, 发现好费用量啊",
+      "url": "https://www.v2ex.com/t/1259118#reply4",
+      "summary": "我看你们都在说黑五, 早上才开通了一个试用,网页端问了几个问题,现在已经使用 8%了 是不是使用方法不对....这里消耗量还没开始写代码呢....",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "抄了个 3D 找人小游戏《找找他在哪》，改成小红书小工具版本，上线了，想请大家体验一下",
+      "url": "https://www.v2ex.com/t/1259113#reply0",
+      "summary": "最近做了个找人小游戏，叫《找找他在哪》。 玩法很简单：在一座热闹的 3D 小镇里，找到那个戴红白条纹帽、戴圆眼镜、背绿色书包，手里拿着放大镜的人。 听起来特征已经很明显了，但放进人群里，还真容易看漏。我自己测试时也经常拖来拖去，找着找着就忘…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "感觉 Chatgpt 没送重置很久了啊，很不习惯",
+      "url": "https://www.v2ex.com/t/1259052#reply8",
+      "summary": "上一次爽蹬还是那个谁说一天一个大更新，没更新就送的时候，然后就没怎么送过重置了，额度用完就只能躺着等下周了",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "资料读取识别",
+      "url": "https://www.v2ex.com/t/1259037#reply1",
+      "summary": "我想问一下 pdf word 这些资料上传读取都是怎么做的？ 主要是关于图片。有些图片比如扫描件这种 ocr 就行了都是一些有内容的文本图片，但是有些资料里面包含一些插图，比如我上传个人介绍 pdf。除了文本 里面还有一些奖状啊这种插图，都…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "换到 GPT-6.2 之后，提示词和 instructions 有几处要改",
+      "url": "https://www.v2ex.com/t/1259084#reply3",
+      "summary": "刚才把官方那篇最新模型指南翻了一遍，GPT-6.2（Astra / Sol）和之前比，有几处迁移时挺容易踩的。原文在这： https://developers.openai.com/api/docs/guides/latest-model…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "给 19.4k★ Rust 检索引擎 XERJ 跑了 60 题中文法规/财报 RAG 基准，不改引擎把 R@3 从 22.2% 拉到 91.1%（两份 PR 已合入官方）",
+      "url": "https://www.v2ex.com/t/1259013#reply1",
+      "summary": "最近拿 19.4k★ 的单文件 Rust AI 搜索引擎 XERJ 测了一轮真实中文/双语 RAG 场景（33,575 个分块：29 部中国现行法规 + SEC/港股财报与招股书 + 临床试验三线表）。 默认 BM25 词法检索在中文场景掉…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "想以土区价格购买 Google AI Pro 问题",
+      "url": "https://www.v2ex.com/t/1259099#reply2",
+      "summary": "想以土区架构 购买 Google AI PRO（99 美元） 目前 Up 想在 App Store 里以土区价格购买 ，是否 Google 账号 也要改为土耳其才可以？ 目前现状： 1.有土区 Apple ID，有土区礼品卡余额； 2.有土…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "鸿蒙版醒图新版本上线：AI修图「不烧心」",
+      "url": "https://www.ifanr.com/1690991?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "手边刚好有舍不得删又不好修的照片？可以先拿它试试。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "XREAL AURA 体验：科幻电影的未来，这么近那么远",
+      "url": "https://www.ifanr.com/1690660?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "未来可期 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "华为OSTA星芒 O1 Pro 评测：一台真正为 AI 而生的鸿蒙手机",
+      "url": "https://www.ifanr.com/1690613?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "面向 AI，面向世界，面向未来 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "早报｜曝苹果明年下半年发布iPhone 20与智能眼镜/丘成桐：AI证明黎曼猜想，数学进入新纪元/GTA6带动主机溢价，PS5 Pro涨至近1.6万元",
+      "url": "https://www.ifanr.com/1690857?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "· 曝小米汽车欧洲团队再添一名前小鹏高管 · 神舟二十四号完成发射前最后一次全区合练 · AI 服务器供应商被曝在交货前提价，部分订单涨幅达 45% #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上…",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "《GTA6》开发人员在游戏地图内设纪念碑，纪念一直支持自己追逐梦想的已故母亲",
+      "url": "https://www.ithome.com/1/030/900.htm",
+      "summary": "IT之家 11 月 23 日消息，《GTA 6》质量保证（Quality Assurance，QA）部门成员 Matt Green 在其 Instagram 上发文透露，他在游戏中的雷奥奈达州地图内为已故母亲设置了一座纪念碑，以此纪念生前一…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "我国研发的地球系统智能科研平台“ZHU·GE”推出",
+      "url": "https://www.ithome.com/1/030/899.htm",
+      "summary": "IT之家 11 月 23 日消息，据中国气象报社报道，11 月 23 日，在 2026 雄安气象人工智能国际研讨会上， 地球系统智能科研平台“ZHU·GE”正式推出 。 “ZHU·GE”取自英文 Zone-to-global Holisti…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "Stellantis 拟全面退出欧洲赛车赛事，以推进成本削减计划",
+      "url": "https://www.ithome.com/1/030/898.htm",
+      "summary": "IT之家 11 月 23 日消息，据法媒《费加罗报》报道，Stellantis 正在推进新一轮成本削减计划，考虑全面退出欧洲各项赛车运动赛事。如果这一计划属实，Stellantis 旗下标致、欧宝、雪铁龙和蓝旗亚等品牌可能都将结束现有赛车项…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "谷歌解释 3D Emoji 为何要求 6GB 内存 / 10GB 存储：Google Play 服务安全措施所致",
+      "url": "https://www.ithome.com/1/030/897.htm",
+      "summary": "IT之家 11 月 23 日消息，据科技媒体 Android Authority 今天报道，谷歌推出的新版 Noto 3D Emoji 原本将为 Android 带来全新视觉体验，但许多用户对其 6GB 内存、10GB 存储要求感到困惑。…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "backend",
+      "type": "article"
+    },
+    {
+      "title": "GrapheneOS 将推出自研 RCS 消息应用，摆脱谷歌依赖",
+      "url": "https://www.ithome.com/1/030/896.htm",
+      "summary": "IT之家 11 月 23 日消息，据科技媒体 Android Authority 今天报道，GrapheneOS（IT之家注：石墨烯 OS）正在开发自研 RCS 消息应用。未来该系统用户无需依赖谷歌信息应用，就能使用 RCS 信息服务。 G…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "领克 900L 旗舰大七座 SUV 将于 11 月 27 日开启预售，900V 超级电混",
+      "url": "https://www.ithome.com/1/030/895.htm",
+      "summary": "IT之家 11 月 23 日消息，领克汽车今日宣布，领克 900L 全球预售发布会将于 11 月 27 日举行，号称“900V 超级电混旗舰大七座 SUV”。 这款旗舰大七座 SUV 于 11 月 11 日进行了全球首秀，长宽高分别为 52…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "奇瑞风云 A9 夜影版车型发售，限时置换价 131899 元",
+      "url": "https://www.ithome.com/1/030/894.htm",
+      "summary": "IT之家 11 月 23 日消息，奇瑞风云 A9 夜影版车型今日上市，官方指导价 134,899 元，限时超级置换价 131,899 元。 新车提供墨石黑、玄武灰双色可选，内饰采用夜幕紫黑限定色。除颜色外，新车还采用了夜影版专属套件拉花，配…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "微星推出其首款电竞桌 MAG TA10：双电机智能升降，2699 元起",
+      "url": "https://www.ithome.com/1/030/893.htm",
+      "summary": "IT之家 11 月 23 日消息，微星 (MSI) 本月 21 日正式推出其该品牌首款电竞桌 MAG TA10。这一型号搭载捷昌双电机驱动系统，支持升降，售价 2699 元起。 MAG TA10 主体采用铝合金 + 冷轧钢框架，搭配静电喷粉…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "frontend",
       "type": "article"
     },
     {
-      "title": "Lean 4 Nedir? Claude Riemann Kanıtının Arkasındaki İspat Denetleyicisi",
-      "url": "https://dev.to/tobiass_hoffmann/lean-4-nedir-claude-riemann-kanitinin-arkasindaki-ispat-denetleyicisi-48l6",
-      "summary": "<p>Lean 4 nedir? Lean 4, matematiksel ispatları ve program özelliklerini adım adım denetleyen, her çıkarımı kabul eden y…",
-      "source": "DEV",
-      "sourceKey": "devto",
-      "date": "2026-11-23",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Dionaea honeypots fail safely only when their listeners are contained",
-      "url": "https://dev.to/stark_zhuang_df5076f35c68/dionaea-honeypots-fail-safely-only-when-their-listeners-are-contained-3a0d",
-      "summary": "<h1> Dionaea honeypots fail safely only when their listeners are contained </h1> <p>Dionaea is designed to expose emulat…",
-      "source": "DEV",
-      "sourceKey": "devto",
-      "date": "2026-11-23",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "A Practical Workflow for Agent-Driven 3D Asset Generation",
-      "url": "https://dev.to/ameermaviaposts/a-practical-workflow-for-agent-driven-3d-asset-generation-234d",
-      "summary": "<p>Producing a usable 3D asset from a concept still involves far more than generating an attractive shape. Teams must co…",
-      "source": "DEV",
-      "sourceKey": "devto",
-      "date": "2026-11-23",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Lean 4 là gì? Công cụ kiểm chứng đứng sau chứng minh giả thuyết Riemann của Claude",
-      "url": "https://dev.to/sebbasstian/lean-4-la-gi-cong-cu-kiem-chung-dung-sau-chung-minh-gia-thuyet-riemann-cua-claude-jc4",
-      "summary": "<p>Lean 4 là gì? Lean 4 là một ngôn ngữ lập trình mã nguồn mở đồng thời là trợ lý chứng minh, có nhiệm vụ kiểm tra từng…",
-      "source": "DEV",
-      "sourceKey": "devto",
-      "date": "2026-11-23",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "WARN Act and Your On-Call Pay — What Happens to Standby Pay After a Layoff Notice",
-      "url": "https://dev.to/layoffatlas/warn-act-and-your-on-call-pay-what-happens-to-standby-pay-after-a-layoff-notice-25il",
-      "summary": "<p>A WARN notice tells you your job is ending in at least 60 days. If part of your pay comes from being on call — nights…",
-      "source": "DEV",
-      "sourceKey": "devto",
+      "title": "亚马逊推出《宝可梦》24 部动画电影蓝光合集：精灵球造型包装，售 399.99 美元",
+      "url": "https://www.ithome.com/1/030/891.htm",
+      "summary": "IT之家 11 月 23 日消息，亚马逊与 Viz Media 共同推出《宝可梦》24 部动画电影蓝光合集，并由亚马逊独家销售，售价为 399.99 美元 （IT之家注：现汇率约合 2,672 元人民币） 。 亚马逊商品页面显示，该合集名为…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "frontend",
       "type": "article"
     },
     {
-      "title": "Seven secondhand machines run most of our infrastructure. Here is what broke.",
-      "url": "https://dev.to/mouve/seven-secondhand-machines-run-most-of-our-infrastructure-here-is-what-broke-4pkh",
-      "summary": "<p>Mouve's production runs on six small virtual machines in Helsinki. Everything else runs in our office in Tallinn, on…",
-      "source": "DEV",
-      "sourceKey": "devto",
+      "title": "自变量发布具身基础模型 WALL-OSS-1.0，零样本真机成功率达 55.1%",
+      "url": "https://www.ithome.com/1/030/890.htm",
+      "summary": "IT之家 11 月 23 日消息，自变量今日发布新一代具身基础模型 WALL-OSS-1.0。该模型将预训练本身当作智能的来源，而非后续任务微调的起点。 据介绍，这款模型的训练分为两个阶段：一阶段让动作数据前置加入训练，配合多模态数据，让“…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "韩国私募股权基金 MBK Partners 计划私有化 Wacom",
+      "url": "https://www.ithome.com/1/030/889.htm",
+      "summary": "IT之家 11 月 23 日消息，根据 Wacom（和冠）官网当地时间 20 日公告，韩国私募股权基金 MBK Partners 计划收购这家诞生于日本的数字书写解决方案与技术企业 并使其私有化退市。 这笔公开要约收购预计将于 2027 年…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "电动方程式 2027 季前测试发生严重事故：测试车起火爆燃，车手及时撤离未受伤",
+      "url": "https://www.ithome.com/1/030/882.htm",
+      "summary": "IT之家 11 月 23 日消息，当地时间 11 月 20 日，电动方程式（Formula E）2027 赛季季前测试在西班牙马德里哈拉马（Jarama）赛道发生严重事故。 当天，英国车手泰勒 · 巴纳德（Taylor Barnard）在哈…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "魏建军再测长城 001 号超跑，称“进步显著”",
+      "url": "https://www.ithome.com/1/030/879.htm",
+      "summary": "IT之家 11 月 23 日消息，长城汽车董事长魏建军今日发布视频，再次对长城 001 号超级跑车进行测试。他表示，距上一次测试已过去两周， 此次测试车辆进步显著 ，希望进一步加快调校速度，尽早取得更加完善的结果。 在视频中，魏建军谈到了长…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "联想确认拯救者 Y700 五代平板电脑《燕云十六声》定制版 12 月发布",
+      "url": "https://www.ithome.com/1/030/865.htm",
+      "summary": "IT之家 11 月 23 日消息，联想 (Lenovo) 拯救者 (Legion) 官方今日中午确认，其与游戏《燕云十六声》合作打造的 联想 AI 平板拯救者 Y700 五代燕云定制版将于 2026 年 12 月发布 。 IT之家获悉，这一…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "上汽 MG4 增推 530 从容版：限时补贴价 7.88 万元起，纯电续航 530km",
+      "url": "https://www.ithome.com/1/030/833.htm",
+      "summary": "IT之家 11 月 23 日消息，上汽 MG4 新增 530 从容版车型，官方指导价 8.18 万元，限时补贴价 7.88 万元。作为参考，目前 MG4 系列共有 13 款车型在售，限时补贴价 6.58 万元起。 新车定位紧凑型两厢纯电车，…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "2027 款宝马 X7 上市：3.0T+48V 轻混动力，92.8 万起",
+      "url": "https://www.ithome.com/1/030/831.htm",
+      "summary": "IT之家 11 月 23 日消息，今日，2027 款宝马 X7 上市，新车仅提供 2 款配置， 售价 92.80-112.8 万元。 全新 X7 已确认将于 2027 年晚些时候投产，此次新车上市是现款车型生命周期末尾的一次重要升级。 20…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "美财长贝森特改口：英伟达应从公司“外部”寻找新 CEO，而黄仁勋现在就是“外部人士”",
+      "url": "https://www.ithome.com/1/030/811.htm",
+      "summary": "IT之家 11 月 23 日消息，据英国金融时报今日报道，美国财政部长斯科特 · 贝森特表示，他不会反对黄仁勋重返英伟达， 此前他曾呼吁英伟达董事会实施“彻底的改革” ， 应该从“外部”寻找新 CEO 。 美国总统唐纳德 · 特朗普今日在真…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "腾讯《地下城与勇士》经典版、《代号 FIGHT》国内首曝：后者 12 月 4 日开测，《卡赞》国区最新情报公开",
+      "url": "https://www.ithome.com/1/030/810.htm",
+      "summary": "IT之家 11 月 23 日消息，在 11 月 20 日的 2026 WeGame 游戏之夜活动上，腾讯公布了 DNF 系列三款新作的进展，同时带来多款游戏的测试与上线时间。 其中， 《地下城与勇士》经典版 在国内首次亮相。该作以 70 版…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "智谱 GLM-5.4 模型发布，已上线 Coding Plan",
+      "url": "https://www.ithome.com/1/030/809.htm",
+      "summary": "IT之家 11 月 23 日消息，据IT之家小伙伴反馈，智谱官方运营人员发布消息， GLM-5.4 模型已经上线 Coding Plan 。“过去三个月，我们同时激进的 Scaling Loop 和模型大小，大家首先看到的是 Loop Tr…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "《最终幻想 7：启示录》通过 ESRB 评级，适合 13 岁以上玩家游玩",
+      "url": "https://www.ithome.com/1/030/808.htm",
+      "summary": "IT之家 11 月 23 日消息，Square Enix《最终幻想 7：启示录》已获得美国娱乐软件分级委员会（ESRB）评级，被评为 T 级（Teen，青少年级），适合 13 岁及以上玩家游玩。 评级信息显示，游戏包含血腥、粗俗语言、轻微暗…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "消息称华为星芒小平板已安排，还有笔记本、穿戴产品等",
+      "url": "https://www.ithome.com/1/030/807.htm",
+      "summary": "IT之家 11 月 23 日消息，微博博主 @数码闲聊站 今日透露，华为子品牌星芒也是全场景布局，除了手机还会有平板、笔记本、穿戴产品等， 目前确认「星芒小平板」已安排 。 该博主还在评论区透露，星芒品牌主打先锋科技，前期产品大部分是华为换…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "柯达推出 Slide Tag 迷你数码相框盲盒：1.5 英寸彩色墨水屏，可当追踪器使用",
+      "url": "https://www.ithome.com/1/030/806.htm",
+      "summary": "IT之家 11 月 23 日消息，柯达现已在海外推出 Slide Tag 迷你数码相框。这款产品配备彩色电子墨水屏（E-Ink）， 采用盲盒形式发售 ，含 8 种常规款式、1 种隐藏款， 单个装售价 35 美元 （IT之家注：现汇率约合 2…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "长城 H6L HEV 混动版官图发布：搭载 1.5T 混动系统，11 月 27 日广州车展上市",
+      "url": "https://www.ithome.com/1/030/805.htm",
+      "summary": "IT之家 11 月 23 日消息，长城汽车今日发布长城 H6L HEV 混动版官图，并宣布新车将于 11 月 27 日开幕的 2026 广州国际汽车展览会上正式上市。 新车搭载长城第五代智能混动技术，配备 1.5T 混动专用发动机和 2 挡…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "小鹏 P7 全新内饰色「云境灰」公布，橙灰撞色设计",
+      "url": "https://www.ithome.com/1/030/804.htm",
+      "summary": "IT之家 11 月 23 日消息，小鹏 P7 全新内饰色「云境灰」官图今日公布，将于 11 月 25 日小鹏科技日正式亮相。 灵感来自阳光映照下的云朵， 浅云般的灰白色调铺陈座舱，明亮而舒展， 一抹橙色跃然于颈间与缝线， 橙灰撞色，点亮鲜活…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "黑客 Voices38 声称已破解《影之刃零》游戏 D 加密，商业表现或受影响",
+      "url": "https://www.ithome.com/1/030/803.htm",
+      "summary": "IT之家 11 月 23 日消息，据科技媒体 Notebookcheck 今天报道，黑客 Voices38 声称已破解《影之刃零》游戏的 D 加密技术（Denuvo）， 目前 PC 版破解游戏已在盗版渠道传播 。 据报道，Denuvo 开发…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "美国网络安全事件频发：特朗普撤换国家网络总监，此前 FBI 国家犯罪信息中心疑似遭黑客入侵",
+      "url": "https://www.ithome.com/1/030/801.htm",
+      "summary": "IT之家 11 月 23 日消息，据央视新闻今日报道，美国总统特朗普已撤换美国国家网络总监肖恩 · 凯恩克罗斯（Sean Cairncross），并提名美国国防部首席信息官柯尔丝滕 · 戴维斯（Kirsten A. Davies）接任。 此…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "紫光展锐携手比派发布全球首款 5G 开源“派”BPI-M2C，基于 UIS7885",
+      "url": "https://www.ithome.com/1/030/800.htm",
+      "summary": "IT之家 11 月 23 日消息，紫光展锐 (UNISOC) 近日与香蕉派 (Banana Pi) 开源硬件项目主导方比派一道发布 全球首款 5G 开源“派” BPI-M2C。 这款高性能单板计算机 (SBC) 基于紫光展锐 5G 行业智能…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "frontend",
       "type": "article"
     },
     {
-      "title": "O que é Lean 4? O verificador de provas por trás da prova de Riemann de Claude",
-      "url": "https://dev.to/lucas_ferreira/o-que-e-lean-4-o-verificador-de-provas-por-tras-da-prova-de-riemann-de-claude-4h8",
-      "summary": "<h1> O que é o Lean 4? Verificador de provas, a prova de Riemann com Claude e como rodar sua primeira prova </h1> <p>O q…",
-      "source": "DEV",
-      "sourceKey": "devto",
+      "title": "蚂蚁 CEO 韩歆毅：阿福已有 1.5 亿用户成全球最大 AI 健康应用，呼吁医保、商保从“治病”延伸到“健康”",
+      "url": "https://www.ithome.com/1/030/799.htm",
+      "summary": "IT之家 11 月 23 日现场消息，2026 蚂蚁阿福医疗健康生态大会今日（11 月 23 日）在广东广州举行。 蚂蚁集团首席执行官韩歆毅在主论坛发言中表示，AI 正在拓宽人类健康自塑的边界，让健康管理从“千人一方”走向“一人一方”、从“…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "ai",
       "type": "article"
     },
     {
-      "title": "Qu’est-ce que Lean 4 ? Le vérificateur de preuves derrière la preuve de Riemann de Claude",
-      "url": "https://dev.to/antoine_laurentt/quest-ce-que-lean-4-le-verificateur-de-preuves-derriere-la-preuve-de-riemann-de-claude-4d73",
-      "summary": "<p>Qu'est-ce que Lean 4 ? Lean 4 est un langage de programmation open source et un assistant de preuve qui vérifie pas à…",
-      "source": "DEV",
-      "sourceKey": "devto",
+      "title": "虚幻引擎 5.9 预览版 2 更新：支持纯蓝图项目 Web 打包，AI 工具集默认开启",
+      "url": "https://www.ithome.com/1/030/798.htm",
+      "summary": "IT之家 11 月 23 日消息，Epic Games 现已发布虚幻引擎 5.9 预览版 2，本次更新进一步改进了 Web 端打包功能，以及 AI 辅助游戏开发的相关功能。 IT之家注意到，本次更新引入一项实验性特性， 允许使用 WebAs…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "ai",
       "type": "article"
     },
     {
-      "title": "¿Qué es Lean 4? El verificador de demostraciones detrás de la prueba de Riemann de Claude",
-      "url": "https://dev.to/roobia/que-es-lean-4-el-verificador-de-demostraciones-detras-de-la-prueba-de-riemann-de-claude-3eg3",
-      "summary": "<h1> ¿Qué es Lean 4? El comprobador de demostraciones detrás de la demostración de Riemann de Claude </h1> <p>¿Qué es Le…",
-      "source": "DEV",
-      "sourceKey": "devto",
+      "title": "消息称亚马逊接近以 75 亿美元收购人工智能初创企业 Decart",
+      "url": "https://www.ithome.com/1/030/797.htm",
+      "summary": "IT之家 11 月 23 日消息，《金融时报》当地时间昨日报道称，Amazon 已就收购 Decart 展开深入谈判， 双方最早可能在本周初达成协议 ，但这笔价值约为 75 亿美元 （IT之家注：现汇率约合 501.1 亿元人民币） 的交易…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "ai",
       "type": "article"
     },
     {
-      "title": "Apa Itu Lean 4? Pemeriksa Bukti di Balik Pembuktian Riemann Claude",
-      "url": "https://dev.to/walse/apa-itu-lean-4-pemeriksa-bukti-di-balik-pembuktian-riemann-claude-1bia",
-      "summary": "<p>Apa itu Lean 4? Lean 4 adalah bahasa pemrograman sekaligus asisten pembuktian sumber terbuka yang memeriksa bukti mat…",
-      "source": "DEV",
-      "sourceKey": "devto",
+      "title": "信息窗口乱跳转或无法关闭，工信部通报 YY、快看漫画等 23 款 App 及 SDK",
+      "url": "https://www.ithome.com/1/030/796.htm",
+      "summary": "IT之家 11 月 23 日消息，工信部今日发布《关于侵害用户权益行为的 APP（SDK）通报》（2026 年第 7 批，总第 60 批）。 公告称，根据中央网信办、工业和信息化部、公安部联合发布的《关于开展 2026 年个人信息保护系列专…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "摩托车网联平台接入率突破 90%，我国牵头的摩托车及轻便摩托车信息与服务国际标准立项",
+      "url": "https://www.ithome.com/1/030/795.htm",
+      "summary": "IT之家 11 月 23 日消息，据央视新闻今日报道， 国际标准化组织正式批准《摩托车和轻便摩托车信息和服务术语》国际标准立项 。该国际标准旨在填补全球范围内的空白，为行业信息与服务相关技术发展提供通用术语基础。 该标准系统构建了包含信息与…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "蚂蚁阿福宣布全新升级：“望闻问切”实时视频看健康，全家档案一个 App 管",
+      "url": "https://www.ithome.com/1/030/794.htm",
+      "summary": "IT之家 11 月 23 日现场消息，在今日的蚂蚁阿福医疗健康生态大会上，蚂蚁阿福 App 宣布迎来全新升级。 IT之家在大会现场获悉，蚂蚁阿福 App 基于蚂蚁百灵医疗健康系列模型，带来两项功能大升级： 实时视频看健康，AI 也能“望闻问…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "ai",
       "type": "article"
     },
     {
-      "title": "A Partial Evaluator for C",
-      "url": "https://phoenix.labri.fr/software/tempo/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50607627 Points: 10 # Comments: 0",
-      "source": "HackerNews",
-      "sourceKey": "hn",
+      "title": "壹号本预热《EVA》联名限量款 OneXPlayer X2：明日香二号机设计",
+      "url": "https://www.ithome.com/1/030/793.htm",
+      "summary": "IT之家 11 月 23 日消息，壹号本 (ONE-NETBOOK) 本月 20 日宣布将推出《新世纪福音战士》(EVA) 联名限量款 OneXPlayer X2 三合一 PC 游戏掌机。 该特别版 融入二号机风格设计元素与明日香主题涂装…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "news",
       "type": "article"
     },
     {
-      "title": "DeFlock Amerca Facebook Group Suspended as a Dangerous Organization",
-      "url": "https://www.facebook.com/shugvermonte/posts/the-deflock-america-group-with-over-840k-members-has-been-suspended-by-meta-what/10165140280736049/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50607498 Points: 46 # Comments: 6",
-      "source": "HackerNews",
-      "sourceKey": "hn",
+      "title": "特朗普：我希望英伟达董事会能重新聘用黄仁勋，这对英伟达、美国来说都是最好的事情",
+      "url": "https://www.ithome.com/1/030/792.htm",
+      "summary": "IT之家 11 月 23 日消息，美国总统唐纳德 · 特朗普今日在真实社交平台表示， 他希望英伟达董事会能重新聘用黄仁勋 。这对英伟达公司、美国来说都是最好的事情。 据IT之家此前报道 ，黄仁勋于 11 月初向英伟达发布全员信，承认自己的出…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "news",
       "type": "article"
     },
     {
-      "title": "XNU Linux: Full OS X GUI Userspace on Linux",
-      "url": "https://github.com/AFK-surf/xnulinux",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50607261 Points: 112 # Comments: 44",
-      "source": "HackerNews",
-      "sourceKey": "hn",
+      "title": "小鹏 P7 全新车色「晨曦粉」亮相，11 月 25 日线下首展",
+      "url": "https://www.ithome.com/1/030/791.htm",
+      "summary": "IT之家 11 月 23 日消息，今日，小鹏 P7 全新车色「晨曦粉」正式亮相，将于 11 月 25 日小鹏科技日开启线下首展。 IT之家附官方介绍： 灵感来自晨曦洒落湖面的一缕柔光，温柔而闪耀。 低饱和、高明度的银粉色调，融入多粒径金属铝…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "news",
       "type": "article"
     },
     {
-      "title": "Treemap of the Riemann Hypothesis Lean Proof",
-      "url": "https://pengowray.github.io/riemann-zeta-proof-visualizer/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50606499 Points: 30 # Comments: 4",
-      "source": "HackerNews",
-      "sourceKey": "hn",
+      "title": "Flyme Auto 全球累计装车量突破 376.9 万辆，魅族与亿咖通联合开发",
+      "url": "https://www.ithome.com/1/030/790.htm",
+      "summary": "IT之家 11 月 23 日消息，魅族 Flyme AIOS 今日公布 Flyme Auto 最新装机数据。 官方数据显示，2026 年 10 月，Flyme Auto 新增装机量为 175,341 辆，1—10 月累计装机量超过 1,50…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "vivo S70 系列手机官宣 12 月发布，预计提供“闪光人像专业套装”",
+      "url": "https://www.ithome.com/1/030/789.htm",
+      "summary": "IT之家 11 月 23 日消息，vivo S70 系列手机今日在各大电商平台开启预约，官网显示新品将于 12 月发布，分为 vivo S70、S70 旗舰版两款机型。 据博主 @数码闲聊站 今日爆料，vivo S70 系列将提供专门的 「…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "news",
       "type": "article"
     },
     {
-      "title": "Free alternative TV network built from the Internet Archive's forgotten videos",
-      "url": "https://spelunkr.tv",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50606192 Points: 336 # Comments: 52",
-      "source": "HackerNews",
-      "sourceKey": "hn",
+      "title": "蚂蚁阿福发布全新 AI 健康手环“福环”和 AI 健康戒指“福戒”",
+      "url": "https://www.ithome.com/1/030/788.htm",
+      "summary": "IT之家 11 月 23 日现场消息，在今日的蚂蚁阿福医疗健康生态大会上，蚂蚁阿福带来了两款全新的 AI 健康硬件 —— AI 健康手环 · 福环 AI 健康戒指 · 福戒 两款产品均主打健康监测和超长续航 ，主要用来记录睡眠、心率、呼吸、…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "小米 REDMI 多款笔记本电脑今日已执行涨价：涨幅最高 500 元",
+      "url": "https://www.ithome.com/1/030/787.htm",
+      "summary": "IT之家 11 月 23 日消息，博主 @懒酱的日记本 发现，小米旗下多款笔记本电脑今日起价格上调 300～500 元： REDMI Book 14 2024 焕新版 REDMI Book 14 2025 REDMI Book 16 202…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "news",
       "type": "article"
     },
     {
-      "title": "What we learned operating auth for 1k APIs",
-      "url": "https://nango.dev/blog/lessons-from-operating-api-auth-for-900-apis/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50606072 Points: 30 # Comments: 4",
-      "source": "HackerNews",
-      "sourceKey": "hn",
+      "title": "腾讯魔方新作《异人之下》定档 12 月 17 日，登陆 PC、iOS、安卓、鸿蒙",
+      "url": "https://www.ithome.com/1/030/786.htm",
+      "summary": "IT之家 11 月 23 日消息，腾讯魔方工作室旗下 3D 格斗竞技游戏《异人之下》宣布定档 12 月 17 日， 登陆 PC、iOS、安卓和鸿蒙端 。 目前，本作已在苹果 App Store 中上线。官方宣称本作提供纯粹极致的 3D 格斗…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
       "date": "2026-11-23",
       "category": "news",
       "type": "article"
+    },
+    {
+      "title": "小米推出米家窗帘伴侣卷帘版：单次续航 4 个月，众筹价 259 元",
+      "url": "https://www.ithome.com/1/030/785.htm",
+      "summary": "IT之家 11 月 23 日消息，今日，米家窗帘伴侣卷帘版在小米有品上架，众筹到手价 259 元起，建议零售价 349 元起（ 点击前往 ）。 IT之家从商品页面获悉，该产品是后装智能配件，无需布线、不改电路，通过带动卷帘拉珠实现电动升降。…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "蚂蚁百灵医疗健康大模型宣布开源，最轻量版一台笔记本就能部署",
+      "url": "https://www.ithome.com/1/030/784.htm",
+      "summary": "IT之家 11 月 23 日现场消息，在今日的蚂蚁阿福医疗健康生态大会上， 蚂蚁百灵医疗健康大模型宣布全面开源 。 蚂蚁百灵医疗健康大模型家族包含大语言模型、实时音视频模型、预测模型、安全防护模型，支持疾病未来六年的发病风险预测，疾病种类、…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "谷歌 AI 搜索变现受阻，苹果服务业务收入增长也随之放缓",
+      "url": "https://www.ithome.com/1/030/783.htm",
+      "summary": "IT之家 11 月 23 日消息，据科技媒体 Appleinsider 昨天报道，苹果与谷歌达成的搜索合作协议，带来的收益已不如从前。如今用户的搜索习惯已经改变，导致市场格局生变。 据报道，苹果与谷歌早已就 Safari 默认搜索引擎达成合…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "小米推出米家智能水暖毯 Pro：左右双区独立调温，众筹价 799 元",
+      "url": "https://www.ithome.com/1/030/782.htm",
+      "summary": "IT之家 11 月 23 日消息，米家智能水暖毯 Pro 已在小米有品上架并开启众筹预约，众筹价 799 元，建议零售价 1099 元。众筹将于 11 月 25 日 10:00 开始，12 月 2 日 09:59 结束（ 点击前往 ）。 I…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "特斯拉 AI4.5 芯片有望明年推出，马斯克称内存太贵、从 32GB 降到 24GB",
+      "url": "https://www.ithome.com/1/030/780.htm",
+      "summary": "IT之家 11 月 23 日消息，特斯拉 CEO 埃隆 · 马斯克今日在 X 平台发文回复博主 Sawyer Merritt， 升级版 AI4.5 芯片的性能提升较小，主要是将内存升级到 LPDDR5X 。 马斯克表示 AI5 芯片将专属于…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "海盗船推出 WS 3200D RS 工作站机箱：配备安全锁孔、防盗螺丝",
+      "url": "https://www.ithome.com/1/030/779.htm",
+      "summary": "IT之家 11 月 23 日消息，CORSAIR（海盗船）本月中旬推出了 WS 3200D RS 机箱。这一型号与面向游戏 PC 的标准 3200D RS 共享基础，但针对工作站工作负载进行了优化调整。 WS 3200D RS 两侧均配备钢…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "迈从 G87 V3 机械键盘发布：全新多功能按键旋钮，首发 239 元起",
+      "url": "https://www.ithome.com/1/030/778.htm",
+      "summary": "IT之家 11 月 23 日消息，迈从 G87 V3 全能 87 配列机械键盘今日发布，11 月 25 日 10:00 全平台开售，首发到手价 239 元、269 元。 IT之家从官方公布信息获悉，G87 V3 提供海平线、晴空蓝、鎏金黑、…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "马斯克称存储芯片涨价使特斯拉 AI4 车载电脑成本翻倍",
+      "url": "https://www.ithome.com/1/030/777.htm",
+      "summary": "IT之家 11 月 23 日消息，特斯拉 CEO 埃隆 · 马斯克 11 月 22 日表示，受全球 DRAM 内存和 NAND 闪存价格上涨影响， 特斯拉 AI4 车载计算机的物料成本已经翻倍 。 他在 X 平台上回应有关特斯拉最新版完全自…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "高通汽车芯片业务年收入达 80 亿美元，有望 2027 年登顶全球汽车半导体市场",
+      "url": "https://www.ithome.com/1/030/776.htm",
+      "summary": "IT之家 11 月 23 日消息，据科技媒体 Wccftech 昨天报道，高通多年来意在摆脱过度依赖智能手机的刻板印象，毕竟在 DRAM 飞速涨价的今天，手机芯片业务面临着较大压力。最新行业数据表明，该公司规模最大的多元化布局正在提前取得成…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "鸿蒙智行问界新 M7 官宣：升级面向 L3 的全域冗余架构，新色首发「翡冷翠」「暖阳金」",
+      "url": "https://www.ithome.com/1/030/775.htm",
+      "summary": "IT之家 11 月 23 日消息，鸿蒙智行问界新 M7 正式官宣，并公布了两款新配色： 温润「翡冷翠」 华贵「暖阳金」 余承东表示，问界 M7 系列一直很受家庭用户欢迎，上市至今已经交付超 47 万辆，稳居中国品牌 30 万级 SUV 车型…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "东风日产 NX7 定档 11 月 27 日广州车展上市：全系宁德时代电池，预售 12.99 万元起",
+      "url": "https://www.ithome.com/1/030/774.htm",
+      "summary": "IT之家 11 月 23 日消息，东风日产 N 序列第四款车型 NX7 将于 11 月 27 日在广州车展正式上市，并同步开启交付。 新车已于 11 月 13 日开启预售，共推出三款配置，预售价区间为 12.99 万元至 14.99 万元，…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "Singularity Computers 推出外置液冷系统：四组 560 冷排，5000W 解热",
+      "url": "https://www.ithome.com/1/030/773.htm",
+      "summary": "IT之家 11 月 23 日消息，澳大利亚分体式液冷制造商 Singularity Computers 当地时间本月 21 日推出了 SC Enterprise 5000W 液冷系统。该外置散热装置 具备 5kW 的设计解热能力 。 SC…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "奇瑞纵横 R700 车型 11 月 26 日发布，与纵横 G700 同平台打造",
+      "url": "https://www.ithome.com/1/030/772.htm",
+      "summary": "IT之家 11 月 23 日消息，据易车今日报道，奇瑞纵横 R700 将于 11 月 26 日正式发布。作为纵横品牌全新“R”系列首款车型，与纵横 G700 同平台打造，虽然整体延续了方盒子硬派造型，但细节上却与纵横 G700 不同。 ▲…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "歼-35、空警-600 将亮相 12 月 7 日珠海航展并首设海上展区，055 型万吨大驱面向公众开放",
+      "url": "https://www.ithome.com/1/030/771.htm",
+      "summary": "IT之家 11 月 23 日消息，第十六届中国国际航空航天博览会定于 12 月 7 日至 13 日在广东珠海举办。 恰逢中国航展创办三十周年，本届航展采用“一展三区”布局，在珠海国际航展中心主展区之外，新增高栏港海上装备展示区与莲洲无人装备…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "韩国防 AI 作弊新招：要求考生穿围裙考试、时隔 6 年重新收缴手机",
+      "url": "https://www.ithome.com/1/030/770.htm",
+      "summary": "IT之家 11 月 23 日消息，据韩媒报道，韩国第 28 届警卫指导师考试前日开考。据考生所述，本次考试加强了作弊防范力度，去年只要求将手机和手表放在包里，今年全部收走。 考场还要求考生穿上餐馆使用的一次性围裙 ，各处都悬挂着禁止作弊的标…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "四部门：鼓励发展适合养老场景的人工智能体、服务机器人、智能穿戴设备、外骨骼等新产品",
+      "url": "https://www.ithome.com/1/030/769.htm",
+      "summary": "IT之家 11 月 23 日消息，今日，发改委等四部门印发《“一老一小”服务体系建设实施方案》。 其中提到，支持养老、托育机构应用智能管理服务、智慧消防安防等系统，提升管理水平。推动养老机构配置智能健康监测、辅助器具等设备。 鼓励发展适合养…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "从北影毕设到院线电影：B站《龙心少女》最新 PV 公布，摔跤社与火药方糖联合制作",
+      "url": "https://www.ithome.com/1/030/765.htm",
+      "summary": "IT之家 11 月 23 日消息，在昨晚的哔哩哔哩 2026—2027 年国创动画作品发布会上，动画电影《龙心少女》正式官宣，并发布了 2026 全新 PV。 这部影片由摔跤社与火药方糖联合制作，哔哩哔哩、摔跤社、火药方糖共同出品。 这部电…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "frontend",
+      "type": "article"
+    },
+    {
+      "title": "蚂蚁电竞 24.5\" QHD 540Hz HMO 显示器 ANT255TQ 在售，6299 元",
+      "url": "https://www.ithome.com/1/030/764.htm",
+      "summary": "IT之家 11 月 23 日消息，蚂蚁电竞 (ANTGAMER) 现已在销售 ANT255TQ 显示器，实际价格为 6299 元。 这一型号采用 24.5\" IPS 面板， 结合新一代 HMO（高迁移率氧化物）背板技术 ，支持 QHD (2…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "《黑神话：悟空》美术总监杨奇谈《GTA 6》：“工业化”一词是对其贬损，昂贵且低效的艺术品",
+      "url": "https://www.ithome.com/1/030/763.htm",
+      "summary": "IT之家 11 月 23 日消息，昨晚，游戏科学联合创始人、《黑神话：悟空》美术总监杨奇在微博回复网友提问时表示，“工业化”一词儿是对《GTA 6》的贬损，该作“明明是无数的日夜和灵感的整合，昂贵且低效的艺术品”。 据他描述，自己刚结束《G…",
+      "source": "IT之家",
+      "sourceKey": "ithome",
+      "date": "2026-11-23",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "storytold/photocraft",
+      "url": "https://github.com/storytold/photocraft",
+      "summary": "PhotoCraft: An open-source photo editor written from scratch in pure Rust",
+      "source": "GitHub 热门",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 81081,
+      "language": "Rust",
+      "license": "Apache-2.0"
     },
     {
       "title": "storytold/craft-anything",
       "url": "https://github.com/storytold/craft-anything",
       "summary": "Craft Anything: understand how any software works, and craft your own.",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 41469,
+      "stars": 41512,
       "language": "Rust",
       "license": "Apache-2.0"
     },
@@ -588,25 +1471,77 @@
       "title": "ccch1mneyyy/dsh-Go",
       "url": "https://github.com/ccch1mneyyy/dsh-Go",
       "summary": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 30362,
+      "stars": 30387,
       "language": "Dart",
       "license": "AGPL-3.0"
+    },
+    {
+      "title": "KnifeLemon/Filee",
+      "url": "https://github.com/KnifeLemon/Filee",
+      "summary": "Free, open-source file converter. Convert 263 formats offline by drag & drop — images, PDF, Word, Excel, PowerPoint, HWP…",
+      "source": "GitHub 热门",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 30046,
+      "language": "C#",
+      "license": "MIT"
+    },
+    {
+      "title": "storytold/pdfcraft",
+      "url": "https://github.com/storytold/pdfcraft",
+      "summary": "PdfCraft: An open-source PDF reader and editor written from scratch in pure Rust",
+      "source": "GitHub 热门",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 21499,
+      "language": "Rust",
+      "license": "Apache-2.0"
+    },
+    {
+      "title": "lemomo-ai/lemo-opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "summary": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus…",
+      "source": "GitHub 热门",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 20013,
+      "language": "JavaScript",
+      "license": ""
+    },
+    {
+      "title": "storytold/filmcraft",
+      "url": "https://github.com/storytold/filmcraft",
+      "summary": "FilmCraft: An open-source, nonlinear video editor written from scratch in pure Rust",
+      "source": "GitHub 热门",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 18872,
+      "language": "Rust",
+      "license": "Apache-2.0"
     },
     {
       "title": "storytold/wordcraft",
       "url": "https://github.com/storytold/wordcraft",
       "summary": "WordCraft: an open-source, clean-room word processor in pure Rust",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 18455,
+      "stars": 18456,
       "language": "Rust",
       "license": "Apache-2.0"
     },
@@ -614,64 +1549,77 @@
       "title": "tangency-labs/solidcraft",
       "url": "https://github.com/tangency-labs/solidcraft",
       "summary": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 17805,
+      "stars": 17810,
       "language": "Rust",
       "license": "Apache-2.0"
-    },
-    {
-      "title": "anefzaoui/misterdownloadmanager",
-      "url": "https://github.com/anefzaoui/misterdownloadmanager",
-      "summary": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windo…",
-      "source": "GitHub Trending",
-      "sourceKey": "github",
-      "date": "2026-11-23",
-      "category": "repo",
-      "type": "repo",
-      "stars": 16840,
-      "language": "Rust",
-      "license": "GPL-3.0"
     },
     {
       "title": "ItsNotRexed/Leonida",
       "url": "https://github.com/ItsNotRexed/Leonida",
       "summary": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 16839,
+      "stars": 17049,
       "language": "Python",
+      "license": "GPL-3.0"
+    },
+    {
+      "title": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "summary": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windo…",
+      "source": "GitHub 热门",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 16876,
+      "language": "Rust",
       "license": "GPL-3.0"
     },
     {
       "title": "seedds/nxnative",
       "url": "https://github.com/seedds/nxnative",
       "summary": "Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE…",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 16526,
+      "stars": 16527,
       "language": "Objective-C",
       "license": "MIT"
+    },
+    {
+      "title": "storytold/lightcraft",
+      "url": "https://github.com/storytold/lightcraft",
+      "summary": "LightCraft: An open-source non-destructive photo editor written from scratch in pure Rust",
+      "source": "GitHub 热门",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 16312,
+      "language": "Rust",
+      "license": "Apache-2.0"
     },
     {
       "title": "pengchujin/aerial-tv",
       "url": "https://github.com/pengchujin/aerial-tv",
       "summary": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 13011,
+      "stars": 13016,
       "language": "Kotlin",
       "license": "MIT"
     },
@@ -679,79 +1627,40 @@
       "title": "JuneYaooo/rea-video",
       "url": "https://github.com/JuneYaooo/rea-video",
       "summary": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VI…",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 12342,
+      "stars": 12355,
       "language": "Python",
+      "license": "Apache-2.0"
+    },
+    {
+      "title": "storytold/vectorcraft",
+      "url": "https://github.com/storytold/vectorcraft",
+      "summary": "VectorCraft: An open-source vector art tool written from scratch in pure Rust",
+      "source": "GitHub 热门",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 12027,
+      "language": "Rust",
       "license": "Apache-2.0"
     },
     {
       "title": "horizon-rust/horizon",
       "url": "https://github.com/horizon-rust/horizon",
       "summary": "Minecraft 26.3 rewritten in Rust.",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 11800,
+      "stars": 11801,
       "language": "Rust",
       "license": "LGPL-3.0"
-    },
-    {
-      "title": "zortos293/Lichii",
-      "url": "https://github.com/zortos293/Lichii",
-      "summary": "VERY experimental Nintendo Switch 2 emulator",
-      "source": "GitHub Trending",
-      "sourceKey": "github",
-      "date": "2026-11-23",
-      "category": "repo",
-      "type": "repo",
-      "stars": 10095,
-      "language": "C++",
-      "license": "GPL-3.0"
-    },
-    {
-      "title": "l0ng-ai/openidea",
-      "url": "https://github.com/l0ng-ai/openidea",
-      "summary": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app:…",
-      "source": "GitHub Trending",
-      "sourceKey": "github",
-      "date": "2026-11-23",
-      "category": "repo",
-      "type": "repo",
-      "stars": 9895,
-      "language": "TypeScript",
-      "license": "Apache-2.0"
-    },
-    {
-      "title": "wangzan101/Mika",
-      "url": "https://github.com/wangzan101/Mika",
-      "summary": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-      "source": "GitHub Trending",
-      "sourceKey": "github",
-      "date": "2026-11-23",
-      "category": "repo",
-      "type": "repo",
-      "stars": 9681,
-      "language": "Kotlin",
-      "license": "Apache-2.0"
-    },
-    {
-      "title": "HeyPuter/everything",
-      "url": "https://github.com/HeyPuter/everything",
-      "summary": "We're rebuilding and open-sourcing the world’s software from scratch.",
-      "source": "GitHub Trending",
-      "sourceKey": "github",
-      "date": "2026-11-23",
-      "category": "repo",
-      "type": "repo",
-      "stars": 9304,
-      "language": "JavaScript",
-      "license": "MIT"
     },
     {
       "title": "morluto/rea",
@@ -762,7 +1671,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 474489,
+      "stars": 474533,
       "language": "TypeScript",
       "license": "MIT"
     },
@@ -775,9 +1684,22 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 459512,
+      "stars": 459513,
       "language": "TypeScript",
       "license": "BSD-3-Clause"
+    },
+    {
+      "title": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "summary": "Curated list of project-based tutorials",
+      "source": "GitHub · JavaScript",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 290301,
+      "language": "Python",
+      "license": "MIT"
     },
     {
       "title": "react/react",
@@ -788,7 +1710,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 252932,
+      "stars": 252934,
       "language": "JavaScript",
       "license": "MIT"
     },
@@ -814,7 +1736,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 123947,
+      "stars": 123948,
       "language": "JavaScript",
       "license": ""
     },
@@ -827,7 +1749,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 119898,
+      "stars": 119900,
       "language": "TypeScript",
       "license": "AGPL-3.0"
     },
@@ -840,7 +1762,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 119187,
+      "stars": 119188,
       "language": "JavaScript",
       "license": "MIT"
     },
@@ -879,7 +1801,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 91201,
+      "stars": 91206,
       "language": "TypeScript",
       "license": "MIT"
     },
@@ -892,7 +1814,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 77223,
+      "stars": 77224,
       "language": "TypeScript",
       "license": "MIT"
     },
@@ -931,7 +1853,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 55592,
+      "stars": 55593,
       "language": "TypeScript",
       "license": "Apache-2.0"
     },
@@ -983,22 +1905,9 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 37765,
+      "stars": 37766,
       "language": "TypeScript",
       "license": ""
-    },
-    {
-      "title": "t8y2/dbx",
-      "url": "https://github.com/t8y2/dbx",
-      "summary": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB…",
-      "source": "GitHub · Vue",
-      "sourceKey": "github",
-      "date": "2026-11-23",
-      "category": "repo",
-      "type": "repo",
-      "stars": 31178,
-      "language": "Rust",
-      "license": "Apache-2.0"
     },
     {
       "title": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -1009,7 +1918,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 152970,
+      "stars": 152984,
       "language": "Python",
       "license": "MIT"
     },
@@ -1027,6 +1936,19 @@
       "license": "MIT"
     },
     {
+      "title": "shadcn-ui/ui",
+      "url": "https://github.com/shadcn-ui/ui",
+      "summary": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize…",
+      "source": "GitHub · React",
+      "sourceKey": "github",
+      "date": "2026-11-23",
+      "category": "repo",
+      "type": "repo",
+      "stars": 128795,
+      "language": "TypeScript",
+      "license": "MIT"
+    },
+    {
       "title": "ruvnet/RuView",
       "url": "https://github.com/ruvnet/RuView",
       "summary": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection…",
@@ -1035,7 +1957,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 104869,
+      "stars": 104875,
       "language": "Rust",
       "license": "MIT"
     },
@@ -1087,7 +2009,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 64649,
+      "stars": 64648,
       "language": "Go",
       "license": "MIT"
     },
@@ -1100,7 +2022,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 85633,
+      "stars": 85636,
       "language": "Python",
       "license": "MIT"
     },
@@ -1126,7 +2048,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 395068,
+      "stars": 395073,
       "language": "TypeScript",
       "license": "MIT"
     },
@@ -1139,7 +2061,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 265498,
+      "stars": 265508,
       "language": "Python",
       "license": "MIT"
     },
@@ -1152,7 +2074,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 211869,
+      "stars": 211872,
       "language": "TypeScript",
       "license": ""
     },
@@ -1165,7 +2087,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 207246,
+      "stars": 207273,
       "language": "TypeScript",
       "license": "AGPL-3.0"
     },
@@ -1191,7 +2113,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 178303,
+      "stars": 178304,
       "language": "MDX",
       "license": ""
     },
@@ -1204,7 +2126,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 161713,
+      "stars": 161716,
       "language": "Python",
       "license": ""
     },
@@ -1217,7 +2139,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 149989,
+      "stars": 149987,
       "language": "Python",
       "license": "MIT"
     },
@@ -1230,7 +2152,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 148186,
+      "stars": 148190,
       "language": "Python",
       "license": "GPL-3.0"
     },
@@ -1243,7 +2165,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 122220,
+      "stars": 122224,
       "language": "Go",
       "license": "Apache-2.0"
     },
@@ -1269,7 +2191,7 @@
       "date": "2026-11-23",
       "category": "repo",
       "type": "repo",
-      "stars": 116677,
+      "stars": 116699,
       "language": "Python",
       "license": "AGPL-3.0"
     },
@@ -1281,26 +2203,6 @@
       "sourceKey": "juejin",
       "date": "2026-11-22",
       "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "评测通过率 0.5，阈值一改就绿：跑分器先写三种退出码",
-      "url": "https://juejin.cn/post/7710701905585242112",
-      "summary": "同一份评测 case，阈值 0.9 时通过率 0.5 判 FAIL，调到 0.5 就判 PASS。跑分器真正要写死的是 0、1、2 三种退出码，以及空库和全 SKIP 的拒绝分支。",
-      "source": "掘金",
-      "sourceKey": "juejin",
-      "date": "2026-11-22",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Agent Harness 工程（I7）：观测与评测——把运行变成可复现读数",
-      "url": "https://juejin.cn/post/7710636227040608266",
-      "summary": "观测与评测：以事件为唯一事实源，还原成 span、指标与可回放 transcript；fixture 跑 k 次得 pass^k 与置信区间，回归门比基线哈希与通过率，拦截评测集漂移与退化。",
-      "source": "掘金",
-      "sourceKey": "juejin",
-      "date": "2026-11-22",
-      "category": "ai",
       "type": "article"
     },
     {
@@ -1340,7 +2242,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-22",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -1440,7 +2342,7 @@
       "source": "cnBeta",
       "sourceKey": "cnbeta",
       "date": "2026-11-22",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -1530,7 +2432,7 @@
       "source": "cnBeta",
       "sourceKey": "cnbeta",
       "date": "2026-11-22",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -1550,7 +2452,7 @@
       "source": "cnBeta",
       "sourceKey": "cnbeta",
       "date": "2026-11-22",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -1730,7 +2632,7 @@
       "source": "cnBeta",
       "sourceKey": "cnbeta",
       "date": "2026-11-22",
-      "category": "news",
+      "category": "ai",
       "type": "article"
     },
     {
@@ -1810,7 +2712,7 @@
       "source": "cnBeta",
       "sourceKey": "cnbeta",
       "date": "2026-11-22",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -1850,7 +2752,7 @@
       "source": "cnBeta",
       "sourceKey": "cnbeta",
       "date": "2026-11-22",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -1859,146 +2761,6 @@
       "summary": "11月21日，欧洲理事会主席科斯塔公布欧盟2028年至2034年长期预算修订方案，拟通过征收数字服务税、电子废弃物税及提高烟草税等方式扩大欧盟财政收入来源，以缓解成员国之间围绕预算规模及出资比例的争议。 阅读全文",
       "source": "cnBeta",
       "sourceKey": "cnbeta",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
-      "url": "https://0rwx.com/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50605445 Points: 35 # Comments: 8",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
-      "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50605045 Points: 202 # Comments: 155",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "GL.iNet Security Notice 2026-11-20",
-      "url": "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50604988 Points: 150 # Comments: 71",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "Localcode, open source agentic coding on your Mac with one command",
-      "url": "https://github.com/mjwsolo/localcode",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50604540 Points: 47 # Comments: 13",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "The Usefulness of Useless Knowledge [pdf] (1939)",
-      "url": "https://www.ias.edu/sites/default/files/library/UsefulnessHarpers.pdf",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50604472 Points: 100 # Comments: 17",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "The struggle for freedom: How BSD escaped AT&T licensing",
-      "url": "https://fosscomics.com/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50604123 Points: 90 # Comments: 30",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50603845 Points: 387 # Comments: 157",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "A miniature San Francisco with live buses, planes and boats",
-      "url": "https://smallsf.com/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50603589 Points: 217 # Comments: 82",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "Nyx, the Oldest Internet Service Provider",
-      "url": "https://nyx.net/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50603465 Points: 120 # Comments: 17",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "Assume People Are Not Interested in Your Blog Post",
-      "url": "https://danielsada.tech/blog/assume-people-are-not-interested-in-your-blog-post/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50603143 Points: 135 # Comments: 66",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "What Happened to Silicon Valley?",
-      "url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50602947 Points: 560 # Comments: 299",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
-      "url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50602843 Points: 435 # Comments: 217",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "Perplexity and Intelligence",
-      "url": "https://openai.com/index/perplexity-and-intelligence/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50601525 Points: 546 # Comments: 367",
-      "source": "HackerNews",
-      "sourceKey": "hn",
-      "date": "2026-11-22",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "I joined the NTP Pool, but not with my Stratum 1 Pi",
-      "url": "https://www.jeffgeerling.com/blog/2026/i-joined-the-ntp-pool/",
-      "summary": "Comments URL: https://news.ycombinator.com/item?id=50600622 Points: 144 # Comments: 50",
-      "source": "HackerNews",
-      "sourceKey": "hn",
       "date": "2026-11-22",
       "category": "news",
       "type": "article"
@@ -2044,15 +2806,255 @@
       "type": "article"
     },
     {
+      "title": "分享一下我订阅 gemini 黑五优惠的流程",
+      "url": "https://www.v2ex.com/t/1258863#reply99",
+      "summary": "先刷个 2 刀一个月的订阅，不行 5 刀三个月的也行，反正也只会先付一个月 我是之前就买了 5 刀的优惠，然后在电脑上点击切换订阅还是要 199 所以改成去手机 gemini app 上切换到包年，这个时候就会生效订阅续费半价 99 刀的…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "google 账号改地区总是被驳回",
+      "url": "https://www.v2ex.com/t/1258887#reply58",
+      "summary": "十几年的 google 老账号，看到 neon 这么火，想订阅一下，发现所在地区是中国，无法订阅，已经发起申请了十几遍的更改地区的请求，全部以证据不足驳回来了，IP 还算纯净吧，请教各位大佬还有什么办法吗？",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "GPT plus139 冲来的算不算便宜",
+      "url": "https://www.v2ex.com/t/1258943#reply30",
+      "summary": "",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "Google 黑五 1 年 100 刀的活动，和现在 APP 上 15 刀 3 个月的活动能叠加吗？",
+      "url": "https://www.v2ex.com/t/1258850#reply88",
+      "summary": "几个问题请教下有订阅经验的朋友 黑五 1 年 100 刀的活动，和现在 APP 上 15 刀 3 个月的活动能叠加吗？ 15 刀是不是可以用 APP store 余额支付？黑五活动可以吗？ Gemini 封号是怎么个形式？会整个 Googl…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "Google 黑五 1 年 100 刀，GPT 的土区 499plus 还续吗？",
+      "url": "https://www.v2ex.com/t/1258938#reply37",
+      "summary": "各位看呢",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "一朋友 提出的关于稳定访问 Claude 的设想",
+      "url": "https://www.v2ex.com/t/1258977#reply12",
+      "summary": "通过 VR 访问一下 claude，其实也是很好的选项，meta 的系统很干净，不存在泄露 sim 卡 或者国产芯片信息，只要网络稳定妥妥的。 PS:原话 还附了个图 难道他真是天才ヘ(￣ω￣ヘ)",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "一个护照可以几个 KYC claude",
+      "url": "https://www.v2ex.com/t/1258986#reply3",
+      "summary": "",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "躺起编程：我给 VS Code 做了个扩展，躺在沙发上也能用手机接着和 Claude Code 写代码，从查看测试结果到追问报错，不用远程桌面，也不用重新解释项目上下文",
+      "url": "https://www.v2ex.com/t/1258984#reply4",
+      "summary": "最想离开工位的时候，往往是刚让 Claude Code 跑完一轮修改、正在等测试结果的时候。人可以先去沙发上躺一会儿，可要是测试挂了，只想追问一句「哪条断言没过」，难道还得起身回电脑前？ 我给自己做的 VS Code 扩展 Claude C…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "提醒：macOS 更新不会升级 Python 的 certifi",
+      "url": "https://www.v2ex.com/t/1258978#reply1",
+      "summary": "eMudhra 中间 CA 私钥泄露后，Apple 在系统更新里移除了相关根证书，brew 也更新了 ca-certificates。但 Python 的 certifi 是另一份独立的 CA 清单，装在用户 site-packages 里…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "关于 Agy 无法将远程 Mac 作为开发宿主机，大家目前有优雅的解决方案吗？",
+      "url": "https://www.v2ex.com/t/1258894#reply31",
+      "summary": "手头有一台 Mac mini，之前一直将其作为固定的远程代码开发服务器, 主力代码生成使用 Codex, 修修补补用 Codebuddy 的 ds 4.1F。之前用 Jio 开了一个 Gemini 账号, 但因为 Antigravity I…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "大家帮我拿个主意，要把跨境电商封店的经验平移到 Claude 吗？",
+      "url": "https://www.v2ex.com/t/1258964#reply16",
+      "summary": "之前主要经营 Etsy 平台，了解的都知道这个平台也是 2022 年封禁中国区。这几年，自己也一直和海外的身份（包括个人的真实手机号、银行卡、有效证件）、IP、指纹浏览器、网络环境、Persona 身份认证等账号安全相关的因素打交道。前期也…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "请问 cursor 套餐用完后，是充钱买 token 好，还是新开一个账户买套餐好",
+      "url": "https://www.v2ex.com/t/1258967#reply3",
+      "summary": "现在 cursor 200 刀套餐，家送得 grok bot 不够用，大家是继续充钱么？还是可以在开一个高级套餐。或者还有其他方式更省钱，新买账户，需要管风控么。人在国外 ip 使用，银行卡支付都没问题。 感谢！",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "连 Anthropic 的离职员工都封",
+      "url": "https://www.v2ex.com/t/1258923#reply11",
+      "summary": "哈哈哈哈无差别风控，到底是谁的号在中国用能不被封呢",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "要取消 claude 订阅吗",
+      "url": "https://www.v2ex.com/t/1258871#reply17",
+      "summary": "请教大神，目前有 gpt plus 20 刀，claude pro 20 刀，刚刚搞了个 100 刀的 google gemini， 发现 fable 5.2 在 claude 里不能用了 - 要另外买，业余编程非重度使用，gpt 全家尤其…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "iOS 土耳其 App Store 半价订阅 google one Ultra 方法",
+      "url": "https://www.v2ex.com/t/1258860#reply25",
+      "summary": "搬运的 L 站的 Wender 大佬的帖子 稍微修改了下 可惜我已经有 gpt 100 了-。- , 有想买便宜稳定的 VPS 的可以 看看（RN） https://v2ex.com/t/1258457 ^https://one.googl…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "优秀的人类工程师，擅长做一些痛苦的取舍……",
+      "url": "https://www.v2ex.com/t/1258925#reply6",
+      "summary": "优秀的人类工程师，擅长做一些痛苦的取舍，尽可能用最少的代码量，达成最多的目的。代码复杂度是一笔需要精打细算的预算。 因为人脑的上下文实在太小了，只能放进一个短小精悍的 codebase，否则大脑就逐渐起雾模糊了。而 AI 没有这种顾虑，可以…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "你们为什么都用 claude 不用别的啊?",
+      "url": "https://www.v2ex.com/t/1258922#reply10",
+      "summary": "我都不敢问,显得我很弱..... 其实我搞桌面开发,codebuddy qoder opencode 搭配 ds glm 甚至 mimo,就完全够用了 好奇大哥们都在搞什么高深的开发..",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "之前 10 块开的 google jio 会员，现在有必要升级 99 刀一年的正式会员吗？",
+      "url": "https://www.v2ex.com/t/1258909#reply19",
+      "summary": "如题，现在 jio 的 pro 会员可以正常使用，还有必要参加 google 黑五活动转正式会员吗？",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "意外！reasonix 停更了！",
+      "url": "https://www.v2ex.com/t/1258852#reply22",
+      "summary": "https://github.com/esengine/DeepSeek-Reasonix/blob/studio/README.zh-CN.md Reasonix 已于 2026-11-12 起停止维护。 最后一个版本为 v2.61.0，…",
+      "source": "V2EX",
+      "sourceKey": "v2ex",
+      "date": "2026-11-22",
+      "category": "backend",
+      "type": "article"
+    },
+    {
+      "title": "Nature：糖尿病大鼠成功恢复正常血糖！用电刺激迷走神经控糖",
+      "url": "https://www.qbitai.com/2026/11/511904.html",
+      "summary": "用葡萄糖发电控制血糖。",
+      "source": "量子位",
+      "sourceKey": "qbitai",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "A社数学家用Claude又证明另一千禧难题，逼出一份写了12年的940页纯人类手稿",
+      "url": "https://www.qbitai.com/2026/11/511870.html",
+      "summary": "",
+      "source": "量子位",
+      "sourceKey": "qbitai",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "iPhone 18 大更新，明年春天见！但苹果的挑战才刚刚开始",
+      "url": "https://www.ifanr.com/1690832?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "更多的新品，也不能消除苹果的 AI 焦虑 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "Claude 的黎曼猜想证明获 Lean 官方认证，马斯克直呼惊人成就",
+      "url": "https://www.ifanr.com/1690820?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "AI 恐怖如斯 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "伟大的 GTA 6，「不好玩」的 GTA 6",
+      "url": "https://www.ifanr.com/1690801?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "我都遵纪守法了，还能叫 GTA 吗？ #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-22",
+      "category": "ai",
+      "type": "article"
+    },
+    {
       "title": "Gathin23/cleanyourtv",
       "url": "https://github.com/Gathin23/cleanyourtv",
       "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 60420,
+      "stars": 60428,
       "language": "Python",
       "license": ""
     },
@@ -2060,12 +3062,12 @@
       "title": "BaaRai/ARTEX",
       "url": "https://github.com/BaaRai/ARTEX",
       "summary": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 16554,
+      "stars": 16592,
       "language": "Go",
       "license": "AGPL-3.0"
     },
@@ -2073,27 +3075,14 @@
       "title": "libracoder/kiri",
       "url": "https://github.com/libracoder/kiri",
       "summary": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 12421,
+      "stars": 12428,
       "language": "Rust",
       "license": "Apache-2.0"
-    },
-    {
-      "title": "RoutineMiku/apkstart",
-      "url": "https://github.com/RoutineMiku/apkstart",
-      "summary": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
-      "source": "GitHub Trending",
-      "sourceKey": "github",
-      "date": "2026-11-22",
-      "category": "repo",
-      "type": "repo",
-      "stars": 9305,
-      "language": "JavaScript",
-      "license": "MIT"
     },
     {
       "title": "electron/electron",
@@ -2117,7 +3106,7 @@
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 100841,
+      "stars": 100842,
       "language": "TypeScript",
       "license": "Apache-2.0"
     },
@@ -2143,7 +3132,7 @@
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 75028,
+      "stars": 75037,
       "language": "TypeScript",
       "license": ""
     },
@@ -2195,7 +3184,7 @@
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 40591,
+      "stars": 40590,
       "language": "Java",
       "license": "MIT"
     },
@@ -2234,7 +3223,7 @@
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 96386,
+      "stars": 96387,
       "language": "Shell",
       "license": "MIT"
     },
@@ -2260,7 +3249,7 @@
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 66373,
+      "stars": 66374,
       "language": "PHP",
       "license": "Apache-2.0"
     },
@@ -2286,7 +3275,7 @@
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 159304,
+      "stars": 159306,
       "language": "Svelte",
       "license": ""
     },
@@ -2299,7 +3288,7 @@
       "date": "2026-11-22",
       "category": "repo",
       "type": "repo",
-      "stars": 151063,
+      "stars": 151065,
       "language": "Python",
       "license": "MIT"
     },
@@ -2310,7 +3299,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-21",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -2320,7 +3309,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-21",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -2350,7 +3339,7 @@
       "source": "cnBeta",
       "sourceKey": "cnbeta",
       "date": "2026-11-21",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -2400,7 +3389,7 @@
       "source": "cnBeta",
       "sourceKey": "cnbeta",
       "date": "2026-11-21",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -2484,6 +3473,36 @@
       "type": "article"
     },
     {
+      "title": "塞尔达传说40周年版Switch 2售罄 页面曾提示明年1月补货",
+      "url": "https://www.cnbeta.com.tw/articles/game/1587394.htm",
+      "summary": "塞尔达传说40周年版Nintendo Switch 2目前已在任天堂数字商店售罄。商品页面曾短暂提示“更多库存将于2027年1月到货”，但任天堂随后删除了具体月份，因此这一补货时间尚未得到最终确认。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-21",
+      "category": "news",
+      "type": "article"
+    },
+    {
+      "title": "《GTA6》Mandy在网络上火了 配音演员作出回应",
+      "url": "https://www.cnbeta.com.tw/articles/game/1587392.htm",
+      "summary": "《GTA6》正式发行后，玩家开始追查游戏角色背后的演员。饰演Mandy的Lexie Shoaibi因角色在玩家社区走红而受到关注，并对此作出回应。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "IPO融资额增至1195亿美元 Anthropic股价大跌超8%",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587390.htm",
+      "summary": "据彭博社报道，Anthropic股价周五大跌，回吐了上市首日部分涨幅。在该公司创下史上最大规模IPO纪录后，其股价走势开始考验投资者的信心。周五，Anthropic股价一度暴跌，几乎跌至83美元的IPO发行价，随后收窄跌幅，最终报收于每股8…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-21",
+      "category": "news",
+      "type": "article"
+    },
+    {
       "title": "地球 28 光年外发现一个三星系统",
       "url": "https://www.solidot.org/story?sid=85955",
       "summary": "天文学家在距离地球 28 光年处发现了一个三星系统，挑战了对恒星演化的现有观念。该系统被命名为 Welopōʻa，包括两颗白矮星和一颗红矮星。白矮星是类太阳恒星耗尽燃料后的高致密残骸，而红矮星则比太阳暗淡得多。天文学家是在红矮星周围寻找行星…",
@@ -2540,34 +3559,118 @@
       "source": "Solidot",
       "sourceKey": "solidot",
       "date": "2026-11-21",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
-      "title": "amosblomqvist/learnharness",
-      "url": "https://github.com/amosblomqvist/learnharness",
-      "summary": "Agent harness for learning difficult things.",
-      "source": "GitHub Trending",
-      "sourceKey": "github",
+      "title": "AI给乐队现场搓MV，这是黑客松还是音乐节啊",
+      "url": "https://www.qbitai.com/2026/11/511855.html",
+      "summary": "",
+      "source": "量子位",
+      "sourceKey": "qbitai",
       "date": "2026-11-21",
-      "category": "repo",
-      "type": "repo",
-      "stars": 11202,
-      "language": "TypeScript",
-      "license": "AGPL-3.0"
+      "category": "ai",
+      "type": "article"
     },
     {
-      "title": "shadcn-ui/ui",
-      "url": "https://github.com/shadcn-ui/ui",
-      "summary": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize…",
-      "source": "GitHub · React",
-      "sourceKey": "github",
+      "title": "中国计算，走出新的登峰之路",
+      "url": "https://www.qbitai.com/2026/11/511849.html",
+      "summary": "",
+      "source": "量子位",
+      "sourceKey": "qbitai",
       "date": "2026-11-21",
-      "category": "repo",
-      "type": "repo",
-      "stars": 128791,
-      "language": "TypeScript",
-      "license": "MIT"
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "8万条群聊消息做成考卷：腾讯元宝×KCL发布首个基于群聊构建的Agent记忆基准",
+      "url": "https://www.qbitai.com/2026/11/511841.html",
+      "summary": "",
+      "source": "量子位",
+      "sourceKey": "qbitai",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "全网疯传！Grok一姐教你如何月提交3000个PR",
+      "url": "https://www.qbitai.com/2026/11/511830.html",
+      "summary": "",
+      "source": "量子位",
+      "sourceKey": "qbitai",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "反超Gemini之后，Karpo新作再开源，浏览器Agent速效双赢",
+      "url": "https://www.qbitai.com/2026/11/511791.html",
+      "summary": "",
+      "source": "量子位",
+      "sourceKey": "qbitai",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍",
+      "url": "https://www.qbitai.com/2026/11/511779.html",
+      "summary": "还实现可变形物体操控全球首通",
+      "source": "量子位",
+      "sourceKey": "qbitai",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "刚刚，DeepSeek V1作者创业项目曝光：开源Agent",
+      "url": "https://www.qbitai.com/2026/11/511570.html",
+      "summary": "专为本地部署而生",
+      "source": "量子位",
+      "sourceKey": "qbitai",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图",
+      "url": "https://www.qbitai.com/2026/11/511757.html",
+      "summary": "还透露了不少训练背后的秘诀",
+      "source": "量子位",
+      "sourceKey": "qbitai",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "美股一夜崩盘，AI 泡沫真要破了？",
+      "url": "https://www.ifanr.com/1690789?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "AI 泡沫要破了吗 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "刚刚，曝黎曼猜想被证明，Claude 立大功",
+      "url": "https://www.ifanr.com/1690750?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "AI 恐怖如斯 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "早报｜曝Claude证明黎曼猜想，陶哲轩回应/余承东更正发布会表述：开车不能睡觉/五月天公布Vision Pro演唱会，Apple Store可预约体验",
+      "url": "https://www.ifanr.com/1690759?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "· 三星任命手机和存储业务新负责人 · 5499 元起，华为星芒发布首款阔直板手机 OSTA O1 Pro · ColorOS 17 上线跨品牌一碰传 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉…",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-21",
+      "category": "ai",
+      "type": "article"
     },
     {
       "title": "nvm-windows/nvm",
@@ -2589,7 +3692,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-20",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -2599,7 +3702,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-20",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -2669,7 +3772,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-20",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -2719,7 +3822,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-20",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -2739,17 +3842,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-20",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "Andy Clarke answers six questions about Standout Designs for the Web",
-      "url": "https://css-tricks.com/andy-clarke-standout-designs-for-the-web-interview/",
-      "summary": "Web designer, author, and Stuff & Nonsense founder Andy Clarke has released Standout Designs for the Web , a new e-book…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-20",
-      "category": "frontend",
+      "category": "ai",
       "type": "article"
     },
     {
@@ -2759,7 +3852,7 @@
       "source": "阮一峰",
       "sourceKey": "ruanyifeng",
       "date": "2026-11-20",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -2789,7 +3882,7 @@
       "source": "Solidot",
       "sourceKey": "solidot",
       "date": "2026-11-20",
-      "category": "news",
+      "category": "ai",
       "type": "article"
     },
     {
@@ -2839,7 +3932,7 @@
       "source": "Solidot",
       "sourceKey": "solidot",
       "date": "2026-11-20",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -2863,15 +3956,75 @@
       "type": "article"
     },
     {
+      "title": "理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
+      "url": "https://www.ifanr.com/1690596?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "最好的智驾芯片，是让你彻底忘掉它。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-20",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "首款鸿蒙 AI 手机发布：华为全新子品牌 OSTA 星芒有一个「增援未来计划」",
+      "url": "https://www.ifanr.com/1690642?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "在手机里打开了一个关于 AI 的「平行宇宙」 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-20",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "给 Gemini 道歉，请自觉排队",
+      "url": "https://www.ifanr.com/1690572?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "Gemini 4 真的越来越好用了。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-20",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "触屏只是它最不起眼的升级｜MacBook PROLED 评测",
+      "url": "https://www.ifanr.com/1690404?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "触屏不是她的全部 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-20",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "AI Agent 元年，苹果是最后一个入局的巨头",
+      "url": "https://www.ifanr.com/1690510?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "苹果急了 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-20",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "早报｜苹果招人打造「接管电脑」的AI智能体/史上最大IPO，Anthropic上市/华为官宣Mate 90 Air主打轻薄",
+      "url": "https://www.ifanr.com/1690473?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "· 旅行者 1 号距地球达一光日，信号单程需 24 小时 · 网易 UU 远程将上线付费会员，基础远控继续免费 · 腾讯大幅削减元宝投入，微信小微日活达 3000 万 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内…",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-20",
+      "category": "ai",
+      "type": "article"
+    },
+    {
       "title": "Minireel/HGhub",
       "url": "https://github.com/Minireel/HGhub",
       "summary": "Plug-in media player",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-20",
       "category": "repo",
       "type": "repo",
-      "stars": 11561,
+      "stars": 11566,
       "language": "Rust",
       "license": ""
     },
@@ -2884,7 +4037,7 @@
       "date": "2026-11-20",
       "category": "repo",
       "type": "repo",
-      "stars": 101560,
+      "stars": 101561,
       "language": "TypeScript",
       "license": "MIT"
     },
@@ -2910,7 +4063,7 @@
       "date": "2026-11-20",
       "category": "repo",
       "type": "repo",
-      "stars": 38624,
+      "stars": 38625,
       "language": "TypeScript",
       "license": ""
     },
@@ -2923,7 +4076,7 @@
       "date": "2026-11-20",
       "category": "repo",
       "type": "repo",
-      "stars": 66785,
+      "stars": 66786,
       "language": "TypeScript",
       "license": "MIT"
     },
@@ -2960,7 +4113,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-19",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -2970,7 +4123,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-19",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -3000,7 +4153,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-19",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -3010,7 +4163,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-19",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -3020,7 +4173,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-19",
-      "category": "news",
+      "category": "backend",
       "type": "article"
     },
     {
@@ -3030,7 +4183,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-19",
-      "category": "news",
+      "category": "ai",
       "type": "article"
     },
     {
@@ -3080,7 +4233,7 @@
       "source": "OSCHINA",
       "sourceKey": "oschina",
       "date": "2026-11-19",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -3124,35 +4277,55 @@
       "type": "article"
     },
     {
-      "title": "伏羲智能决策平台发布 v1.0.0：多智能体协作与决策运营闭环升级",
-      "url": "https://www.oschina.net/news/503652",
-      "summary": "摘要 开源项目伏羲智能决策平台发布 v1.0.0。该版本升级多智能体编排与知识检索，完善测试提案、历史回归、业务结果回传、偏差归因、漂移监测和优化评估流程，尝试把自然语言建模、确定性决策执行与发布后运营连接起来。平台采用 Rust 技术栈，…",
-      "source": "OSCHINA",
-      "sourceKey": "oschina",
+      "title": "比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
+      "url": "https://www.ifanr.com/1690430?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "推翻百年来的空间格局。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
       "date": "2026-11-19",
-      "category": "news",
+      "category": "ai",
       "type": "article"
     },
     {
-      "title": "scroll-state()",
-      "url": "https://css-tricks.com/almanac/functions/s/scroll-state/",
-      "summary": "The CSS scroll-state() query, surprisingly, has nothing to do with whether you’re doom-scrolling in a state of existenti…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
+      "title": "刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了",
+      "url": "https://www.ifanr.com/1690375?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "例如，为什么就你 A 社封号这么严格 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
       "date": "2026-11-19",
-      "category": "frontend",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "今年是阔屏的元年，阔屏是手机的今后十年",
+      "url": "https://www.ifanr.com/1690322?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "新中产、新比例、新潮流 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-19",
+      "category": "ai",
+      "type": "article"
+    },
+    {
+      "title": "刚拒绝黄仁勋回归，英伟达官宣全员加薪，热门接班人曝光",
+      "url": "https://www.ifanr.com/1690288?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "summary": "英伟达何去何从 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "source": "爱范儿",
+      "sourceKey": "ifanr",
+      "date": "2026-11-19",
+      "category": "ai",
       "type": "article"
     },
     {
       "title": "deepseek-ai/DeepInfer",
       "url": "https://github.com/deepseek-ai/DeepInfer",
       "summary": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-19",
       "category": "repo",
       "type": "repo",
-      "stars": 26327,
+      "stars": 26328,
       "language": "Python",
       "license": "Apache-2.0"
     },
@@ -3204,30 +4377,20 @@
       "date": "2026-11-19",
       "category": "repo",
       "type": "repo",
-      "stars": 124038,
+      "stars": 124039,
       "language": "Jupyter Notebook",
       "license": "MIT"
-    },
-    {
-      "title": "When Everything Has Changed, What Do We Do Next?",
-      "url": "https://css-tricks.com/when-everything-has-changed/",
-      "summary": "It’s been a… year, huh? I think the most common emoji I’ve seen this year is “Face with Bags Under Eyes” (🫩) and that s…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-18",
-      "category": "frontend",
-      "type": "article"
     },
     {
       "title": "Zagitta/gpu-unlock",
       "url": "https://github.com/Zagitta/gpu-unlock",
       "summary": "Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughp…",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-18",
       "category": "repo",
       "type": "repo",
-      "stars": 20814,
+      "stars": 20817,
       "language": "C",
       "license": ""
     },
@@ -3235,12 +4398,12 @@
       "title": "kingcharleslzy-ai/dsh-purge",
       "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
       "summary": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-18",
       "category": "repo",
       "type": "repo",
-      "stars": 11734,
+      "stars": 11748,
       "language": "JavaScript",
       "license": "MIT"
     },
@@ -3253,51 +4416,8 @@
       "date": "2026-11-18",
       "category": "repo",
       "type": "repo",
-      "stars": 97152,
+      "stars": 97153,
       "language": "JavaScript",
-      "license": "MIT"
-    },
-    {
-      "title": "Node.js 27.0.0-alpha.0.1.1 (Alpha)",
-      "url": "https://nodejs.org/en/blog/release/v27.0.0-alpha.0.1.1",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-11-17",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Meet AI 2027 Conference (Dec 1)",
-      "url": "https://smashingmagazine.com/2026/11/online-smashingconf-ai-2027/",
-      "summary": "Roll up your sleeves! Meet shiny new [AI 2027 Conference](https://smashingconf.com/ai-2027-conference), a friendly onlin…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-11-17",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "AI Sped Up The Build: How Can Accessibility Testing Keep Up?",
-      "url": "https://smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/",
-      "summary": "AI has sped up how teams design and build, but quality assurance (QA) testing hasn’t kept pace, and the web may be getti…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-11-17",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "janestreet/agent_skills",
-      "url": "https://github.com/janestreet/agent_skills",
-      "summary": "Agent skills",
-      "source": "GitHub Trending",
-      "sourceKey": "github",
-      "date": "2026-11-17",
-      "category": "repo",
-      "type": "repo",
-      "stars": 10822,
-      "language": "",
       "license": "MIT"
     },
     {
@@ -3309,7 +4429,7 @@
       "date": "2026-11-17",
       "category": "repo",
       "type": "repo",
-      "stars": 129608,
+      "stars": 129609,
       "language": "JavaScript",
       "license": "CC-BY-4.0"
     },
@@ -3327,38 +4447,15 @@
       "license": "MIT"
     },
     {
-      "title": "Staggering Scroll-Driven Animations with animation-range-start",
-      "url": "https://css-tricks.com/staggering-scroll-driven-animations-with-animation-range-start/",
-      "summary": "Imagine a CSS karaoke machine that displays a ball bouncing on text that incrementally highlights, based on progress thr…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-16",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "practical-tutorials/project-based-learning",
-      "url": "https://github.com/practical-tutorials/project-based-learning",
-      "summary": "Curated list of project-based tutorials",
-      "source": "GitHub · JavaScript",
-      "sourceKey": "github",
-      "date": "2026-11-16",
-      "category": "repo",
-      "type": "repo",
-      "stars": 290300,
-      "language": "Python",
-      "license": "MIT"
-    },
-    {
       "title": "heydamir/unslop",
       "url": "https://github.com/heydamir/unslop",
       "summary": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-15",
       "category": "repo",
       "type": "repo",
-      "stars": 20412,
+      "stars": 20433,
       "language": "JavaScript",
       "license": "CC-BY-4.0"
     },
@@ -3371,19 +4468,9 @@
       "date": "2026-11-14",
       "category": "repo",
       "type": "repo",
-      "stars": 31608,
+      "stars": 31609,
       "language": "JavaScript",
       "license": "MIT"
-    },
-    {
-      "title": "10 Big Ol’ 2027 Black Friday Deals",
-      "url": "https://css-tricks.com/2027-front-end-black-friday-deals/",
-      "summary": "A big ol' roundup of Black Friday deals on front-end courses from the best independent publishers and educators in the b…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-13",
-      "category": "frontend",
-      "type": "article"
     },
     {
       "title": "科技爱好者周刊（第 419 期）：机房来了，写字楼走了",
@@ -3392,127 +4479,7 @@
       "source": "阮一峰",
       "sourceKey": "ruanyifeng",
       "date": "2026-11-13",
-      "category": "news",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 27.0.0-alpha.0.1.0 (Alpha)",
-      "url": "https://nodejs.org/en/blog/release/v27.0.0-alpha.0.1.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-11-12",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Beyond 12 Columns: Designing Layouts With Personality",
-      "url": "https://css-tricks.com/beyond-12-columns/",
-      "summary": "Too many websites look alike. They use familiar layouts, repeat the same patterns, and often leave little impression onc…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-12",
       "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Should You Actually Add AI To That? A Four-Question Audit For Product Teams",
-      "url": "https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/",
-      "summary": "An AI feature can save users time on a task, only for them to spend it checking the results. This practical audit helps…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-11-12",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.13.1 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v26.13.1",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-11-11",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 24.22.3 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v24.22.3",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-11-11",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 22.23.5 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v22.23.5",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-11-11",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "CSS Optimization: Is Using Declarations Just Once (UDJO) Still Effective Today?",
-      "url": "https://css-tricks.com/css-using-declarations-just-once/",
-      "summary": "Is the technique inspired by the DRY principle by identifying and reducing (if not eliminating) CSS declaration repetiti…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-10",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "CSS-Tricks, Version 20",
-      "url": "https://css-tricks.com/css-tricks-version-20/",
-      "summary": "Things look a little different around here? I hope so because we just pushed a site redesign! Here's everything new with…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-09",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "RSS Club: CSS-Tricks Redesign Preview",
-      "url": "https://css-tricks.com/css-tricks-redesign-preview/",
-      "summary": "Hey you wonderful RSS subscribers! We just soft-pushed a site redesign and wanted to give ya'll the first heads-up. A fu…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-06",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "A New Community For In-House UX People",
-      "url": "https://smashingmagazine.com/2026/11/ux-insiders-community-in-house-ux-people/",
-      "summary": "We’ve been working on something new! We’ve teamed up for a **new small community** for people doing UX-inside organizati…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-11-06",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Taming Typography: Building a Modern CSS Reset",
-      "url": "https://css-tricks.com/taming-typography-modern-css-reset/",
-      "summary": "Stu created tidy-typography.css: a style reset for taming typography with modern CSS features for everything from fluid…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-05",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Making Immersive LLM Chat Experiences More Accessible",
-      "url": "https://smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/",
-      "summary": "As LLM chat patterns become more widespread, making them accessible is essential to ensuring everyone can access the inf…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-11-05",
-      "category": "ai",
       "type": "article"
     },
     {
@@ -3522,7 +4489,7 @@
       "source": "阮一峰",
       "sourceKey": "ruanyifeng",
       "date": "2026-11-05",
-      "category": "news",
+      "category": "frontend",
       "type": "article"
     },
     {
@@ -3539,45 +4506,15 @@
       "license": "MIT"
     },
     {
-      "title": "Smashing AI Conference",
-      "url": "https://css-tricks.com/smashing-ai-conference/",
-      "summary": "The AI 2027 Conference is a live online day for designers and engineers on where AI stands today, what to expect in 2027…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-04",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Re-Implementing :nth-child() With Modern CSS",
-      "url": "https://css-tricks.com/re-implementing-nth-child-with-modern-css/",
-      "summary": "Combining :nth-child with style queries and sibling-index() to conditionally select child elements. Re-Implementing :nth…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-03",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Modern CSS Might Make Your Front-End More Complex",
-      "url": "https://smashingmagazine.com/2026/11/modern-css-might-make-your-front-end-more-complex/",
-      "summary": "Replacing JavaScript with a modern CSS feature can simplify a piece of code while making the wider application harder to…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-11-03",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
       "title": "deepseek-ai/dsh-superagent-prototype",
       "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
       "summary": "Towards a More Autonomous Agent System",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-03",
       "category": "repo",
       "type": "repo",
-      "stars": 24277,
+      "stars": 24284,
       "language": "TypeScript",
       "license": "MIT"
     },
@@ -3590,30 +4527,20 @@
       "date": "2026-11-03",
       "category": "repo",
       "type": "repo",
-      "stars": 324371,
+      "stars": 324401,
       "language": "Shell",
       "license": "MIT"
     },
     {
-      "title": "What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()",
-      "url": "https://css-tricks.com/whats-important-20/",
-      "summary": "This is the final issue of What’s !important on CSS-Tricks.com. The good news is that it’s coming back in an expanded fo…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-11-02",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
       "title": "google-research/harness2",
       "url": "https://github.com/google-research/harness2",
-      "summary": "A Python project on GitHub with 24,836 stars.",
-      "source": "GitHub Trending",
+      "summary": "A Python project on GitHub with 24,840 stars.",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-11-02",
       "category": "repo",
       "type": "repo",
-      "stars": 24836,
+      "stars": 24840,
       "language": "Python",
       "license": "Apache-2.0"
     },
@@ -3626,19 +4553,9 @@
       "date": "2026-11-02",
       "category": "repo",
       "type": "repo",
-      "stars": 74994,
+      "stars": 74996,
       "language": "JavaScript",
       "license": "MIT"
-    },
-    {
-      "title": "A Spark Of Color In November’s Gray (2026 Wallpapers Edition)",
-      "url": "https://smashingmagazine.com/2026/10/desktop-wallpaper-calendars-november-2026/",
-      "summary": "Let’s kick of November with a new collection of desktop wallpapers! Designed by creatives from across the globe, the wal…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-10-31",
-      "category": "frontend",
-      "type": "article"
     },
     {
       "title": "getify/You-Dont-Know-JS",
@@ -3669,65 +4586,15 @@
     {
       "title": "openai/math",
       "url": "https://github.com/openai/math",
-      "summary": "A Lean project on GitHub with 17,675 stars.",
-      "source": "GitHub Trending",
+      "summary": "A Lean project on GitHub with 17,676 stars.",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-10-30",
       "category": "repo",
       "type": "repo",
-      "stars": 17675,
+      "stars": 17676,
       "language": "Lean",
       "license": "Apache-2.0"
-    },
-    {
-      "title": "Node.js 27.0.0-alpha.0.0.0 (Alpha)",
-      "url": "https://nodejs.org/en/blog/release/v27.0.0-alpha.0.0.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-29",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "The Frankenstein Table",
-      "url": "https://css-tricks.com/the-frankenstein-table/",
-      "summary": "A super scary way to go about tables using other layout techniques, like CSS Grid. The Frankenstein Table originally han…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-10-29",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 24.22.2 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v24.22.2",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-28",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.13.0 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v26.13.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-28",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "What’s !important #19: CSS Refraction Effects, Scroll State Queries, @custom-media, and Mo…",
-      "url": "https://css-tricks.com/whats-important-19/",
-      "summary": "We’re back! Don't worry, this isn’t a trick (despite what our name suggests!). However, due to the hiatus, we're also a…",
-      "source": "CSS-Tricks",
-      "sourceKey": "css",
-      "date": "2026-10-27",
-      "category": "frontend",
-      "type": "article"
     },
     {
       "title": "Snailclimb/JavaGuide",
@@ -3738,49 +4605,9 @@
       "date": "2026-10-25",
       "category": "repo",
       "type": "repo",
-      "stars": 159645,
+      "stars": 159646,
       "language": "JavaScript",
       "license": "Apache-2.0"
-    },
-    {
-      "title": "Accordion Icons: Which Work Best?",
-      "url": "https://smashingmagazine.com/2026/10/accordion-icons-which-work-best/",
-      "summary": "A closer look at accordion icons, why split menus are harmful, and why it’s better not to have icons and text labels lin…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-10-23",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.12.1 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.12.1",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-21",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 24.22.1 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v24.22.1",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-21",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 22.23.4 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v22.23.4",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-21",
-      "category": "backend",
-      "type": "article"
     },
     {
       "title": "leonardomso/33-js-concepts",
@@ -3794,16 +4621,6 @@
       "stars": 66534,
       "language": "JavaScript",
       "license": "MIT"
-    },
-    {
-      "title": "Embracing Playful Imperfection With The CSS `random()` Function",
-      "url": "https://smashingmagazine.com/2026/10/embracing-playful-imperfection-css-random-function/",
-      "summary": "Design systems thrive on consistency, so where does randomness fit in? Through playful demos of organic typography, boun…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-10-20",
-      "category": "frontend",
-      "type": "article"
     },
     {
       "title": "ChatGPTNextWeb/NextChat",
@@ -3822,44 +4639,27 @@
       "title": "wheresryan22/anatomy",
       "url": "https://github.com/wheresryan22/anatomy",
       "summary": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Ge…",
-      "source": "GitHub Trending",
+      "source": "GitHub 热门",
       "sourceKey": "github",
       "date": "2026-10-18",
       "category": "repo",
       "type": "repo",
-      "stars": 28768,
+      "stars": 28771,
       "language": "JavaScript",
       "license": "MIT"
     },
     {
-      "title": "Is Your Organization Messing Up AI Adoption?",
-      "url": "https://smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption/",
-      "summary": "What can digital transformation teach us about AI adoption? Paul Boag revisits his book Digital Adaptation to show how l…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-10-16",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 24.22.0 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v24.22.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-14",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.12.0 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.12.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-14",
-      "category": "backend",
-      "type": "article"
+      "title": "yihui-dev/awesome-opus5-5-videos",
+      "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "summary": "A growing collection of viral videos made with Claude Opus 5.5 and the prompts behind them. Watch each original next to…",
+      "source": "GitHub 热门",
+      "sourceKey": "github",
+      "date": "2026-10-13",
+      "category": "repo",
+      "type": "repo",
+      "stars": 16248,
+      "language": "",
+      "license": "MIT"
     },
     {
       "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
@@ -3888,149 +4688,6 @@
       "license": "MIT"
     },
     {
-      "title": "Node.js 26.11.1 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.11.1",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-07",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.11.0 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.11.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-10-07",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "A Practical Guide To Naming Things",
-      "url": "https://smashingmagazine.com/2026/10/how-name-things/",
-      "summary": "A practical guide to naming UI components, with useful resources, naming conventions, and structures. You’ll find more […",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-10-06",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Jakeschincariol/replica-skill",
-      "url": "https://github.com/Jakeschincariol/replica-skill",
-      "summary": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users…",
-      "source": "GitHub Trending",
-      "sourceKey": "github",
-      "date": "2026-10-03",
-      "category": "repo",
-      "type": "repo",
-      "stars": 10360,
-      "language": "Python",
-      "license": "MIT"
-    },
-    {
-      "title": "Under Autumn’s Spell (October 2026 Wallpapers Edition)",
-      "url": "https://smashingmagazine.com/2026/09/desktop-wallpaper-calendars-october-2026/",
-      "summary": "October is just around the corner, which means it’s time for some new desktop wallpapers! Designed by the community for…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-09-30",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 22.23.3 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v22.23.3",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-09-23",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.10.0 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.10.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-09-22",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.9.0 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.9.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-09-16",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Stop Treating CSS Container Queries Like Traditional Media Queries",
-      "url": "https://smashingmagazine.com/2026/09/stop-treating-css-container-queries-traditional-media-queries/",
-      "summary": "Despite broad browser support, container queries remain surprisingly underused and frequently misunderstood. Let’s look…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-09-16",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Building A UX ROI Case That Survives The Boardroom",
-      "url": "https://smashingmagazine.com/2026/09/building-ux-roi-case-survives-boardroom/",
-      "summary": "Strong UX ideas do not secure investment on their own. Through a worked example, Alex Williams breaks down how to define…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-09-11",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React 19.3",
-      "url": "https://react.dev/blog/2026/09/09/react-19-3",
-      "summary": "React 19.3 adds new features like View Transitions, Fragment Refs, browser(), Trusted Types, and more.",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2026-09-09",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.8.2 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.8.2",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-09-09",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 24.21.0 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v24.21.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-09-09",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "The Death Of The Button: Why The Best Interface Is No Interface",
-      "url": "https://smashingmagazine.com/2026/09/death-button-why-best-interface-is-no-interface/",
-      "summary": "The web is evolving beyond menus, forms, and endless clicks toward experiences shaped around human intent. For UX design…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-09-09",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
       "title": "enaqx/awesome-react",
       "url": "https://github.com/enaqx/awesome-react",
       "summary": "A collection of awesome things regarding React ecosystem",
@@ -4057,934 +4714,17 @@
       "license": "CC0-1.0"
     },
     {
-      "title": "The Many Faces Of September (2026 Wallpapers Edition)",
-      "url": "https://smashingmagazine.com/2026/08/desktop-wallpaper-calendars-september-2026/",
-      "summary": "Could there be a better way to welcome the new month than with a new collection of desktop wallpapers? Whether you’re ho…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-08-31",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.8.1 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.8.1",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-08-26",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.8.0 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.8.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-08-26",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 24.20.0 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v24.20.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-08-26",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Rethinking Data Visualisation: A UX Approach To Dashboards That Actually Drives Decisions",
-      "url": "https://smashingmagazine.com/2026/08/rethinking-data-visualisation-ux-approach-dashboards/",
-      "summary": "Data visualisation sits at the intersection of two disciplines that rarely talk to each other: data and design. Meriem B…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-08-26",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Why Your Website Should Never Stop Changing",
-      "url": "https://smashingmagazine.com/2026/08/why-website-should-never-stop-changing/",
-      "summary": "Every website peaks on launch day and slowly drifts from there, not because it breaks, but because nobody has time to ke…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-08-25",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Timing Charts: A Blueprint For SMIL Animations",
-      "url": "https://smashingmagazine.com/2026/08/timing-charts-blueprint-smil-animations/",
-      "summary": "Discover SMIL, the often-overlooked way to animate SVGs that works inside ` ` tags and can fully animate everything in a…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-08-20",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "New EU Guidelines For AI Labelling",
-      "url": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/",
-      "summary": "New EU guidelines, why AI sparkles aren’t enough, when AI labels are required, and what the rules mean for AI-powered fe…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-08-13",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Building Tactile UX: Honoring Intentional Design With Lottie",
-      "url": "https://smashingmagazine.com/2026/08/building-tactile-ux-honoring-intentional-design-lottie/",
-      "summary": "When tasked with building a highly interactive, tactile web experience, the architecture must serve the art direction. I…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-08-11",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "How Baseline Can Help You Ship Less JavaScript",
-      "url": "https://smashingmagazine.com/2026/08/how-baseline-can-help-ship-less-javascript/",
-      "summary": "The gap between “you need a library for this” and “the browser does this” keeps closing. A practical guide to auditing y…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-08-07",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.7.0 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.7.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-08-05",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.6.0 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.6.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-08-03",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 24.19.0 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v24.19.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-08-03",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Small Joys And Big Adventures (August 2026 Wallpapers Edition)",
-      "url": "https://smashingmagazine.com/2026/07/desktop-wallpaper-calendars-august-2026/",
-      "summary": "Whether you’re enjoying some well-earned time off this August or are jumping headfirst into a new project, how about som…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-07-31",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 24.18.1 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v24.18.1",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-07-29",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.5.1 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.5.1",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-07-29",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 22.23.2 (LTS)",
-      "url": "https://nodejs.org/en/blog/release/v22.23.2",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-07-29",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "The Bull And Bear Case For Digital Design In The Age Of AI",
-      "url": "https://smashingmagazine.com/2026/07/bull-and-bear-case-digital-design-age-ai/",
-      "summary": "As AI reshapes product design, it could give designers greater autonomy or expose the gaps that autonomy makes harder to…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-07-29",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Thinking Outside The Box: Digital Design In The AI Era",
-      "url": "https://smashingmagazine.com/2026/07/digital-design-ai-era/",
-      "summary": "Many of the AI tools we interact with take the form of text boxes. But what if there was a different way to interact wit…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-07-28",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Weaponizing And Defending The React Flight Protocol: Deserialization Sinks In RSCs",
-      "url": "https://smashingmagazine.com/2026/07/weaponizing-defending-react-flight-protocol/",
-      "summary": "While React Server Components rely on the custom Flight protocol to stream interactive UIs, this same mechanism introduc…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-07-21",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "When It Makes Sense To “Block” The Main Thread",
-      "url": "https://smashingmagazine.com/2026/07/when-makes-sense-block-main-thread/",
-      "summary": "The common rule of thumb is to never “block” the browser’s main thread when running JavaScript tasks. But is this a hard…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-07-17",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "No, People Don’t Want More AI In Their Life",
-      "url": "https://smashingmagazine.com/2026/07/people-dont-want-more-ai/",
-      "summary": "Many companies assume everyone craves new AI features. But the reality is that most people don't want more AI &mdash; at…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-07-15",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "From Kickoff To First Concept: How To Turn Brand Strategy Into Visual Direction",
-      "url": "https://smashingmagazine.com/2026/07/how-turn-brand-strategy-into-visual-direction/",
-      "summary": "The strongest visual concepts don’t start in Figma. They start with the right questions. Explore the pre-concept phase o…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-07-10",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Designing For Distressed Users: Why Mental Health Apps Shouldn’t Follow Every UI Fashion",
-      "url": "https://smashingmagazine.com/2026/07/designing-distressed-users-mental-health-apps-ui/",
-      "summary": "Many UI trends are designed to capture attention and signal innovation, but those goals often conflict with the needs of…",
-      "source": "Smashing",
-      "sourceKey": "smashing",
-      "date": "2026-07-09",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Node.js 26.5.0 (Current)",
-      "url": "https://nodejs.org/en/blog/release/v26.5.0",
-      "summary": "",
-      "source": "Node.js",
-      "sourceKey": "nodejs",
-      "date": "2026-07-08",
-      "category": "backend",
-      "type": "article"
-    },
-    {
-      "title": "The React Foundation: A New Home for React Hosted by the Linux Foundation",
-      "url": "https://react.dev/blog/2026/02/24/the-react-foundation",
-      "summary": "The React Foundation has officially launched, hosted by the Linux Foundation.",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2026-02-24",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Denial of Service and Source Code Exposure in React Server Components",
-      "url": "https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components",
-      "summary": "Security researchers have found and disclosed two additional vulnerabilities in React Server Components while attempting…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2025-12-11",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Critical Security Vulnerability in React Server Components",
-      "url": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components",
-      "summary": "There is an unauthenticated remote code execution vulnerability in React Server Components. A fix has been published in…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2025-12-03",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React Conf 2025 Recap",
-      "url": "https://react.dev/blog/2025/10/16/react-conf-2025-recap",
-      "summary": "Last week we hosted React Conf 2025, in this post, we summarize the talks and announcements from the event...",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2025-10-16",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React Compiler v1.0",
-      "url": "https://react.dev/blog/2025/10/07/react-compiler-1",
-      "summary": "We are releasing the compiler's first stable release today.",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2025-10-07",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Introducing the React Foundation",
-      "url": "https://react.dev/blog/2025/10/07/introducing-the-react-foundation",
-      "summary": "Today, we're announcing our plans to create the React Foundation a new technical governance structure",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2025-10-07",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React 19.2",
-      "url": "https://react.dev/blog/2025/10/01/react-19-2",
-      "summary": "React 19.2 adds new features like Activity, React Performance Tracks, useEffectEvent, and more.",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2025-10-01",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React Labs: View Transitions, Activity, and more",
-      "url": "https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more",
-      "summary": "In React Labs posts, we write about projects in active research and development. In this post, we're sharing two new exp…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2025-04-23",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Sunsetting Create React App",
-      "url": "https://react.dev/blog/2025/02/14/sunsetting-create-react-app",
-      "summary": "Today, we’re deprecating Create React App for new apps, and encouraging existing apps to migrate to a framework, or to m…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2025-02-14",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React v19",
-      "url": "https://react.dev/blog/2024/12/05/react-19",
-      "summary": "React 19 is now available on npm! In this post, we'll give an overview of the new features in React 19, and how you can…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2024-12-05",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "React Compiler Beta Release",
-      "url": "https://react.dev/blog/2024/10/21/react-compiler-beta-release",
-      "summary": "At React Conf 2024, we announced the experimental release of React Compiler, a build-time tool that optimizes your React…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2024-10-21",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Announcing Vue 3.5",
-      "url": "https://blog.vuejs.org/posts/vue-3-5",
-      "summary": "Today we are excited to announce the release of Vue 3.5 \"Tengen Toppa Gurren Lagann\"! This minor release contains no bre…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2024-09-01",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "React Conf 2024 Recap",
-      "url": "https://react.dev/blog/2024/05/22/react-conf-2024-recap",
-      "summary": "Last week we hosted React Conf 2024, a two-day conference in Henderson, Nevada where 700+ attendees gathered in-person t…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2024-05-22",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React 19 Upgrade Guide",
-      "url": "https://react.dev/blog/2024/04/25/react-19-upgrade-guide",
-      "summary": "The improvements added to React 19 require some breaking changes, but we've worked to make the upgrade as smooth as poss…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2024-04-25",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Announcing VitePress 1.0",
-      "url": "https://blog.vuejs.org/posts/vitepress-1.0",
-      "summary": "Today we are happy to announce the (long overdue) 1.0 release of VitePress ! VitePress is a Static Site Generator (SSG)…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2024-03-21",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React Labs: What We've Been Working On – February 2024",
-      "url": "https://react.dev/blog/2024/02/15/react-labs-what-we-have-been-working-on-february-2024",
-      "summary": "In React Labs posts, we write about projects in active research and development. We’ve made significant progress since o…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2024-02-15",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Announcing Vue 3.4",
-      "url": "https://blog.vuejs.org/posts/vue-3-4",
-      "summary": "Today we're excited to announce the release of Vue 3.4 \"🏀 Slam Dunk\"! This release includes some substantial internal i…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2023-12-28",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Vue 2 is Approaching End Of Life",
-      "url": "https://blog.vuejs.org/posts/vue-2-eol",
-      "summary": "With 2024 almost upon us, we would like to take this opportunity to remind the Vue community that Vue 2 will reach End o…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2023-12-15",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Announcing Vue 3.3",
-      "url": "https://blog.vuejs.org/posts/vue-3-3",
-      "summary": "Today we're excited to announce the release of Vue 3.3 \"Rurouni Kenshin\"! This release is focused on developer experienc…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2023-05-11",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React Canaries: Enabling Incremental Feature Rollout Outside Meta",
-      "url": "https://react.dev/blog/2023/05/03/react-canaries",
-      "summary": "We'd like to offer the React community an option to adopt individual new features as soon as their design is close to fi…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2023-05-03",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React Labs: What We've Been Working On – March 2023",
-      "url": "https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023",
-      "summary": "In React Labs posts, we write about projects in active research and development. We've made significant progress on them…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2023-03-22",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Introducing react.dev",
-      "url": "https://react.dev/blog/2023/03/16/introducing-react-dev",
-      "summary": "Today we are thrilled to launch react.dev, the new home for React and its documentation. In this post, we would like to…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2023-03-16",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Volar: a New Beginning",
-      "url": "https://blog.vuejs.org/posts/volar-a-new-beginning",
-      "summary": "Most users of Volar know it as the official Vue.js VSCode extension. It started as a personal project when the official…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2023-02-08",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "2022 Year In Review",
-      "url": "https://blog.vuejs.org/posts/2022-year-in-review",
-      "summary": "Happy new year, Vue community! With 2023 upon us, we would like to take this opportunity to recap what happened in 2022,…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2023-01-01",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "On Escape's Vue 2 to Svelte Migration",
-      "url": "https://blog.vuejs.org/posts/on-migration",
-      "summary": "Recently, folks at Escape shared a blog post talking about their migration from Vue 2 to Svelte, and compared Vue 3 with…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2022-12-05",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Volar 1.0 \"Nika\" Released!",
-      "url": "https://blog.vuejs.org/posts/volar-1.0",
-      "summary": "We are happy to announce that we have released v1.0 of Volar, the official IDE/TS tooling support for Vue! 🎉 This major…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2022-10-10",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Vue 2.7 \"Naruto\" Released",
-      "url": "https://blog.vuejs.org/posts/vue-2-7-naruto",
-      "summary": "Today we are happy to announce that Vue 2.7 \"Naruto\" has been released!",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2022-07-01",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Vue 2.7 is Now in Beta",
-      "url": "https://blog.vuejs.org/posts/vue-2-7-beta",
-      "summary": "We are happy to announce that Vue 2.7 is now in beta.",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2022-06-20",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React Labs: What We've Been Working On – June 2022",
-      "url": "https://react.dev/blog/2022/06/15/react-labs-what-we-have-been-working-on-june-2022",
-      "summary": "React 18 was years in the making, and with it brought valuable lessons for the React team. Its release was the result of…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2022-06-15",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React v18.0",
-      "url": "https://react.dev/blog/2022/03/29/react-v18",
-      "summary": "React 18 is now available on npm! In our last post, we shared step-by-step instructions for upgrading your app to React…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2022-03-08",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "How to Upgrade to React 18",
-      "url": "https://react.dev/blog/2022/03/08/react-18-upgrade-guide",
-      "summary": "As we shared in the release post, React 18 introduces features powered by our new concurrent renderer, with a gradual ad…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2022-03-08",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Vue 3 as the New Default",
-      "url": "https://blog.vuejs.org/posts/vue-3-as-the-new-default",
-      "summary": "TL;DR: Vue 3 is now the new default version as of Monday, February 7, 2022 ! Make sure to read the Potential Required Ac…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2022-01-20",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "React Conf 2021 Recap",
-      "url": "https://react.dev/blog/2021/12/17/react-conf-2021-recap",
-      "summary": "Last week we hosted our 6th React Conf. In previous years, we've used the React Conf stage to deliver industry changing…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2021-12-17",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Vue 3.2 Released!",
-      "url": "https://blog.vuejs.org/posts/vue-3-2",
-      "summary": "We are excited to announce the release of Vue.js 3.2 \"Quintessential Quintuplets\"! This release includes many significan…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2021-08-05",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "The Plan for React 18",
-      "url": "https://react.dev/blog/2021/06/08/the-plan-for-react-18",
-      "summary": "The React team is excited to share a few updates. We’ve started work on the React 18 release, which will be our next maj…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2021-06-08",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Reflections for 2020-2021",
-      "url": "https://blog.vuejs.org/posts/hello-2021",
-      "summary": "With a new year upon us, we also have a new blog! In this post, we would like to take a look back at some of the highlig…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2021-01-11",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Introducing Zero-Bundle-Size React Server Components",
-      "url": "https://react.dev/blog/2020/12/21/data-fetching-with-react-server-components",
-      "summary": "2020 has been a long year. As it comes to an end we wanted to share a special Holiday Update on our research into zero-b…",
-      "source": "React",
-      "sourceKey": "react",
-      "date": "2020-12-21",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Announcing Vue 3.0 \"One Piece\"",
-      "url": "https://blog.vuejs.org/posts/vue-3-one-piece",
-      "summary": "Today we are proud to announce the official release of Vue.js 3.0 \"One Piece\". This new major version of the framework p…",
-      "source": "Vue",
-      "sourceKey": "vue",
-      "date": "2020-09-18",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Auto Agent Protocol (MCP, A2A, PAP are under the hood)",
-      "url": "https://github.com/auto-agent-protocol/auto-agent-protocol",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "From Singletons to Dependency Injection in React",
-      "url": "https://reactdevelopment.substack.com/p/from-singletons-to-dependency-injection",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "JavaScript Geometry Orthogonalize library",
-      "url": "https://github.com/stefanocudini/orthogonalize-js",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Sometimes three boring statements beats one clever expression",
-      "url": "https://allthingssmitty.com/2026/11/16/sometimes-three-boring-statements-beat-one-clever-expression/",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Xec - TypeScript automation for local, SSH, Docker, and Kubernetes workflows (v0.13)",
-      "url": "https://xec.sh/",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Dual JWT Authentication: Security, Redis, and Trade-Offs",
-      "url": "https://www.jstools.space/blog/dual-jwt-authentication/",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "pathmask matches relative paths against patterns in the syntax of .gitignore",
-      "url": "https://github.com/webdiscus/pathmask",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Announcing Parcel 3 Alpha",
-      "url": "https://v3.parceljs.org/blog/v3-alpha/?ck_subscriber_id=2125261785",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Goyangi: watch what Claude Code is doing, live: every step, tool call, subagent, token and…",
-      "url": "https://github.com/netil/goyangi",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "We Migrated 10,144 Tests from Jest to Vitest in 3 Weeks: The Honest, AI-Assisted Truth",
-      "url": "https://dev.to/subito/we-migrated-10144-tests-from-jest-to-vitest-in-3-weeks-the-honest-ai-assisted-truth-527",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "Repo-Atlas - Any GitHub user’s work, mapped and clustered, with stale favorites flagged.",
-      "url": "https://github.com/evoluteur/repo-atlas",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "EchoJS Meta: I'm Going Home",
-      "url": "https://www.echojs.com/news/43449",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "SVAR Gantt v2.8 for React, Svelte, Vue: upgraded scheduling engine & live updates",
-      "url": "https://svar.dev/blog/svar-gantt-2-8-released/",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Vovk.ts – Turn Next.js route handlers into MCP tools and typed clients",
-      "url": "https://vovk.dev",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Full port of CossUI components to Svelte",
-      "url": "https://cossui-svelte.com/",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "kafka-harbor: the Kafka layer every Node.js team rebuilds by hand, done once",
-      "url": "https://dev.to/pinceladasdaweb/kafka-harbor-the-kafka-layer-every-nodejs-team-rebuilds-by-hand-done-once-35id",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Croft: Typed data pipeline – in TypeScript and DuckDB",
-      "url": "https://croft.zabaca.com/",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Mutative v2 - better immutability and faster immutable updates",
-      "url": "https://github.com/unadlib/mutative",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "theAuth: open-source TypeScript auth for AI agents, with an MCP OAuth 2.1 server",
-      "url": "https://github.com/glincker/theauth",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "ai",
-      "type": "article"
-    },
-    {
-      "title": "React Forms and React.memo: Understanding What Actually Re-Renders",
-      "url": "https://reactdevelopment.substack.com/p/react-forms-and-reactmemo-understanding",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Type-safe OpenAPI requests that follow your document exactly",
-      "url": "https://github.com/jskits/openapi-chain",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Vite+ 1.0 is out",
-      "url": "https://voidzero.dev/posts/announcing-vite-plus-1-0",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Node.JS Built-Ins That Replaced NPM Packages",
-      "url": "https://flaviocopes.com/node-builtins/",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Tibetan-Singing-Bowls: Strike or rub a set of virtual Tibetan singing bowls - synthesized…",
-      "url": "https://github.com/evoluteur/tibetan-singing-bowls",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Draw a mandala with mirrored symmetry and export it as PNG or SVG.",
-      "url": "https://github.com/evoluteur/mandala-maker",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Supapower - A sync engine that keeps a local PGlite database in sync with Supabase, inspir…",
-      "url": "https://github.com/aboviq/supapower",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "billboard.js 4.1.0: Live resizing, configurable subchart, React subpath & CSP-safe worker",
-      "url": "https://netil.medium.com/billboard-js-4-1-0-live-resizing-configurable-subchart-react-subpath-csp-safe-worker-e1a6fd0ece88",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "From 1,256ms to 96ms: Fixing INP in a Massive React Dropdown",
-      "url": "https://dev.to/subito/from-1256ms-to-96ms-fixing-inp-in-a-massive-react-dropdown-16l7",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "structured-filter-react: React component for structured queries",
-      "url": "https://github.com/evoluteur/structured-filter-react",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
-    },
-    {
-      "title": "Cymatics: Play a frequency and watch the sand settle into its Chladni figure, computed fro…",
-      "url": "https://github.com/evoluteur/cymatics",
-      "summary": "",
-      "source": "EchoJS",
-      "sourceKey": "echojs",
-      "date": "",
-      "category": "frontend",
-      "type": "article"
+      "title": "Asabeneh/30-Days-Of-JavaScript",
+      "url": "https://github.com/Asabeneh/30-Days-Of-JavaScript",
+      "summary": "30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript programming language in 30 days.…",
+      "source": "GitHub · Vue",
+      "sourceKey": "github",
+      "date": "2026-08-27",
+      "category": "repo",
+      "type": "repo",
+      "stars": 47011,
+      "language": "JavaScript",
+      "license": ""
     }
   ]
 }

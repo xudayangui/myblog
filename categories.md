@@ -22,7 +22,7 @@ const groups = computed(() => {
 
 # 分类
 
-<div v-for="[cat, list] in groups" :key="cat">
+<div v-for="[cat, list] in groups" :key="cat" :id="cat">
   <div class="archive-year">{{ cat }} <span class="count">· {{ list.length }} 篇</span></div>
   <a v-for="post in list" :key="post.url" :href="post.url" class="post-item">
     <time>{{ post.date }}</time>

@@ -7,29 +7,30 @@ import feeds from '../feeds.data.json'
 const latest = computed(() => posts.slice(0, 10))
 const tagCount = computed(() => new Set(posts.flatMap((p: any) => p.tags)).size)
 const catCount = computed(() => new Set(posts.flatMap((p: any) => p.categories)).size)
-const words = computed(() => (posts.length * 1873).toLocaleString('en-US'))
+// 真实字数：posts 数据的 wordCount 之和（构建期统计）
+const words = computed(() => posts.reduce((sum: number, p: any) => sum + (p.wordCount || 0), 0).toLocaleString('en-US'))
 
 const sections = [
   {
-    k: '01 / COLUMN',
-    title: 'JavaScript',
-    desc: '语言基础与原理笔记，从 == 与 === 到原型与作用域',
-    link: '/docs/javascript/1',
-    count: () => posts.filter((p: any) => p.url.includes('/javascript/')).length
+    k: '01 / FRONTEND',
+    title: '前端',
+    desc: 'JavaScript、Vue、React 与 CSS，从语言原理到工程实践',
+    link: '/categories#JavaScript',
+    count: () => posts.filter((p: any) => ['JavaScript', 'Vue', 'React', 'CSS'].includes(p.categories[0])).length
   },
   {
-    k: '02 / COLUMN',
-    title: 'Vue',
-    desc: '生命周期、Vue CLI 4 等框架实践记录',
-    link: '/docs/vue/Vue',
-    count: () => posts.filter((p: any) => p.url.includes('/vue/')).length
+    k: '02 / BACKEND',
+    title: '后端',
+    desc: 'Node.js、数据库、缓存与 API 设计的服务端笔记',
+    link: '/categories#后端',
+    count: () => posts.filter((p: any) => ['后端', 'Node.js'].includes(p.categories[0])).length
   },
   {
-    k: '03 / COLUMN',
-    title: '归档与检索',
-    desc: '按时间、分类、标签多维度回顾所有文章',
-    link: '/archives',
-    count: () => posts.length
+    k: '03 / AI',
+    title: '人工智能',
+    desc: '大模型原理、Prompt、RAG 与 Agent 的学习手记',
+    link: '/categories#人工智能',
+    count: () => posts.filter((p: any) => p.categories[0] === '人工智能').length
   }
 ]
 
@@ -64,7 +65,7 @@ function summary(post: any) {
         <h1 class="yh-title">在日常与代码之间<br>留一页纸给<span class="accent">时间</span></h1>
         <p class="yh-subtitle">喧闹任其喧闹，自有我自为之。</p>
         <p class="yh-deck">
-          这里收录 {{ posts.length }} 篇关于 JavaScript、Vue 与前端工程的个人手记。
+          这里收录 {{ posts.length }} 篇关于前端、后端与人工智能的个人手记。
           记录值得沉淀的知识点，也记录思考留下的痕迹——让界面退到内容之后，让文字成为主角。
         </p>
         <div class="yh-actions">
@@ -119,7 +120,7 @@ function summary(post: any) {
     <!-- 技术雷达入口 -->
     <a :href="withBase('/radar')" class="yh-radar">
       <span class="dot" aria-hidden="true"></span>
-      <span class="txt"><b>技术雷达</b> &nbsp;—&nbsp; 来自掘金 · OSCHINA · cnBeta 的 {{ feeds.items.length }} 篇近期好文，已为你聚合</span>
+      <span class="txt"><b>技术雷达</b> &nbsp;—&nbsp; 掘金 · 量子位 · IT之家 · GitHub 等 {{ feeds.items.length }} 条中文好文与热门项目</span>
       <span class="go">VIEW →</span>
     </a>
 
@@ -127,7 +128,7 @@ function summary(post: any) {
     <footer class="yh-colophon">
       <span>Dayangui · 前端技术手记</span>
       <span>Set in Serif &amp; Sans · VitePress</span>
-      <a href="https://github.com/xudayangui" target="_blank" rel="noopener">GITHUB ↗</a>
+      <a href="https://github.com/xudayangui" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
     </footer>
   </div>
 </template>

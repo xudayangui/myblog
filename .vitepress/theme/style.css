@@ -12,9 +12,9 @@ html:root {
   --yh-surface-1:  #faf9f7;
   --yh-surface-2:  #f4f3f0;
   --yh-surface-3:  #ecebe7;
-  --yh-n1: #c9c8c3;  /* 边框/弱图标 */
-  --yh-n2: #a3a29d;  /* 辅助信息 */
-  --yh-n3: #7a7974;  /* 次要文字 */
+  --yh-n1: #c9c8c3;  /* 纯装饰/边框 */
+  --yh-n2: #6b6a65;  /* 辅助信息（对比度 ≥5:1） */
+  --yh-n3: #686761;  /* 次要文字（对比度 ≥5:1） */
   --yh-n4: #54534f;  /* 强调文字 */
   --yh-n5: #33322e;  /* 正文 */
   --yh-n6: #1c1b19;  /* 标题 */
@@ -62,8 +62,8 @@ html.dark {
   --yh-surface-2:  #282724;
   --yh-surface-3:  #353430;
   --yh-n1: #45433e;
-  --yh-n2: #78766f;
-  --yh-n3: #a09d95;
+  --yh-n2: #8b8982;
+  --yh-n3: #a9a69e;
   --yh-n4: #c3c0b8;
   --yh-n5: #e3e0d8;
   --yh-n6: #f4f2ec;
@@ -506,4 +506,11 @@ html.dark .yh-btn-primary { color: #1a1416; }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* 键盘可访问性：所有交互元素可见焦点 */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--yh-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
 }

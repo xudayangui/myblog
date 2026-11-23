@@ -1,13 +1,11 @@
 /**
- * 技术雷达 · 数据源抓取脚本
+ * 技术雷达 · 数据源抓取脚本（全中文源）
  *
- * 从技术站点的公开 RSS + GitHub 代码仓库抓取元数据（标题 / 链接 / 摘要 / 来源 / 时间 / 分类），
- * 聚合到 .vitepress/theme/feeds.data.json，供「技术雷达」页面展示。
- *
- * 设计原则：
- * - 只抓元数据，不存正文。点击跳转原文，尊重版权与原作者。
- * - 任一源失败不影响其他源；全部失败时保留上一次的缓存数据。
- * - 按 URL 去重；前端主题关键词加权排序。
+ * 只聚合中文技术站点 RSS + GitHub 仓库元数据到 .vitepress/theme/feeds.data.json。
+ * - 文章源全部为中文社区 / 媒体，并做中文标题检测兜底（非中文标题直接丢弃）。
+ * - 代码仓库源使用 GitHub Search API（项目名天然为英文，归入「代码仓库」分类）。
+ * - 只抓元数据，不存正文；点击跳转原文，尊重版权。
+ * - 任一源失败不影响其他源；全部失败时保留上一次缓存。
  * - 无任何第三方依赖，仅用 Node 内置 fetch。
  */
 
@@ -19,43 +17,48 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(__dirname, '..')
 const OUT = resolve(ROOT, '.vitepress/theme/feeds.data.json')
 
-// RSS 源：每个源的抓取条数上限 + 默认分类（用于前端 / 后端 / AI / 资讯分栏）
+// 全中文 RSS 源：标题实测 100% 含中文
 const FEEDS = [
   { key: 'juejin', name: '掘金', url: 'https://juejin.cn/rss', limit: 30, category: 'frontend' },
   { key: 'oschina', name: 'OSCHINA', url: 'https://www.oschina.net/news/rss', limit: 60, category: 'news' },
-  { key: 'cnbeta', name: 'cnBeta', url: 'https://rss.cnbeta.com.tw/rss', limit: 80, category: 'news' },
-  { key: 'react', name: 'React', url: 'https://react.dev/rss.xml', limit: 30, category: 'frontend' },
-  { key: 'vue', name: 'Vue', url: 'https://blog.vuejs.org/feed.rss', limit: 20, category: 'frontend' },
-  { key: 'nodejs', name: 'Node.js', url: 'https://nodejs.org/en/feed/releases.xml', limit: 30, category: 'backend' },
-  { key: 'css', name: 'CSS-Tricks', url: 'https://css-tricks.com/feed/', limit: 20, category: 'frontend' },
-  { key: 'smashing', name: 'Smashing', url: 'https://www.smashingmagazine.com/feed/', limit: 30, category: 'frontend' },
-  { key: 'echojs', name: 'EchoJS', url: 'https://www.echojs.com/rss', limit: 40, category: 'frontend' },
-  { key: 'devto', name: 'DEV', url: 'https://dev.to/feed', limit: 20, category: 'frontend' },
-  { key: 'ruanyifeng', name: '阮一峰', url: 'https://www.ruanyifeng.com/blog/atom.xml', limit: 12, category: 'news' },
-  { key: 'hn', name: 'HackerNews', url: 'https://hnrss.org/frontpage', limit: 30, category: 'news' },
-  { key: 'solidot', name: 'Solidot', url: 'https://www.solidot.org/index.rss', limit: 30, category: 'news' }
+  { key: 'cnbeta', name: 'cnBeta', url: 'https://rss.cnbeta.com.tw/rss', limit: 100, category: 'news' },
+  { key: 'ruanyifeng', name: '阮一峰', url: 'https://www.ruanyifeng.com/blog/atom.xml', limit: 12, category: 'frontend' },
+  { key: 'solidot', name: 'Solidot', url: 'https://www.solidot.org/index.rss', limit: 40, category: 'news' },
+  { key: 'v2ex', name: 'V2EX', url: 'https://www.v2ex.com/feed/tab/tech.xml', limit: 40, category: 'news' },
+  { key: 'qbitai', name: '量子位', url: 'https://www.qbitai.com/feed', limit: 20, category: 'ai' },
+  { key: 'ifanr', name: '爱范儿', url: 'https://www.ifanr.com/feed', limit: 25, category: 'ai' },
+  { key: 'ithome', name: 'IT之家', url: 'https://www.ithome.com/rss/', limit: 60, category: 'news' }
 ]
 
-// GitHub 仓库查询：多组 topic / 时间窗口，覆盖前端技术栈与最新热门项目
+// 动态计算日期窗口（避免硬编码日期随时间失效）
+function daysAgo(n) {
+  const d = new Date()
+  d.setUTCDate(d.getUTCDate() - n)
+  return d.toISOString().slice(0, 10)
+}
+const createdSince = daysAgo(60)
+const pushedSince = daysAgo(90)
+
+// GitHub 仓库查询：覆盖前端技术栈、后端与 AI
 const REPO_QUERIES = [
-  { key: 'gh-trend', label: 'GitHub Trending', q: 'created:>2026-10-01', sort: 'stars', limit: 30 },
-  { key: 'gh-js', label: 'GitHub · JavaScript', q: 'topic:javascript pushed:>2026-09-01', sort: 'stars', limit: 25 },
-  { key: 'gh-vue', label: 'GitHub · Vue', q: 'topic:vue pushed:>2026-09-01', sort: 'stars', limit: 20 },
-  { key: 'gh-react', label: 'GitHub · React', q: 'topic:react pushed:>2026-09-01', sort: 'stars', limit: 20 },
-  { key: 'gh-node', label: 'GitHub · Node.js', q: 'topic:nodejs pushed:>2026-09-01', sort: 'stars', limit: 20 },
-  { key: 'gh-ai', label: 'GitHub · AI', q: 'topic:ai pushed:>2026-09-01', sort: 'stars', limit: 20 }
+  { key: 'gh-trend', label: 'GitHub 热门', q: `created:>${createdSince}`, sort: 'stars', limit: 30 },
+  { key: 'gh-js', label: 'GitHub · JavaScript', q: `topic:javascript pushed:>${pushedSince}`, sort: 'stars', limit: 25 },
+  { key: 'gh-vue', label: 'GitHub · Vue', q: `topic:vue pushed:>${pushedSince}`, sort: 'stars', limit: 20 },
+  { key: 'gh-react', label: 'GitHub · React', q: `topic:react pushed:>${pushedSince}`, sort: 'stars', limit: 20 },
+  { key: 'gh-node', label: 'GitHub · Node.js', q: `topic:nodejs pushed:>${pushedSince}`, sort: 'stars', limit: 20 },
+  { key: 'gh-ai', label: 'GitHub · AI', q: `topic:ai pushed:>${pushedSince}`, sort: 'stars', limit: 20 }
 ]
 
 const UA = 'Mozilla/5.0 (compatible; TechRadarBot/1.0; +https://github.com/xudayangui/myblog)'
 
-// 前端主题关键词：命中则排序加权
-const FRONTEND_KEYWORDS = [
-  'vue', 'react', 'node', 'javascript', 'typescript', 'js', 'css', 'html',
-  'webpack', 'vite', 'npm', 'frontend', '前端', '浏览器', 'python',
-  'ai', '开源', '框架', '性能', '算法', '面试', 'docker', 'kubernetes'
-]
 // AI 关键词：命中则归入 AI 分类（优先于来源默认分类）
-const AI_KEYWORDS = ['ai', '人工智能', '大模型', 'llm', 'gpt', 'claude', 'agent', '机器学习', '深度学习', 'aigc', 'diffusion']
+const AI_KEYWORDS = ['ai', '人工智能', '大模型', 'llm', 'gpt', 'claude', 'agent', '机器学习', '深度学习', 'aigc', 'diffusion', 'gemini', '智能体', '神经网络', '算力']
+// 后端关键词：命中则归入后端分类
+const BACKEND_KEYWORDS = ['数据库', 'mysql', 'redis', '服务器', '后端', '云原生', 'kubernetes', 'docker', '微服务', 'nginx', 'linux', '操作系统', '编译器', '编程语言', 'java', 'golang', 'rust', '数据库', '存储', '分布式', '并发', '缓存', 'api', 'http']
+// 前端关键词：命中则归入前端分类
+const FRONTEND_KEYWORDS = ['前端', 'javascript', 'vue', 'react', 'css', 'html', '浏览器', 'chrome', 'node', 'typescript', 'webpack', 'vite', '框架', '组件', '网页', 'web', '动画', 'ui', '界面']
+
+const hasChinese = (s) => /[\u4e00-\u9fa5]/.test(String(s))
 
 function decodeEntities(s) {
   return String(s)
@@ -67,7 +70,12 @@ function decodeEntities(s) {
 }
 
 function stripHtml(s) {
-  return decodeEntities(String(s).replace(/^<!\[CDATA\[/, '').replace(/\]\]>$/, '').replace(/<[^>]*>/g, ' '))
+  let out = String(s).replace(/^<!\[CDATA\[/, '').replace(/\]\]>$/, '')
+  // 先解码实体再去标签，循环两轮应对 &lt;p&gt; 这类转义标签（IT之家源）
+  for (let i = 0; i < 2; i++) {
+    out = decodeEntities(out).replace(/<[^>]*>/g, ' ')
+  }
+  return out
     .replace(/Article URL:\s*https?:\/\/\S+/gi, '')
     .replace(/Comments?\s*$/i, '')
     .replace(/\s+/g, ' ').trim()
@@ -98,15 +106,11 @@ function truncate(s, n = 120) {
   return s.length > n ? s.slice(0, n).trimEnd() + '…' : s
 }
 
-function weight(item) {
-  const text = (item.title + ' ' + (item.summary || '')).toLowerCase()
-  return FRONTEND_KEYWORDS.reduce((acc, k) => acc + (text.includes(k) ? 1 : 0), 0)
-}
-
-// 根据内容智能归类：AI 优先命中，否则用来源默认分类
 function categorize(item, defaultCat) {
   const text = (item.title + ' ' + (item.summary || '')).toLowerCase()
   if (AI_KEYWORDS.some((k) => text.includes(k))) return 'ai'
+  if (FRONTEND_KEYWORDS.some((k) => text.includes(k))) return 'frontend'
+  if (BACKEND_KEYWORDS.some((k) => text.includes(k))) return 'backend'
   return defaultCat || 'news'
 }
 
@@ -131,9 +135,12 @@ function parseRss(xml, feed) {
   let m
   while ((m = re.exec(xml)) && items.length < feed.limit) {
     const b = m[0]
-    const title = tag(b, 'title')
+    let title = tag(b, 'title')
     const url = link(b)
     if (!title || !/^https?:\/\//.test(url)) continue
+    // 中文兜底：标题必须含中文；去掉常见的前缀噪音
+    if (!hasChinese(title)) continue
+    title = title.replace(/^(科技爱好者周刊|派早报)[：:]/, (x) => x).trim()
     const summary = truncate(tag(b, 'description') || tag(b, 'summary') || tag(b, 'content'))
     const item = {
       title: truncate(title, 90), url, summary,
@@ -142,38 +149,42 @@ function parseRss(xml, feed) {
       category: 'news', type: 'article'
     }
     item.category = categorize(item, feed.category)
-    item._w = weight(item)
     items.push(item)
   }
   return items
 }
 
-// GitHub 仓库：调用官方 Search API，按 star 排序取近期活跃项目
+function sleep(ms) { return new Promise((r) => setTimeout(r, ms)) }
+
 async function fetchRepos(query) {
   const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(query.q)}&sort=${query.sort}&order=desc&per_page=${query.limit}`
-  const text = await get(url, 15000, {
-    accept: 'application/vnd.github+json',
-    'x-github-api-version': '2022-11-28'
-  })
+  const headers = { accept: 'application/vnd.github+json', 'x-github-api-version': '2022-11-28' }
+  let text = ''
+  // 限流（403/429）时退避重试，最多 3 次
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      text = await get(url, 15000, headers)
+      break
+    } catch (e) {
+      if (/403|429/.test(e.message) && attempt < 2) {
+        await sleep(4000 * (attempt + 1))
+        continue
+      }
+      throw e
+    }
+  }
   const data = JSON.parse(text)
   if (!Array.isArray(data.items)) throw new Error(data.message || 'API 未返回 items')
-  return data.items.map((r) => {
-    const item = {
-      title: r.full_name,
-      url: r.html_url,
-      summary: truncate(r.description || `A ${r.language || 'open-source'} project on GitHub with ${r.stargazers_count.toLocaleString()} stars.`),
-      source: query.label,
-      sourceKey: 'github',
-      date: toDate(r.pushed_at || r.created_at),
-      category: 'repo',
-      type: 'repo',
-      stars: r.stargazers_count,
-      language: r.language || '',
-      license: r.license?.spdx_id && r.license.spdx_id !== 'NOASSERTION' ? r.license.spdx_id : ''
-    }
-    item._w = weight(item)
-    return item
-  })
+  return data.items.map((r) => ({
+    title: r.full_name,
+    url: r.html_url,
+    summary: truncate(r.description || `A ${r.language || 'open-source'} project on GitHub with ${r.stargazers_count.toLocaleString()} stars.`),
+    source: query.label, sourceKey: 'github',
+    date: toDate(r.pushed_at || r.created_at),
+    category: 'repo', type: 'repo',
+    stars: r.stargazers_count, language: r.language || '',
+    license: r.license?.spdx_id && r.license.spdx_id !== 'NOASSERTION' ? r.license.spdx_id : ''
+  }))
 }
 
 async function readCache() {
@@ -181,7 +192,7 @@ async function readCache() {
 }
 
 async function main() {
-  console.log('技术雷达 · 正在抓取数据源…')
+  console.log('技术雷达 · 正在抓取中文数据源…')
   const all = []
   const failed = []
   const seen = new Set()
@@ -191,18 +202,16 @@ async function main() {
     for (const item of items) {
       if (seen.has(item.url)) continue
       seen.add(item.url)
-      delete item._w
       all.push(item)
       added++
     }
     return added
   }
 
-  // RSS 源
   for (const feed of FEEDS) {
     try {
       const items = parseRss(await get(feed.url), feed)
-      if (!items.length) throw new Error('未解析到条目')
+      if (!items.length) throw new Error('未解析到中文条目')
       console.log(`  ✓ ${feed.name}: ${addItems(items)} 篇`)
     } catch (e) {
       failed.push(feed.name)
@@ -210,9 +219,9 @@ async function main() {
     }
   }
 
-  // GitHub 仓库源
   for (const query of REPO_QUERIES) {
     try {
+      await sleep(3000) // GitHub Search API 未认证限流约 10 次/分钟，节流避免 403
       const items = await fetchRepos(query)
       if (!items.length) throw new Error('未解析到仓库')
       console.log(`  ✓ ${query.label}: ${addItems(items)} 个仓库`)
@@ -224,20 +233,18 @@ async function main() {
 
   if (!all.length) {
     const cache = await readCache()
-    if (cache?.items?.length) {
-      console.warn('所有数据源均失败，保留上次缓存数据。')
-      return
-    }
+    if (cache?.items?.length) { console.warn('所有数据源均失败，保留上次缓存数据。'); return }
     throw new Error('所有数据源均失败且无缓存')
   }
 
-  // 按日期倒序
   all.sort((a, b) => (a.date !== b.date ? (a.date < b.date ? 1 : -1) : 0))
 
   await mkdir(dirname(OUT), { recursive: true })
   await writeFile(OUT, JSON.stringify({ fetchedAt: new Date().toISOString(), items: all }, null, 2), 'utf8')
   const repos = all.filter((i) => i.type === 'repo').length
-  console.log(`完成：共 ${all.length} 条（文章 ${all.length - repos} · 仓库 ${repos}）→ ${OUT}`)
+  const nonChinese = all.filter((i) => i.type === 'article' && !hasChinese(i.title)).length
+  console.log(`完成：共 ${all.length} 条（文章 ${all.length - repos} · 仓库 ${repos}）`)
+  console.log(`文章中文检测：非中文标题 ${nonChinese} 条`)
   if (failed.length) console.warn(`失败源（已跳过）: ${failed.join('、')}`)
 }
 

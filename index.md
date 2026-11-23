@@ -1,7 +1,7 @@
 ---
 layout: page
 sidebar: false
-title: myBlog · 前端技术手记
+title: 前端、后端与 AI 技术手记
 ---
 
 <HomePage />
