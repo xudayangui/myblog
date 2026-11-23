@@ -9,7 +9,16 @@ const sourceMeta: Record<string, { label: string; color: string }> = {
   juejin: { label: '掘金', color: '#3a7afe' },
   oschina: { label: 'OSCHINA', color: '#c0392b' },
   cnbeta: { label: 'cnBeta', color: '#d68910' },
-  github: { label: 'GitHub', color: '#6c5ce7' }
+  github: { label: 'GitHub', color: '#6c5ce7' },
+  nodejs: { label: 'Node.js', color: '#68a063' },
+  react: { label: 'React', color: '#61dafb' },
+  css: { label: 'CSS-Tricks', color: '#ff7a59' },
+  smashing: { label: 'Smashing', color: '#e8594a' },
+  echojs: { label: 'EchoJS', color: '#8e7cc3' },
+  devto: { label: 'DEV', color: '#333333' },
+  ruanyifeng: { label: '阮一峰', color: '#2e8b57' },
+  hn: { label: 'HackerNews', color: '#ff6600' },
+  solidot: { label: 'Solidot', color: '#5a8f4e' }
 }
 
 const sources = computed(() => {
@@ -17,11 +26,9 @@ const sources = computed(() => {
   for (const item of feeds.items) counts.set(item.sourceKey, (counts.get(item.sourceKey) || 0) + 1)
   return [
     { key: 'all', label: '全部', count: feeds.items.length },
-    ...[...counts.entries()].map(([key, count]) => ({
-      key,
-      label: sourceMeta[key]?.label || key,
-      count
-    }))
+    ...[...counts.entries()]
+      .map(([key, count]) => ({ key, label: sourceMeta[key]?.label || key, count }))
+      .sort((a, b) => b.count - a.count)
   ]
 })
 
@@ -40,22 +47,23 @@ const fetchedDate = computed(() => {
 })
 
 function colorOf(key: string) {
-  return sourceMeta[key]?.color || 'var(--pj-seal)'
+  return sourceMeta[key]?.color || 'var(--yh-accent)'
+}
+function shortDate(d: string) {
+  return d ? d.slice(5).replace('-', '.') : ''
 }
 </script>
 
 <template>
   <div class="radar-page">
-    <!-- 终端风格标题区 -->
-    <div class="radar-terminal">
-      <div class="radar-term-line"><span class="t-user">dayangui</span>@<span class="t-host">blog</span>:~$ <span class="t-cmd">fetch --sources juejin,oschina,cnbeta</span></div>
-      <div class="radar-term-line t-dim">› Aggregating feeds from tech communities...</div>
-      <div class="radar-term-line t-ok">✓ Loaded {{ feeds.items.length }} articles &nbsp;·&nbsp; synced {{ fetchedDate }}</div>
-    </div>
-
     <header class="radar-head">
-      <h1>技术雷达<span class="dot">.</span></h1>
-      <p>从各大技术社区聚合的近期好文，点击标题跳转原文。只看元数据，不搬运正文——尊重每一位作者的创作。</p>
+      <p class="radar-eyebrow">TECH RADAR / 技术雷达</p>
+      <h1>看见更多<span class="accent">好文章</span></h1>
+      <p class="radar-intro">从掘金、OSCHINA、cnBeta、React、Node.js 等技术社区聚合的近期好文。只看元数据，点击标题跳转原文——尊重每一位作者的创作。</p>
+      <div class="radar-sync">
+        <span class="sync-dot"></span>
+        已聚合 <b>{{ feeds.items.length }}</b> 篇 &nbsp;·&nbsp; 更新于 {{ fetchedDate }}
+      </div>
     </header>
 
     <!-- 工具栏：来源筛选 + 搜索 -->
@@ -79,7 +87,7 @@ function colorOf(key: string) {
       </label>
     </div>
 
-    <!-- 文章列表 -->
+    <!-- 文章列表：宽松信息流 -->
     <div class="radar-grid" v-if="filtered.length">
       <a
         v-for="(item, i) in filtered"
@@ -89,16 +97,15 @@ function colorOf(key: string) {
         rel="noopener noreferrer"
         class="radar-card"
       >
-        <div class="radar-card-top">
-          <span class="radar-index">{{ String(i + 1).padStart(2, '0') }}</span>
-          <span class="radar-source" :style="{ '--src-color': colorOf(item.sourceKey) }">{{ item.source }}</span>
-          <span class="radar-date" v-if="item.date">{{ item.date.slice(5) }}</span>
+        <div class="radar-card-body">
+          <div class="radar-card-meta">
+            <span class="radar-source" :style="{ '--src-color': colorOf(item.sourceKey) }">{{ item.source }}</span>
+            <span class="radar-date" v-if="item.date">{{ shortDate(item.date) }}</span>
+          </div>
+          <h2 class="radar-card-title">{{ item.title }}</h2>
+          <p class="radar-card-summary" v-if="item.summary">{{ item.summary }}</p>
         </div>
-        <h2 class="radar-card-title">{{ item.title }}</h2>
-        <p class="radar-card-summary" v-if="item.summary">{{ item.summary }}</p>
-        <div class="radar-card-foot">
-          <span class="radar-external">阅读原文 <span aria-hidden="true">↗</span></span>
-        </div>
+        <span class="radar-card-arrow" aria-hidden="true">↗</span>
       </a>
     </div>
 
@@ -108,165 +115,146 @@ function colorOf(key: string) {
     </div>
 
     <footer class="radar-footnote">
-      <p>数据来源：掘金、OSCHINA、cnBeta 等公开 RSS 订阅源。本站仅展示标题与摘要，版权归原作者所有。</p>
+      <p>数据来源：掘金、OSCHINA、cnBeta、React、Node.js、CSS-Tricks 等公开 RSS 订阅源。本站仅展示标题与摘要，版权归原作者所有。</p>
       <p>数据由 <code>scripts/fetch-feeds.mjs</code> 在构建时自动抓取更新。</p>
     </footer>
   </div>
 </template>
 
 <style scoped>
-.radar-page { --edge: clamp(1.25rem, 5vw, 4.5rem); padding: 0 var(--edge) var(--pj-s24); }
-
-.radar-terminal {
-  padding: var(--pj-s6);
-  margin: var(--pj-s8) 0 var(--pj-s12);
-  border: 1px solid var(--pj-rule);
-  border-radius: 3px;
-  background: var(--pj-paper-2);
-  font-family: var(--pj-font-mono);
-  font-size: 0.78rem;
-  line-height: 1.9;
-  overflow-x: auto;
+.radar-page { --edge: clamp(1.25rem, 5vw, 3rem); padding: 0 var(--edge) var(--yh-s24); max-width: 960px; margin: 0 auto; }
+.radar-head { padding: var(--yh-s12) 0 var(--yh-s8); }
+.radar-eyebrow {
+  margin: 0 0 var(--yh-s5);
+  font-family: var(--yh-font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--yh-accent);
+  text-transform: uppercase;
 }
-.radar-term-line { white-space: nowrap; }
-.t-user { color: var(--pj-seal); font-weight: 600; }
-.t-host { color: var(--pj-ink-2); }
-.t-cmd { color: var(--pj-ink); }
-.t-dim { color: var(--pj-ink-3); }
-.t-ok { color: #1d9e75; }
-
-.radar-head { margin-bottom: var(--pj-s12); }
 .radar-head h1 {
-  margin: 0 0 var(--pj-s4);
-  font-family: var(--pj-font-display);
-  font-size: clamp(2.6rem, 7vw, 4.5rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  color: var(--pj-ink);
+  margin: 0;
+  font-family: var(--yh-font-serif);
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.3;
+  color: var(--yh-n6);
 }
-.radar-head h1 .dot { color: var(--pj-seal); }
-.radar-head p { max-width: 60ch; margin: 0; font-size: 0.95rem; line-height: 1.9; color: var(--pj-ink-2); }
+.radar-head h1 .accent { color: var(--yh-accent); }
+.radar-intro { max-width: 60ch; margin: var(--yh-s5) 0 0; font-size: 0.92rem; line-height: 1.85; color: var(--yh-n3); }
+.radar-sync {
+  display: flex;
+  align-items: center;
+  gap: var(--yh-s2);
+  margin-top: var(--yh-s5);
+  font-family: var(--yh-font-mono);
+  font-size: 0.72rem;
+  color: var(--yh-n2);
+}
+.radar-sync b { color: var(--yh-accent); font-weight: 500; }
+.sync-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--yh-accent); }
 
 .radar-toolbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: var(--pj-s4);
-  padding-bottom: var(--pj-s4);
-  margin-bottom: var(--pj-s8);
-  border-bottom: 2px solid var(--pj-ink);
+  gap: var(--yh-s4);
+  padding-bottom: var(--yh-s4);
+  margin-bottom: var(--yh-s4);
+  border-bottom: 1px solid var(--yh-n6);
 }
-.radar-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.radar-filters { display: flex; flex-wrap: wrap; gap: var(--yh-s2); }
 .radar-filter {
-  font-family: var(--pj-font-mono);
-  font-size: 0.78rem;
-  padding: 6px 12px;
-  border: 1px solid var(--pj-rule);
-  border-radius: 3px;
+  font-family: var(--yh-font-mono);
+  font-size: 0.72rem;
+  padding: 5px 11px;
+  border: 1px solid var(--yh-surface-3);
+  border-radius: 2px;
   background: transparent;
-  color: var(--pj-ink-2);
+  color: var(--yh-n3);
   cursor: pointer;
   transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
-.radar-filter:hover { border-color: var(--pj-seal); color: var(--pj-seal); }
-.radar-filter.active { background: var(--pj-seal); border-color: var(--pj-seal); color: #fff; }
-.filter-count { opacity: 0.7; margin-left: 2px; }
+.radar-filter:hover { border-color: var(--yh-accent); color: var(--yh-accent); }
+.radar-filter.active { background: var(--yh-accent); border-color: var(--yh-accent); color: #fff; }
+html.dark .radar-filter.active { color: #1a1416; }
+.filter-count { opacity: 0.65; margin-left: 3px; }
 .radar-search {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: var(--yh-s2);
   padding: 6px 10px;
-  border: 1px solid var(--pj-rule);
-  border-radius: 3px;
-  background: var(--pj-paper);
-  font-family: var(--pj-font-mono);
+  border: 1px solid var(--yh-surface-3);
+  border-radius: 2px;
+  font-family: var(--yh-font-mono);
 }
-.radar-search > span { color: var(--pj-seal); }
+.radar-search > span { color: var(--yh-accent); }
 .radar-search input {
-  border: 0;
-  outline: 0;
-  background: transparent;
-  color: var(--pj-ink);
-  font-family: var(--pj-font-mono);
-  font-size: 0.78rem;
-  width: 150px;
+  border: 0; outline: 0; background: transparent;
+  color: var(--yh-n5); font-family: var(--yh-font-mono); font-size: 0.75rem; width: 140px;
 }
-.radar-search input::placeholder { color: var(--pj-ink-3); }
+.radar-search input::placeholder { color: var(--yh-n2); }
 
-.radar-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--pj-s6);
-}
+/* 宽松单列信息流 */
+.radar-grid { display: flex; flex-direction: column; }
 .radar-card {
   display: flex;
-  flex-direction: column;
-  padding: var(--pj-s6);
-  border: 1px solid var(--pj-rule);
-  border-radius: 3px;
-  background: var(--pj-paper);
+  align-items: flex-start;
+  gap: var(--yh-s5);
+  padding: var(--yh-s6) var(--yh-s3);
+  border-bottom: 1px solid var(--yh-surface-3);
   text-decoration: none;
-  transition: border-color 0.25s, transform 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: background 0.2s ease;
 }
-.radar-card:hover { border-color: var(--pj-seal); transform: translateY(-3px); }
-.radar-card-top { display: flex; align-items: center; gap: 10px; margin-bottom: var(--pj-s4); }
-.radar-index { font-family: var(--pj-font-mono); font-size: 0.72rem; color: var(--pj-rule-strong); }
+.radar-card:hover { background: var(--yh-surface-1); }
+.radar-card-body { flex: 1; min-width: 0; }
+.radar-card-meta { display: flex; align-items: center; gap: var(--yh-s3); margin-bottom: var(--yh-s3); }
 .radar-source {
-  font-family: var(--pj-font-mono);
-  font-size: 0.7rem;
+  font-family: var(--yh-font-mono);
+  font-size: 0.66rem;
   padding: 2px 8px;
-  border: 1px solid var(--src-color);
-  border-radius: 999px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--src-color) 12%, transparent);
   color: var(--src-color);
+  font-weight: 500;
 }
-.radar-date { margin-left: auto; font-family: var(--pj-font-mono); font-size: 0.72rem; color: var(--pj-ink-3); }
+html.dark .radar-source { background: color-mix(in srgb, var(--src-color) 22%, transparent); }
+.radar-date { font-family: var(--yh-font-mono); font-size: 0.7rem; color: var(--yh-n2); }
 .radar-card-title {
-  margin: 0 0 var(--pj-s3);
-  font-family: var(--pj-font-display);
-  font-size: 1.15rem;
-  font-weight: 700;
+  margin: 0 0 var(--yh-s2);
+  font-family: var(--yh-font-serif);
+  font-size: 1.18rem;
+  font-weight: 500;
   line-height: 1.5;
-  color: var(--pj-ink);
-  transition: color 0.2s;
+  color: var(--yh-n6);
+  transition: color 0.2s ease;
 }
-.radar-card:hover .radar-card-title { color: var(--pj-seal); }
+.radar-card:hover .radar-card-title { color: var(--yh-accent); }
 .radar-card-summary {
-  margin: 0 0 var(--pj-s4);
-  font-size: 0.84rem;
+  margin: 0;
+  font-size: 0.85rem;
   line-height: 1.75;
-  color: var(--pj-ink-2);
+  color: var(--yh-n3);
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.radar-card-foot { margin-top: auto; padding-top: var(--pj-s3); border-top: 1px solid var(--pj-rule); }
-.radar-external { font-family: var(--pj-font-mono); font-size: 0.74rem; color: var(--pj-seal); }
+.radar-card-arrow { color: var(--yh-n1); font-size: 1rem; margin-top: var(--yh-s5); transition: color 0.2s ease, transform 0.2s ease; }
+.radar-card:hover .radar-card-arrow { color: var(--yh-accent); transform: translate(2px, -2px); }
 
-.radar-empty {
-  padding: var(--pj-s16) var(--pj-s6);
-  text-align: center;
-  font-family: var(--pj-font-mono);
-  color: var(--pj-ink-3);
-}
-.radar-empty span { color: var(--pj-seal); }
-.radar-empty p { font-family: var(--pj-font-body); }
+.radar-empty { padding: var(--yh-s16) var(--yh-s6); text-align: center; font-family: var(--yh-font-mono); color: var(--yh-n2); }
+.radar-empty span { color: var(--yh-accent); }
 
-.radar-footnote {
-  margin-top: var(--pj-s16);
-  padding-top: var(--pj-s6);
-  border-top: 1px solid var(--pj-rule);
-  font-size: 0.76rem;
-  line-height: 1.8;
-  color: var(--pj-ink-3);
-}
+.radar-footnote { margin-top: var(--yh-s16); padding-top: var(--yh-s5); border-top: 1px solid var(--yh-surface-3); font-size: 0.74rem; line-height: 1.8; color: var(--yh-n2); }
 .radar-footnote p { margin: 0; }
-.radar-footnote code { font-family: var(--pj-font-mono); color: var(--pj-seal); }
+.radar-footnote code { font-family: var(--yh-font-mono); color: var(--yh-accent); }
 
 @media (max-width: 720px) {
   .radar-toolbar { flex-direction: column; align-items: stretch; }
   .radar-search input { width: 100%; }
-  .status-stats { margin-left: 0; padding-left: 0; border-left: 0; width: 100%; }
+  .radar-head { padding-top: var(--yh-s8); }
 }
 </style>

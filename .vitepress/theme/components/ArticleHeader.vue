@@ -40,7 +40,10 @@ const readingTime = computed(() => {
 
 const title = computed(() => frontmatter.value.title || '')
 
-const hasMeta = computed(() => date.value || categories.value.length || tags.value.length || title.value)
+// 只在 docs/ 下的文章详情页渲染，避免污染归档/分类/标签/技术雷达等页面
+const isPost = computed(() => String(page.value.relativePath || '').startsWith('docs/'))
+
+const hasMeta = computed(() => isPost.value && (date.value || categories.value.length || tags.value.length || title.value))
 </script>
 
 <template>

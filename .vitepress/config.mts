@@ -35,7 +35,7 @@ export default defineConfig({
       { text: 'Vue', link: '/docs/vue/Vue' }
     ],
     outline: { label: '本页目录', level: 'deep' },
-    docFooter: { prev: '上一篇', next: '下一篇' },
+    docFooter: { prev: false, next: false },
     lastUpdated: { text: '最后更新于' },
     search: { provider: 'local', options: { translations: { button: { buttonText: '搜索文档' }, modal: { placeholder: '搜索文章...' } } } },
     socialLinks: [{ icon: 'github', link: 'https://github.com/xudayangui' }],
