@@ -1,4 +1,10 @@
 node_modules/
+node_modules_old/
 yarn.lock
 yarn.error
 dist
+.vitepress/dist
+.vitepress/.temp
+.vitepress/cache
+*.timestamp-*.mjs
+.DS_Store
