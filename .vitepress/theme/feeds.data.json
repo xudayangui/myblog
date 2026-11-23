@@ -1,0 +1,173 @@
+{
+  "fetchedAt": "2026-11-23T05:18:32.102Z",
+  "items": [
+    {
+      "title": "第二章：你的第一个Lit组件 - 从零到\"Hello, World\"",
+      "url": "https://juejin.cn/post/7710901773549338651",
+      "summary": "介绍三种 Lit 开发环境，剖析 LitElement 与 html 标签函数，并用装饰器或原生 API 注册自定义元素，从零写出第一个交互式问候组件。",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "理解注入脚本所需的 JavaScript 基础",
+      "url": "https://juejin.cn/post/7710960543771623424",
+      "summary": "理解注入脚本所需的 JavaScript 基础 先不用掌握整门 JavaScript。读懂本次脚本需要了解对象、函数、闭包、调用对象和属性访问器。下面的片段可在你自己的空白测试页控制台中逐段运行，变量",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "网页与 JavaScript 注入基础",
+      "url": "https://juejin.cn/post/7710960543771590656",
+      "summary": "网页与 JavaScript 注入基础 你在手机里看到一个小程序界面时，界面可能由 HTML、CSS 和 JavaScript 共同生成，也可能主要由游戏引擎画在 Canvas 上。鸿蒙容器里的 We",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "Nginx HTTPS 与安全加固：会话复用、OCSP、mTLS 与限流取舍",
+      "url": "https://juejin.cn/post/7710639091189809187",
+      "summary": "1. 先跑起来（5 分钟实验） 自签证书（-addext 需 OpenSSL 1.1.1+；证书放 /tmp，别进仓库）： 最小可跑的 TLS 配置 + 容器： 三条命令验证三件事： 命令 实测输出",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "只防提示注入，等于门锁好了窗户全开——给 AI 应用画一张威胁地图（S01）",
+      "url": "https://juejin.cn/post/7710812195094331392",
+      "summary": "安全的第一步不是加防护，是画地图。本篇用五步建模给 AI 应用画威胁面：五个攻击方向、OWASP 十项映射到具体攻击面、Top 5 风险分级，并当场抓到一次威胁模型已经过期的真实情况。",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "1.Java AES-GCM 加解密入门：理解原理与字符串实战",
+      "url": "https://juejin.cn/post/7710892674455142454",
+      "summary": "加密将原始内容转换为密文，解密则让持有正确密钥的人恢复原文。本文使用 JDK 自带 API，先解释基本概念，再提供字符串加解密的完整实例，不依赖框架或外部服务。 示例要求 Java 17 及以上版本，",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "我们开源了公司的内部组件库，然后被各业务线骂成了筛子",
+      "url": "https://juejin.cn/post/7710892674455126070",
+      "summary": "上个月，为了响应“降本增效”和“统一设计规范”的号召，我们基础架构组把维护了两年多的内部 Vue 组件库正式推上了内部 NPM 仓库，强制要求所有中后台项目接入最新版本（v3.0）。 发布那天，我们在",
+      "source": "掘金",
+      "sourceKey": "juejin",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "微软 CEO 纳德拉承认，VS Code 的护城河被人从终端绕过去了",
+      "url": "https://www.oschina.net/news/503739/nadella-admits-vs-code-faded-in-six-months",
+      "summary": "微软花了十多年把 VS Code 做成开发者的默认工作台。然后 Nadella 自己承认，它称霸十年后仅大概六个月就“销声匿迹”了。 他在《The Pragmatic Engineer》的播客里对 Gergely Oro…",
+      "source": "OSCHINA",
+      "sourceKey": "oschina",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "🔥MakuBoot 5.3 发布，AI 低代码开发平台，快速开发利器",
+      "url": "https://www.oschina.net/news/503738",
+      "summary": "介绍 maku-boot 是采用 SpringBoot4.0、SpringSecurity7.0、Flowable8.0、Mybatis-Plus、Vue3、Element-plus 等技术开发的低代码开发平台，旨在为开…",
+      "source": "OSCHINA",
+      "sourceKey": "oschina",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "OpenAI 首席科学家提议为 AI 开发设置“行业上限”",
+      "url": "https://www.oschina.net/news/503737/openai-perplexity-and-intelligence",
+      "summary": "OpenAI 首席科学家 Jakub Pachocki 写了篇论文式的文章，主张把 perplexity（困惑度，等价于交叉熵损失）确立为跨公司比较模型的行业指标，并以此为基础建立共享的安全标准。 这件事值得注意的地方不…",
+      "source": "OSCHINA",
+      "sourceKey": "oschina",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "qData 主数据平台开源版 v1.0.1 发布：聚焦使用反馈，功能细节与产品体验持续优化",
+      "url": "https://www.oschina.net/news/503735",
+      "summary": "一笔冻结申请显示“已通过”，回到主数据列表一看，对应记录却还没冻结。 类似“页面提示与最终状态不一致”的使用反馈，是 qData 主数据平台开源版 v1.0.1 本次集中处理的问题之一。 本次更新以问题修复为主，覆盖全局…",
+      "source": "OSCHINA",
+      "sourceKey": "oschina",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "TCP/IP 为什么没申请专利？Vint Cerf 说因为不知道 25 年后盟友是谁",
+      "url": "https://www.oschina.net/news/503734/vint-cerf-on-why-tcpip-was-never",
+      "summary": "TCP/IP 为什么没有申请专利？Vint Cerf 在 João Tomé 的新播客《Future Stories》里给了答案。 他 1970 年代和 Bob Kahn 一起写下了那套让全世界的网络能互相通信的规则。给…",
+      "source": "OSCHINA",
+      "sourceKey": "oschina",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "MrDoc v1.1.2 发布，全平台多终端的私有部署AI知识库系统",
+      "url": "https://www.oschina.net/news/503733",
+      "summary": "觅思文档（MrDoc）是一款面向团队与企业的私有化知识管理解决方案，致力于帮助组织构建结构化、可沉淀、可复用的知识体系。 通过「文集 + 文档」的组织方式，结合 Markdown、富文本、Office 文档、表格、图表等…",
+      "source": "OSCHINA",
+      "sourceKey": "oschina",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "🔥 拾趣 Magpie v0.2.0 发布：模型视图更准确，词典功能上新，多项细节优化",
+      "url": "https://www.oschina.net/news/503729",
+      "summary": "🔥 拾趣 Magpie v0.2.0 发布：模型视图更准确，多项细节优化 拾趣 (Magpie)是一款跨平台沉浸式自定义AI 划词工具 划选或双击，浮动条随即弹出：翻译、解释、总结实时呈现；复制、搜索、写入 Obsid…",
+      "source": "OSCHINA",
+      "sourceKey": "oschina",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "《GTA6》Metacritic用户分降至5.6分 部分人没玩过游戏",
+      "url": "https://www.cnbeta.com.tw/articles/game/1587526.htm",
+      "summary": "《GTA6/侠盗猎车6》开放Metacritic用户评价后，用户评分迅速下滑。截至相关信息整理时，该作用户分为5.6分，约44%的评价属于负面。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-22"
+    },
+    {
+      "title": "OpenAI首席科学家警告：AI最快2027年实现自我进化",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587524.htm",
+      "summary": "11月23日，据彭博社报道，OpenAI首席科学家雅库布·帕霍茨基(Jakub Pachocki)提议，AI公司应同意限制开发越来越强大的模型，直到研究人员找到更好的方法来理解和监控这些模型的行为。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-22"
+    },
+    {
+      "title": "从拒绝马斯克到掌管Anthropic 这对兄妹的故事比AI更离奇",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587522.htm",
+      "summary": "11月23日，据《华尔街日报》报道，在Anthropic完成创纪录的首次公开募股（IPO）后，创始人达里奥·阿莫迪（Dario Amodei）与妹妹丹妮拉·阿莫迪（Daniela Amodei）成为硅谷最受关注的兄妹组合…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-22"
+    },
+    {
+      "title": "英伟达应从“外部”寻找CEO？美财长态度反转 不排除黄仁勋回归",
+      "url": "https://www.cnbeta.com.tw/articles/tech/1587520.htm",
+      "summary": "11月23日，据《金融时报》报道，美国财政部长斯科特·贝森特(Scott Bessent)暗示，他不反对黄仁勋重返英伟达。就在一周前，他还曾呼吁英伟达董事会进行“大幅改组”，并从公司“外部”寻找新的CEO。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-22"
+    },
+    {
+      "title": "OpenAI首席科学家呼吁业界限制模型开发 奥特曼表示赞同",
+      "url": "https://www.cnbeta.com.tw/articles/science/1587518.htm",
+      "summary": "OpenAI首席科学家Jakub Pachocki提议，人工智能公司应同意对开发能力日益强大的模型设限，直到研究人员有更好的方法来理解和监控这些模型的行为。Pachocki呼吁制定全行业标准，为AI开发设定界限，各家公司…",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-22"
+    },
+    {
+      "title": "复古游戏杂志《黄金时代》众筹超2.5万英镑 2027年发行六期",
+      "url": "https://www.cnbeta.com.tw/articles/game/1587516.htm",
+      "summary": "朱利安·“贾兹”·里格纳尔创办的复古游戏杂志《黄金时代》已突破初始Kickstarter众筹目标，筹款超过2.5万英镑。项目计划于2027年发行六期实体杂志，集中回顾20世纪游戏文化。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-22"
+    },
+    {
+      "title": "六个民间项目尝试让《GTA6》Xbox版在PC运行 均未完整启动",
+      "url": "https://www.cnbeta.com.tw/articles/game/1587514.htm",
+      "summary": "在R星尚未公布《GTA6》官方PC版的情况下，六个民间项目正尝试让其Xbox Series版本在Windows上运行。不过，目前没有任何项目展示游戏完整运行，相关工具也尚未经过独立测试。 阅读全文",
+      "source": "cnBeta",
+      "sourceKey": "cnbeta",
+      "date": "2026-11-22"
+    }
+  ]
+}

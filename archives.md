@@ -24,7 +24,7 @@ const groups = computed(() => {
 共 **{{ posts.length }}** 篇文章。
 
 <div v-for="[year, list] in groups" :key="year">
-  <div class="archive-year">{{ year }} <span style="font-size:14px;color:var(--vp-c-text-2)">· {{ list.length }} 篇</span></div>
+  <div class="archive-year">{{ year }} <span class="count">· {{ list.length }} 篇</span></div>
   <a v-for="post in list" :key="post.url" :href="post.url" class="post-item">
     <time>{{ post.date.slice(5) }}</time>
     <span class="title">{{ post.title }}</span>

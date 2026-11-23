@@ -4,6 +4,9 @@ on:
   push:
     branches: [master, main]
   workflow_dispatch:
+  schedule:
+    # 每天 UTC 01:00（北京时间 09:00）重新抓取技术文章并部署
+    - cron: '0 1 * * *'
 
 permissions:
   contents: read
@@ -31,6 +34,10 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Fetch tech feeds
+        run: npm run fetch:feeds
+        continue-on-error: true
 
       - name: Build
         run: npm run build

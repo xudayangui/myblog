@@ -8,3 +8,4 @@ dist
 .vitepress/cache
 *.timestamp-*.mjs
 .DS_Store
+.workbuddy/

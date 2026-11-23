@@ -6,7 +6,9 @@
   "description": "Dayangui 的前端技术博客 — JavaScript / Vue / 前端工程实践",
   "scripts": {
     "dev": "vitepress dev .",
+    "fetch:feeds": "node scripts/fetch-feeds.mjs",
     "build": "vitepress build .",
+    "build:full": "npm run fetch:feeds && npm run build",
     "preview": "vitepress preview ."
   },
   "devDependencies": {

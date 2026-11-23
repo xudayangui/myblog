@@ -9,7 +9,7 @@ export default defineConfig({
   cleanUrls: true,
   head: [
     ['link', { rel: 'icon', href: '/myblog/favicon.ico' }],
-    ['meta', { name: 'theme-color', content: '#1677ff' }],
+    ['meta', { name: 'theme-color', content: '#b0401f' }],
     ['meta', { name: 'description', content: 'Dayangui 的前端技术博客，记录 JavaScript、Vue 与前端工程实践' }]
   ],
   themeConfig: {
@@ -20,6 +20,7 @@ export default defineConfig({
       { text: '归档', link: '/archives/' },
       { text: '分类', link: '/categories/' },
       { text: '标签', link: '/tags/' },
+      { text: '技术雷达', link: '/radar/' },
       { text: 'GitHub', link: 'https://github.com/xudayangui' }
     ],
     sidebar: [

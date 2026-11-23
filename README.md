@@ -40,29 +40,42 @@ categories:
 
 3. 归档 / 分类 / 标签页会在构建时自动收录，无需手动维护列表。
 
+## 技术雷达
+
+`/radar/` 是从掘金、OSCHINA、cnBeta 等公开 RSS 聚合的技术文章页，只展示标题与摘要并跳转原文，尊重原作者版权。
+
+```bash
+npm run fetch:feeds   # 手动抓取最新文章
+npm run build:full    # 抓取 + 构建
+```
+
+GitHub Actions 会在每次部署前自动抓取，并每天北京时间 09:00 定时更新。抓取失败的源会自动跳过并保留上次缓存（`feeds.data.json`）。
+
 ## 发布
 
-推送到 `master` 分支后，GitHub Actions（`.github/workflows/deploy.yml`）会自动构建并部署。
+推送到 `master` 分支后，GitHub Actions（`.github/workflows/deploy.yml`）会自动抓取文章、构建并部署。
 需在仓库 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。
-
-> 旧的 `deploy.sh`（VuePress 手动强推 gh-pages）已废弃，保留仅供参考，可安全删除。
 
 ## 目录结构
 
 ```
 .
-├── index.md              # 首页（VitePress home layout）
+├── index.md              # 首页（杂志风 + 程序员审美）
 ├── archives.md           # 归档页
 ├── categories.md         # 分类页
 ├── tags.md               # 标签页
-├── docs/                 # 全部文章（沿用原有 44 篇）
+├── radar.md              # 技术雷达（聚合外部好文）
+├── docs/                 # 全部文章（44 篇）
 │   ├── javascript/
 │   └── vue/
+├── scripts/
+│   └── fetch-feeds.mjs   # 技术文章抓取脚本
 └── .vitepress/
     ├── config.mts        # 站点配置
-    ├── theme/
-    │   ├── index.ts      # 主题入口
-    │   ├── style.css     # 自定义样式
-    │   └── posts.data.js # 文章数据加载器
-    └── dist/             # 构建产物（自动生成）
+    └── theme/
+        ├── index.ts      # 主题入口
+        ├── style.css     # "THE QUIET JOURNAL" 设计系统
+        ├── posts.data.js # 本站文章数据加载器
+        ├── feeds.data.json # 聚合文章缓存（自动生成）
+        └── components/   # HomePage / ArticleHeader / TechRadar
 ```
