@@ -24,10 +24,10 @@ export default defineConfig({
     siteTitle: 'myBlog',
     nav: [
       { text: '首页', link: '/' },
-      { text: '归档', link: '/archives/' },
-      { text: '分类', link: '/categories/' },
-      { text: '标签', link: '/tags/' },
-      { text: '技术雷达', link: '/radar/' },
+      { text: '归档', link: '/archives' },
+      { text: '分类', link: '/categories' },
+      { text: '标签', link: '/tags' },
+      { text: '技术雷达', link: '/radar' },
       { text: 'GitHub', link: 'https://github.com/xudayangui' }
     ],
     sidebar: [

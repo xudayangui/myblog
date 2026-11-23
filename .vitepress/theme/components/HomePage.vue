@@ -28,7 +28,7 @@ const sections = [
     k: '03 / COLUMN',
     title: '归档与检索',
     desc: '按时间、分类、标签多维度回顾所有文章',
-    link: '/archives/',
+    link: '/archives',
     count: () => posts.length
   }
 ]
@@ -68,8 +68,8 @@ function summary(post: any) {
           记录值得沉淀的知识点，也记录思考留下的痕迹——让界面退到内容之后，让文字成为主角。
         </p>
         <div class="yh-actions">
-          <a :href="latest.length ? latest[0].url : withBase('/archives/')" class="yh-btn yh-btn-primary">开始阅读 <span aria-hidden="true">→</span></a>
-          <a :href="withBase('/archives/')" class="yh-btn yh-btn-ghost">浏览归档</a>
+          <a :href="latest.length ? latest[0].url : withBase('/archives')" class="yh-btn yh-btn-primary">开始阅读 <span aria-hidden="true">→</span></a>
+          <a :href="withBase('/archives')" class="yh-btn yh-btn-ghost">浏览归档</a>
         </div>
       </div>
       <aside class="yh-sidenote">
@@ -100,7 +100,7 @@ function summary(post: any) {
           </a>
         </li>
       </ol>
-      <a :href="withBase('/archives/')" class="yh-more">浏览全部归档 <span aria-hidden="true">→</span></a>
+      <a :href="withBase('/archives')" class="yh-more">浏览全部归档 <span aria-hidden="true">→</span></a>
     </section>
 
     <!-- 栏目导航 -->
@@ -117,7 +117,7 @@ function summary(post: any) {
     </section>
 
     <!-- 技术雷达入口 -->
-    <a :href="withBase('/radar/')" class="yh-radar">
+    <a :href="withBase('/radar')" class="yh-radar">
       <span class="dot" aria-hidden="true"></span>
       <span class="txt"><b>技术雷达</b> &nbsp;—&nbsp; 来自掘金 · OSCHINA · cnBeta 的 {{ feeds.items.length }} 篇近期好文，已为你聚合</span>
       <span class="go">VIEW →</span>

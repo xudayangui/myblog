@@ -42,7 +42,7 @@ categories:
 
 ## 技术雷达
 
-`/radar/` 是从掘金、OSCHINA、cnBeta 等公开 RSS 聚合的技术文章页，只展示标题与摘要并跳转原文，尊重原作者版权。
+`/radar` 是从掘金、OSCHINA、cnBeta 等公开 RSS 聚合的技术文章页，只展示标题与摘要并跳转原文，尊重原作者版权。
 
 ```bash
 npm run fetch:feeds   # 手动抓取最新文章
