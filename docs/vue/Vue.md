@@ -4,7 +4,7 @@ date: 2022-03-29
 tags:
  - Vue
 categories:
- - 前端
+ - Vue
 ---
 
 `Vue`实例需要经过创建、初始化数据、编译模板、挂载`DOM`、渲染、更新、渲染、卸载等一系列过程，这个过程就是`Vue`的生命周期，在`Vue`的整个生命周期中提供很多钩子函数在生命周期的不同时刻调用，`Vue`中提供的钩子函数有`beforeCreate`、`created`、`beforeMount`、`mounted`、`beforeUpdate`、`updated`、`beforeDestroy`、`destroyed`。
